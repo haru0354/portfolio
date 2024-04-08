@@ -29,7 +29,7 @@ const SideMenu = () => {
               <li className=" text-center p-4 hover:bg-blue-200">
                 <Image
                   src={sideMenuList.src}
-                  width={190}
+                  width={200}
                   height={180}
                   alt={sideMenuList.alt}
                   className="m-auto block"
