@@ -37,7 +37,7 @@ git、seo、wordpress(開発でなく使用する側)
 
 
 学習したが自己開発をしておらず自信がないスキル
-php、lalaver、sass、Docker、express
+php、Laravel、sass、Docker、express
 
 
 備考
