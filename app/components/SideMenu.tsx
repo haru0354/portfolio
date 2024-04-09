@@ -21,7 +21,7 @@ const SideMenu = () => {
   ];
 
   return (
-    <div className="bg-gray-200 w-[220px] h-full fixed ">
+    <div className="bg-gray-200 w-[220px] h-full fixed">
       <ul>
         {sideMenuLists.map((sideMenuList) => {
           return (

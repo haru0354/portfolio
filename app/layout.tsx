@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SideMenu from "./components/SideMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <SideMenu />
+        <div className="w-full flex items-center justify-center bg-blue-50 ml-[220px]">
+          <main className="max-w-[920px] flex flex-wrap items-center justify-center text-blue-800">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
