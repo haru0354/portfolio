@@ -9,7 +9,6 @@ export default function Home() {
       <Main2ColumnImage />
       <Skill />
       <Profile />
-      <AnimatedItem>test</AnimatedItem>
     </>
   );
 }

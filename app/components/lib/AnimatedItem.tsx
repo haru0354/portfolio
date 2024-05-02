@@ -5,17 +5,22 @@ import { ReactNode } from "react";
 
 type AnimatedItemProps = {
   children: ReactNode;
+  className?: string;
+  delay?: number;
+
 };
 
-const AnimatedItem: React.FC<AnimatedItemProps> = ({ children }) => {
+const AnimatedItem: React.FC<AnimatedItemProps> = ({ children, className, delay }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 60 }} 
-      animate={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 2 }} 
-    >
+    <motion.li
+      initial={{ opacity: 0, x: 60 }} 
+      whileInView={{ opacity: 1, x: 0 }} 
+      viewport={{ once: true }}
+      transition={{ duration: 2, delay: delay, }} 
+      className={className}
+      >
       {children}
-    </motion.div>
+    </motion.li>
   );
 };
 
