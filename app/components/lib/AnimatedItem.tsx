@@ -5,22 +5,47 @@ import { ReactNode } from "react";
 
 type AnimatedItemProps = {
   children: ReactNode;
+  elementType: "div" | "h2" | "h3" | "li";
+  animation: "fadeInRight";
   className?: string;
   delay?: number;
-
 };
 
-const AnimatedItem: React.FC<AnimatedItemProps> = ({ children, className, delay }) => {
+const AnimatedItem: React.FC<AnimatedItemProps> = ({
+  children,
+  className,
+  delay,
+  elementType,
+  animation,
+}) => {
+  const MotionComponent = motion[elementType];
+
+  const fadeInRight = {
+    hidden: { opacity: 0, x: 60 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: delay || 0,
+        duration: 2.5,
+      },
+    },
+  };
+
+  const Animations = {
+    fadeInRight,
+  };
+
   return (
-    <motion.li
-      initial={{ opacity: 0, x: 60 }} 
-      whileInView={{ opacity: 1, x: 0 }} 
+    <MotionComponent
+      variants={Animations[animation]}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 2, delay: delay, }} 
       className={className}
-      >
+    >
       {children}
-    </motion.li>
+    </MotionComponent>
   );
 };
 
