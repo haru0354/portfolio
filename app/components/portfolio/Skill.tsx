@@ -1,10 +1,12 @@
+import AnimatedItem from "../lib/AnimatedItem";
+
 const Skill = () => {
   return (
     <>
       <h2 className="block w-full text-center text-3xl font-bold my-10 ">
         skill
       </h2>
-      <div className="flex flex-wrap">
+      <AnimatedItem animation="fadeInDown" elementType="div" className="flex flex-wrap">
         <div className="mr-2 mb-2 w-[450px] border border-gray-700">
           <h3 className="text-center">自己開発で使用したスキル</h3>
           <ul>
@@ -42,7 +44,7 @@ const Skill = () => {
             <li>随時必要になる部分を日本語や英語で検索・ドキュメントの確認</li>
           </ol>
         </div>
-      </div>
+      </AnimatedItem>
     </>
   );
 };

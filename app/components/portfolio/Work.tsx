@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/Button";
+import AnimatedItem from "../lib/AnimatedItem";
 
 const Work = () => {
   const imageLists = [
@@ -25,7 +26,7 @@ const Work = () => {
       <h2 className="block w-full text-center text-3xl font-bold my-10 ">
         work
       </h2>
-      <div className="bg-blue-100 rounded-lg w-[890px] mb-4 py-10">
+      <AnimatedItem animation="fadeInScale" elementType="div" className="bg-blue-100 rounded-lg w-[890px] mb-4 py-10">
         <p className="w-full text-2xl text-center font-semibold mb-8">
           旅程表アプリ
         </p>
@@ -43,19 +44,23 @@ const Work = () => {
           ああああああああああああああああああああああ
         </p>
         <Button>詳細はコチラ</Button>
-      </div>
+      </AnimatedItem>
       {imageLists.map((imageList) => {
         return (
           <Link href={imageList.slug} key={imageList.id}>
-            <div className="text-center p-1 max-w-[450px]">
-              <Image
-                src={imageList.src}
-                width={450}
-                height={450}
-                alt={imageList.alt}
-                className="m-auto block rounded-lg border-2 hover:border-blue-700"
-              />
-            </div>
+              <AnimatedItem
+                elementType="div"
+                animation="fadeInRotate"
+                className="text-center p-1 max-w-[450px]"
+              >
+                <Image
+                  src={imageList.src}
+                  width={450}
+                  height={450}
+                  alt={imageList.alt}
+                  className="m-auto block rounded-lg border-2 hover:border-blue-700"
+                />
+              </AnimatedItem>
           </Link>
         );
       })}
