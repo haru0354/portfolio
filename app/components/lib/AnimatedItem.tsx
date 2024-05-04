@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 type AnimatedItemProps = {
   children: ReactNode;
   elementType: "div" | "h2" | "h3" | "li";
-  animation: "fadeInRight" | "fadeInDown";
+  animation: "fadeInRight" | "fadeInDown" | "fadeInRotate" | "fadeInScale";
   className?: string;
   delay?: number;
 };
@@ -44,9 +44,36 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
     },
   };
 
+  const fadeInRotate = {
+    hidden: { scale: 0, rotate:180, },
+    visible: {
+      scale: 1,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 30,
+        delay: delay || 0,
+      },
+    },
+  };
+
+  const fadeInScale = {
+    hidden: { scale: 0 },
+    visible: {
+      scale: 1,
+      transition: {
+        delay: delay || 0,
+        duration: 1,
+      },
+    },
+  };
+
   const Animations = {
     fadeInRight,
     fadeInDown,
+    fadeInRotate,
+    fadeInScale,
   };
 
   return (
