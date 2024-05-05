@@ -17,14 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <SideMenu />
-        <div className="w-full flex items-center justify-center bg-blue-50 ml-[220px]">
-          <main className="max-w-[920px] mb-20 flex flex-wrap items-center justify-center text-blue-800">
-            {children}
-          </main>
-        </div>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
