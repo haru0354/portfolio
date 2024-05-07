@@ -10,15 +10,20 @@ const Work = () => {
       src: "/merlion.jpg",
       slug: "/",
       alt: "ISRブログ",
+      title: "ISRブログ",
     },
     {
       id: 2,
       src: "/merlion.jpg",
       slug: "/skill",
       alt: "SSGブログwithMD",
+      title: "SSGブログwithMD",
+
     },
-    { id: 3, src: "/merlion.jpg", slug: "/work", alt: "SSGブログwithMDX" },
-    { id: 4, src: "/merlion.jpg", slug: "/work", alt: "ポートフォリオ" },
+    { id: 3, src: "/merlion.jpg", slug: "/work", alt: "SSGブログwithMDX", title: "SSGブログwithMDX",
+  },
+    { id: 4, src: "/merlion.jpg", slug: "/work", alt: "ポートフォリオ", title: "ポートフォリオ",
+  },
   ];
 
   return (
@@ -57,7 +62,7 @@ const Work = () => {
                 <AnimatedItem
                   elementType="div"
                   animation="fadeInRotate"
-                  className="text-center p-1 max-w-[520px]"
+                  className="text-center p-1 max-w-[520px] relative"
                 >
                   <Image
                     src={imageList.src}
@@ -66,6 +71,9 @@ const Work = () => {
                     alt={imageList.alt}
                     className="m-auto block rounded-lg border-2 hover:border-blue-700"
                   />
+                  <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
+                    {imageList.title}
+                  </div>
                 </AnimatedItem>
               </Link>
             );
