@@ -1,20 +1,18 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer>
-    <div className="bg-blue-500 min-h-[68px] w-full flex flex-grow bottom-0 items-end justify-center">
-      <ul className="text-xs text-center mb-3">
-        <li className="mb-2 text-white">
-          <Link href="/">プライバシーポリシー・免責事項</Link>
-        </li>
-        <li className="text-black">
-          &copy;ポートフォリオサイト
-        </li>
-      </ul>
-    </div>
-  </footer>
-  )
-}
+      <div className="bg-blue-500 py-2 w-full ">
+        <ul className="text-xs text-center">
+          <li className="mb-1 text-white">
+            <Link href="/">プライバシーポリシー・免責事項</Link>
+          </li>
+          <li className="text-black">&copy;ポートフォリオサイト</li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
