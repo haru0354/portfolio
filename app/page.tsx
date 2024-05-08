@@ -4,10 +4,12 @@ import Skill from "./components/portfolio/Skill";
 import Profile from "./components/portfolio/Profile";
 import BackToTopButton from "./components/ui/BackToTopButton ";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <main>
         <About />
         <Work />
