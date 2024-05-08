@@ -36,7 +36,7 @@ const Work = () => {
   ];
 
   return (
-    <section className="bg-blue-50 pt-10 pb-20 w-full">
+    <section id="works" className="bg-blue-50 pt-10 pb-20 w-full">
       <div className="w-[1050px] mx-auto">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
           Works
