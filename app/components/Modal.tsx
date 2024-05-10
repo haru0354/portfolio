@@ -14,6 +14,11 @@ const Modal: React.FC<ModalProps> = ({ src, alt, title }) => {
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
+    if (!isModalOpen) {
+      document.body.style.overflow = 'hidden'; // 背景を固定
+    } else {
+      document.body.style.overflow = '';
+    }
   };
 
   const closeModal = (e: React.MouseEvent<HTMLInputElement>) => {
