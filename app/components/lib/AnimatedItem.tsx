@@ -9,6 +9,7 @@ type AnimatedItemProps = {
   animation: "fadeInRight" | "fadeInDown" | "fadeInRotate" | "fadeInScale";
   className?: string;
   delay?: number;
+  onClick?: (e: React.MouseEvent) => void;
 };
 
 const AnimatedItem: React.FC<AnimatedItemProps> = ({
@@ -17,6 +18,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
   delay,
   elementType,
   animation,
+  onClick,
 }) => {
   const MotionComponent = motion[elementType];
 
@@ -83,6 +85,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       whileInView="visible"
       viewport={{ once: true }}
       className={className}
+      onClick={onClick}
     >
       {children}
     </MotionComponent>
