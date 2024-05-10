@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import AnimatedItem from "./lib/AnimatedItem";
+import CloseButton from "./ui/CloseButton";
 
 type ModalProps = {
   src: string;
@@ -15,13 +16,13 @@ const Modal: React.FC<ModalProps> = ({ src, alt, title }) => {
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
     if (!isModalOpen) {
-      document.body.style.overflow = 'hidden'; // 背景を固定
+      document.body.style.overflow = "hidden"; // 背景を固定
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
   };
 
-  const closeModal = (e: React.MouseEvent<HTMLInputElement>) => {
+  const closeModal = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
       toggleModal();
     }
@@ -49,8 +50,9 @@ const Modal: React.FC<ModalProps> = ({ src, alt, title }) => {
       {isModalOpen && (
         <div
           onClick={closeModal}
-          className="fixed flex inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
+          className="fixed flex flex-col inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
         >
+          <CloseButton onClick={closeModal} />
           <div className="w-[85%] h-[85%] bg-gray-100 border rounded">
             <img src="/merlion.jpg" alt="a" width={300} height={250} />
             <p>{alt}</p>
