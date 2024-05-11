@@ -60,7 +60,9 @@ const Modal: React.FC<ModalProps> = ({
         </div>
       </AnimatedItem>
       {isModalOpen && (
-        <div
+        <AnimatedItem
+          elementType="div"
+          animation="fadeInOpacity"
           onClick={closeModal}
           className="fixed flex inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
         >
@@ -72,7 +74,13 @@ const Modal: React.FC<ModalProps> = ({
               <CloseButton onClick={closeModal} />
             </div>
             <div className="mx-10">
-              <img src="/merlion.jpg" alt="a" width={300} height={250} className="mb-4"/>
+              <img
+                src="/merlion.jpg"
+                alt="a"
+                width={300}
+                height={250}
+                className="mb-4"
+              />
               {overview}
               <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
                 使用技術
@@ -88,7 +96,7 @@ const Modal: React.FC<ModalProps> = ({
               {commitment}
             </div>
           </div>
-        </div>
+        </AnimatedItem>
       )}
     </div>
   );
