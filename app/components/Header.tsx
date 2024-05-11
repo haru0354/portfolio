@@ -15,40 +15,49 @@ const Header = () => {
   };
 
   return (
-    <header className="max-w-[1050px] mx-auto">
-      <div className="flex justify-between items-center mx-2 h-16">
+    <header className="fixed h-16 w-full border-b mb-16 bg-white z-10">
+      <div className="flex justify-between items-center mx-auto h-16 mb-16 max-w-[1050px]">
         <Link href="/">
           <h1>
             <Image
-              src="/logo.png"
-              alt="ポートフォリオサイトのロゴ"
-              width="220"
-              height="52"
+              src="/logo-portfolio.png"
+              alt="マイポートフォリオ(30代エンジニアのポートフォリオ)"
+              width="200"
+              height="48"
               priority
-              className="w-[160px] h-auto md:w-[220px]"
             />
           </h1>
         </Link>
         <ul className="flex">
           <li className="mx-4">
-            <a onClick={() => scrollToSection("about")} className="cursor-pointer">
+            <a
+              onClick={() => scrollToSection("about")}
+              className="cursor-pointer"
+            >
               About
             </a>
           </li>
           <li className="mx-4">
-            {" "}
-            <a onClick={() => scrollToSection("works")} className="cursor-pointer">
+            <a
+              onClick={() => scrollToSection("works")}
+              className="cursor-pointer"
+            >
               Works
             </a>
           </li>
           <li className="mx-4">
-            <a onClick={() => scrollToSection("skill")} className="cursor-pointer">
-              Skill
+            <a
+              onClick={() => scrollToSection("skill")}
+              className="cursor-pointer"
+            >
+              Skills
             </a>
           </li>
           <li className="mx-4">
-            {" "}
-            <a onClick={() => scrollToSection("profile")} className="cursor-pointer">
+            <a
+              onClick={() => scrollToSection("profile")}
+              className="cursor-pointer"
+            >
               Profile
             </a>
           </li>
