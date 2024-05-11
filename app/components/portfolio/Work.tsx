@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import Button from "../ui/Button";
 import AnimatedItem from "../lib/AnimatedItem";
+import Modal from "../Modal";
 
 const Work = () => {
   const imageLists = [
@@ -72,24 +72,13 @@ const Work = () => {
         <div className="flex flex-wrap w-full justify-center">
           {imageLists.map((imageList) => {
             return (
-              <Link href={imageList.slug} key={imageList.id}>
-                <AnimatedItem
-                  elementType="div"
-                  animation="fadeInRotate"
-                  className="text-center p-1 max-w-[520px] relative"
-                >
-                  <Image
-                    src={imageList.src}
-                    width={450}
-                    height={450}
-                    alt={imageList.alt}
-                    className="m-auto block rounded-lg border-2 hover:border-blue-700"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-                    {imageList.title}
-                  </div>
-                </AnimatedItem>
-              </Link>
+              <div key={imageList.id}>
+                <Modal
+                  src={imageList.src}
+                  alt={imageList.alt}
+                  title={imageList.title}
+                />
+              </div>
             );
           })}
         </div>
