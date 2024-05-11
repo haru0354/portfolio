@@ -36,7 +36,7 @@ const Work = () => {
       overview: "overview",
       technology: "next.js14",
       reasonForCreation: "ReasonForCreation",
-      commitment: "commitment",      
+      commitment: "commitment",
     },
     {
       id: 4,
@@ -47,7 +47,8 @@ const Work = () => {
       overview: "overview",
       technology: "next.js14",
       reasonForCreation: "ReasonForCreation",
-      commitment: "commitment",    },
+      commitment: "commitment",
+    },
   ];
 
   return (
@@ -59,16 +60,13 @@ const Work = () => {
         <AnimatedItem
           animation="fadeInScale"
           elementType="div"
-          className="bg-blue-100 rounded-lg w-full mb-4 py-10 "
+          className="bg-blue-100 rounded-lg w-full mb-10 py-10 "
         >
-          <h3 className="w-full text-2xl text-center font-semibold mb-8">
-            旅程表アプリ
-          </h3>
           <div className="relative">
             <Image
               src="/merlion.jpg"
-              width={500}
-              height={500}
+              width={550}
+              height={550}
               alt="a"
               className="m-auto block rounded-lg mb-8 "
             />
@@ -79,16 +77,23 @@ const Work = () => {
           <p className="text-center">
             ああああああああああああああああああああああ
           </p>
-          <p className="text-center mb-10">
-            ああああああああああああああああああああああ
-          </p>
-          <Button>詳細はコチラ</Button>
+          <Modal
+            modalType="button"
+            src="/merlion.jpg"
+            alt="src"
+            title="旅程表作成アプリ"
+            technology="src"
+            overview="src"
+            reasonForCreation="src"
+            commitment="src"
+          />
         </AnimatedItem>
         <div className="flex flex-wrap w-full justify-center">
           {imageLists.map((imageList) => {
             return (
               <div key={imageList.id}>
                 <Modal
+                  modalType="image"
                   src={imageList.src}
                   alt={imageList.alt}
                   title={imageList.title}

@@ -3,8 +3,10 @@
 import { useState } from "react";
 import AnimatedItem from "./lib/AnimatedItem";
 import CloseButton from "./ui/CloseButton";
+import Button from "./ui/Button";
 
 type ModalProps = {
+  modalType: "image" | "button";
   src: string;
   alt: string;
   title: string;
@@ -22,6 +24,7 @@ const Modal: React.FC<ModalProps> = ({
   technology,
   reasonForCreation,
   commitment,
+  modalType,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -41,24 +44,29 @@ const Modal: React.FC<ModalProps> = ({
   };
 
   return (
-    <div>
-      <AnimatedItem
-        elementType="div"
-        animation="fadeInRotate"
-        className="text-center p-1 max-w-[520px] relative hover:border-blue-700"
-        onClick={toggleModal}
-      >
-        <img
-          src={src}
-          width={450}
-          height={450}
-          alt={alt}
-          className="m-auto block rounded-lg border-2 hover:border-blue-700"
-        />
-        <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-          {title}
-        </div>
-      </AnimatedItem>
+    <>
+      {modalType === "image" && (
+        <AnimatedItem
+          elementType="div"
+          animation="fadeInRotate"
+          className="text-center p-1 m-1 max-w-[520px] relative rounded-lg border-2 border-blue-50  hover:border-blue-700  cursor-pointer"
+          onClick={toggleModal}
+        >
+          <img
+            src={src}
+            width={450}
+            height={450}
+            alt={alt}
+            className="m-auto block rounded-lg"
+          />
+          <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
+            {title}
+          </div>
+        </AnimatedItem>
+      )}
+      {modalType === "button" && (
+        <Button onClick={toggleModal}>詳細はコチラ</Button>
+      )}
       {isModalOpen && (
         <AnimatedItem
           elementType="div"
@@ -98,7 +106,7 @@ const Modal: React.FC<ModalProps> = ({
           </div>
         </AnimatedItem>
       )}
-    </div>
+    </>
   );
 };
 
