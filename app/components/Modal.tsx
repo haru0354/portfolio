@@ -8,9 +8,21 @@ type ModalProps = {
   src: string;
   alt: string;
   title: string;
+  overview: string;
+  technology: string;
+  reasonForCreation: string;
+  commitment: string;
 };
 
-const Modal: React.FC<ModalProps> = ({ src, alt, title }) => {
+const Modal: React.FC<ModalProps> = ({
+  src,
+  alt,
+  title,
+  overview,
+  technology,
+  reasonForCreation,
+  commitment,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -50,12 +62,31 @@ const Modal: React.FC<ModalProps> = ({ src, alt, title }) => {
       {isModalOpen && (
         <div
           onClick={closeModal}
-          className="fixed flex flex-col inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
+          className="fixed flex inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
         >
-          <CloseButton onClick={closeModal} />
           <div className="w-[85%] h-[85%] bg-gray-100 border rounded">
-            <img src="/merlion.jpg" alt="a" width={300} height={250} />
-            <p>{alt}</p>
+            <div className="flex justify-between mb-4">
+              <h3 className="text-lg text-white font-semibold px-4 py-2 bg-gray-700 rounded">
+                {title}
+              </h3>
+              <CloseButton onClick={closeModal} />
+            </div>
+            <div className="mx-10">
+              <img src="/merlion.jpg" alt="a" width={300} height={250} className="mb-4"/>
+              {overview}
+              <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
+                使用技術
+              </h4>
+              {technology}
+              <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
+                作成理由
+              </h4>
+              {reasonForCreation}
+              <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
+                こだわりの点
+              </h4>
+              {commitment}
+            </div>
           </div>
         </div>
       )}

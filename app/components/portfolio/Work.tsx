@@ -11,6 +11,10 @@ const Work = () => {
       slug: "/",
       alt: "ISRブログ",
       title: "ISRブログ",
+      overview: "概要",
+      technology: "next.js14",
+      reasonForCreation: "作成理由",
+      commitment: "こだわりの点",
     },
     {
       id: 2,
@@ -18,6 +22,10 @@ const Work = () => {
       slug: "/skill",
       alt: "SSGブログwithMD",
       title: "SSGブログwithMD",
+      overview: "overview",
+      technology: "next.js14",
+      reasonForCreation: "ReasonForCreation",
+      commitment: "commitment",
     },
     {
       id: 3,
@@ -25,6 +33,10 @@ const Work = () => {
       slug: "/work",
       alt: "SSGブログwithMDX",
       title: "SSGブログwithMDX",
+      overview: "overview",
+      technology: "next.js14",
+      reasonForCreation: "ReasonForCreation",
+      commitment: "commitment",      
     },
     {
       id: 4,
@@ -32,7 +44,10 @@ const Work = () => {
       slug: "/work",
       alt: "ポートフォリオ",
       title: "ポートフォリオ",
-    },
+      overview: "overview",
+      technology: "next.js14",
+      reasonForCreation: "ReasonForCreation",
+      commitment: "commitment",    },
   ];
 
   return (
@@ -77,6 +92,10 @@ const Work = () => {
                   src={imageList.src}
                   alt={imageList.alt}
                   title={imageList.title}
+                  technology={imageList.technology}
+                  overview={imageList.overview}
+                  reasonForCreation={imageList.reasonForCreation}
+                  commitment={imageList.commitment}
                 />
               </div>
             );
