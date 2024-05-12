@@ -5,7 +5,6 @@ import Profile from "./components/portfolio/Profile";
 import BackToTopButton from "./components/ui/BackToTopButton ";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Modal from "./components/Modal";
 
 export default function Home() {
   return (
