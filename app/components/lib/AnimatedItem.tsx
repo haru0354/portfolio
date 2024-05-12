@@ -6,7 +6,12 @@ import { ReactNode } from "react";
 type AnimatedItemProps = {
   children: ReactNode;
   elementType: "div" | "h2" | "h3" | "li";
-  animation: "fadeInRight" | "fadeInDown" | "fadeInRotate" | "fadeInScale";
+  animation:
+    | "fadeInRight"
+    | "fadeInDown"
+    | "fadeInRotate"
+    | "fadeInScale"
+    | "fadeInOpacity";
   className?: string;
   delay?: number;
   onClick?: (e: React.MouseEvent) => void;
@@ -47,7 +52,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
   };
 
   const fadeInRotate = {
-    hidden: { scale: 0, rotate:180, },
+    hidden: { scale: 0, rotate: 180 },
     visible: {
       scale: 1,
       rotate: 0,
@@ -71,11 +76,23 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
     },
   };
 
+  const fadeInOpacity = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: delay || 0,
+        duration: 0.8,
+      },
+    },
+  };
+
   const Animations = {
     fadeInRight,
     fadeInDown,
     fadeInRotate,
     fadeInScale,
+    fadeInOpacity,
   };
 
   return (
