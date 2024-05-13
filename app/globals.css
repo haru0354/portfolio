@@ -7,3 +7,12 @@
     flex-direction: column;
   }
 }
+
+body {
+  line-height: 1.8rem;
+  color: rgb(48 51 54);
+}
+
+p {
+  margin-bottom: 1.4rem;
+}
