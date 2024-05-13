@@ -3,7 +3,6 @@
 import { useState } from "react";
 import HeaderMenu from "./HeaderMenu";
 import AnimatedItem from "../lib/AnimatedItem";
-import CloseButton from "../ui/CloseButton";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +19,11 @@ const HamburgerMenu = () => {
 
   return (
     <div className="block sm:hidden">
-      <button onClick={toggleOpen} className="border mr-4 px-2 border-gray-600">
-        open
+      <button onClick={toggleOpen} className="flex flex-col items-center justify-center border mr-4 px-2 pt-2 pb-1 border-gray-300 rounded">
+        <span className="block w-6 h-0.5 bg-gray-500 mb-1"></span>
+        <span className="block w-6 h-0.5 bg-gray-500 mb-1"></span>
+        <span className="block w-6 h-0.5 bg-gray-500"></span>
+        <p className="text-xs mt-1 text-gray-500">menu</p>
       </button>
       {isOpen && (
         <AnimatedItem
