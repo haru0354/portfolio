@@ -62,6 +62,7 @@ const Profile = () => {
             ))}
           </ul>
         </div>
+        <img src="/footer-image-portfolio01.png" alt="エンジニアの仕事中の画像" className="mx-auto" />
       </div>
     </section>
   );
