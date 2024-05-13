@@ -23,7 +23,7 @@ const HamburgerMenu = () => {
         <span className="block w-6 h-0.5 bg-gray-500 mb-1"></span>
         <span className="block w-6 h-0.5 bg-gray-500 mb-1"></span>
         <span className="block w-6 h-0.5 bg-gray-500"></span>
-        <p className="text-xs mt-1 text-gray-500">menu</p>
+        <p className="text-xs mt-1 mb-0 text-gray-500">menu</p>
       </button>
       {isOpen && (
         <AnimatedItem
