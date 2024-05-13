@@ -49,7 +49,7 @@ const Modal: React.FC<ModalProps> = ({
         <AnimatedItem
           elementType="div"
           animation="fadeInRotate"
-          className="text-center p-1 m-1 max-w-[520px] relative rounded-lg border-2 border-blue-50  hover:border-blue-700  cursor-pointer"
+          className="text-center p-1 m-1 max-w-[520px] relative rounded-lg border-2 border-blue-50  hover:border-blue-500  cursor-pointer"
           onClick={toggleModal}
         >
           <img
