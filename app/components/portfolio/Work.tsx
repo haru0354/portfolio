@@ -53,14 +53,14 @@ const Work = () => {
 
   return (
     <section id="works" className="bg-blue-50 pt-10 pb-20 w-full">
-      <div className="w-[1050px] mx-auto">
+      <div className="max-w-[1050px] mx-auto p-2">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
           Works
         </h2>
         <AnimatedItem
           animation="fadeInScale"
           elementType="div"
-          className="bg-blue-100 rounded-lg w-full mb-10 py-10 "
+          className="bg-blue-100 rounded-lg w-full mb-10 py-10 p-2 "
         >
           <div className="relative">
             <Image
