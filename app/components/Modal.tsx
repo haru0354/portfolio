@@ -57,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({
             width={450}
             height={450}
             alt={alt}
-            className="m-auto block rounded-lg"
+            className="mx-auto block rounded-lg"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
             {title}
@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({
           onClick={closeModal}
           className="fixed flex inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
         >
-          <div className="w-[85%] h-[85%] bg-gray-100 border rounded">
+          <div className="w-[90%] sm:w-[800px] h-[85%] bg-gray-100 border rounded">
             <div className="flex justify-between mb-4">
               <h3 className="text-lg text-white font-semibold px-4 py-2 bg-gray-700 rounded">
                 {title}
@@ -87,7 +87,7 @@ const Modal: React.FC<ModalProps> = ({
                 alt="a"
                 width={300}
                 height={250}
-                className="mb-4"
+                className="mx-auto mb-4"
               />
               {overview}
               <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
