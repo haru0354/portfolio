@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedItem from "../lib/AnimatedItem";
 
 const Profile = () => {
@@ -62,12 +63,12 @@ const Profile = () => {
                   {ProfileList.title}
                 </h3>
                 <p>{ProfileList.content}</p>
-                <img src="/image_webp/down-arrow.webp" alt="下矢印" className="absolute mt-[-64px] ml-[-64px]"/>
+                <Image src="/image_webp/down-arrow.webp" width={40} height={40} alt="下矢印" className="absolute mt-[-64px] ml-[-64px]"/>
               </AnimatedItem>
             ))}
           </ul>
         </div>
-        <img src="/image_webp/footer-image-portfolio01.webp" alt="エンジニアの仕事中の画像" className="mx-auto" />
+        <Image src="/image_webp/footer-image-portfolio01.webp" width={801} height={320} alt="エンジニアの仕事中の画像" className="mx-auto" />
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedItem from "../lib/AnimatedItem";
 import Modal from "../Modal";
 
@@ -87,7 +88,7 @@ const Work = () => {
           className="bg-blue-100 rounded-lg w-full mb-10 py-10 p-2 "
         >
           <div className="relative">
-            <img
+            <Image
               src="/image_webp/merlion.webp"
               alt="a"
               width={550}

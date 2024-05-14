@@ -4,6 +4,7 @@ import { useState } from "react";
 import AnimatedItem from "./lib/AnimatedItem";
 import CloseButton from "./ui/CloseButton";
 import Button from "./ui/Button";
+import Image from "next/image";
 
 type ModalProps = {
   modalType: "image" | "button";
@@ -58,7 +59,7 @@ const Modal: React.FC<ModalProps> = ({
           className="text-center p-1 m-1 max-w-[520px] relative rounded-lg border-2 border-blue-50  hover:border-blue-500  cursor-pointer"
           onClick={toggleModal}
         >
-          <img
+          <Image
             src={src}
             width={450}
             height={450}
@@ -88,7 +89,7 @@ const Modal: React.FC<ModalProps> = ({
               <CloseButton onClick={closeModal} />
             </div>
             <div className="mx-10">
-              <img
+              <Image
                 src="/image_webp/merlion.webp"
                 alt="a"
                 width={300}
