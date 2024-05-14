@@ -3,15 +3,15 @@ import AnimatedItem from "../lib/AnimatedItem";
 const Skill = () => {
   return (
     <section id="skill" className="bg-gray-50 pt-10 pb-20 w-full">
-      <div className="w-[1050px] mx-auto">
+      <div className="max-w-[1050px] mx-auto">
         <h2 className="block w-full text-center text-3xl font-bold my-10">
           skill
         </h2>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap items-center justify-center">
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"
-            className="mr-2 my-2 p-4 w-[500px] border border-gray-400 rounded"
+            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[450px] border border-gray-400 rounded"
           >
             <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
               自己開発で使用した技術
@@ -29,7 +29,7 @@ const Skill = () => {
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"
-            className="ml-2 my-2 p-4 w-[500px] border border-gray-400 rounded"
+            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[450px]  border border-gray-400 rounded"
           >
             <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
               基礎を学習した技術(未開発)
@@ -47,7 +47,7 @@ const Skill = () => {
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"
-            className="mr-2 my-2 p-4 w-[500px] border border-gray-400 rounded"
+            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[450px]  border border-gray-400 rounded"
           >
             <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
               その他
@@ -61,7 +61,7 @@ const Skill = () => {
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"
-            className="ml-2 my-2 p-4 w-[500px] border border-gray-400 rounded"
+            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[450px] border border-gray-400 rounded"
           >
             <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
               学習方法・備考

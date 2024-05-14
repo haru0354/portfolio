@@ -41,7 +41,7 @@ const Profile = () => {
 
   return (
     <section id="profile" className="bg-blue-50 pt-10 pb-20 w-full">
-      <div className="w-[1050px] mx-auto">
+      <div className="max-w-[1050px] mx-auto">
         <h2 className="block w-full text-3xl text-center font-bold my-10 ">
           プロフィール
         </h2>
