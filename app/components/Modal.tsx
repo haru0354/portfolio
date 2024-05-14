@@ -12,8 +12,11 @@ type ModalProps = {
   title: string;
   overview: string;
   technology: string;
+  partOfThePackage: string;
   reasonForCreation: string;
   commitment: string;
+  githubURL: string;
+  appURL?: string;
 };
 
 const Modal: React.FC<ModalProps> = ({
@@ -22,9 +25,12 @@ const Modal: React.FC<ModalProps> = ({
   title,
   overview,
   technology,
+  partOfThePackage,
   reasonForCreation,
   commitment,
   modalType,
+  githubURL,
+  appURL,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -74,7 +80,7 @@ const Modal: React.FC<ModalProps> = ({
           onClick={closeModal}
           className="fixed flex inset-0 items-center justify-center w-full h-full bg-gray-500 bg-opacity-60 z-20"
         >
-          <div className="w-[90%] sm:w-[800px] h-[85%] bg-gray-100 border rounded">
+          <div className="w-[90%] sm:w-[800px] h-[85%] pb-20 bg-gray-100 border rounded overflow-y-auto">
             <div className="flex justify-between mb-4">
               <h3 className="text-lg text-white font-semibold px-4 py-2 bg-gray-700 rounded">
                 {title}
@@ -89,17 +95,42 @@ const Modal: React.FC<ModalProps> = ({
                 height={250}
                 className="mx-auto mb-4"
               />
-              {overview}
+              <p>{overview}</p>
+              <ul>
+                <li>
+                  GitHub:
+                  <a
+                    href={`${githubURL}`}
+                    target="blank"
+                    className="text-blue-500"
+                  >
+                    {githubURL}
+                  </a>
+                </li>
+                {appURL && (
+                  <li>
+                    URL:
+                    <a
+                      href={`${appURL}`}
+                      target="blank"
+                      className="text-blue-500"
+                    >
+                      {appURL}
+                    </a>
+                  </li>
+                )}
+              </ul>
               <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
                 使用技術
               </h4>
-              {technology}
+              <p>{technology}</p>
+              パッケージの一例：{partOfThePackage}
               <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
-                作成理由
+                作成したきっかけ
               </h4>
               {reasonForCreation}
               <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
-                こだわりの点
+                作成をしてみて
               </h4>
               {commitment}
             </div>
