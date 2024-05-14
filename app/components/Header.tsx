@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "./portfolio/HamburgerMenu";
 import HeaderMenu from "./portfolio/HeaderMenu";
@@ -11,12 +10,11 @@ const Header = () => {
       <div className="flex justify-between items-center mx-auto h-16 mb-16 max-w-[1050px]">
         <Link href="/">
           <h1>
-            <Image
-              src="/logo-portfolio.png"
-              alt="マイポートフォリオ(30代エンジニアのポートフォリオ)"
+            <img
+              src="/image_webp/logo-portfolio.webp"
               width="200"
               height="48"
-              priority
+              alt="マイポートフォリオ(30代エンジニア未経験のポートフォリオ)"
             />
           </h1>
         </Link>

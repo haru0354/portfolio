@@ -62,12 +62,12 @@ const Profile = () => {
                   {ProfileList.title}
                 </h3>
                 <p>{ProfileList.content}</p>
-                <img src="/down-arrow.png" alt="下矢印" className="absolute mt-[-64px] ml-[-64px]"/>
+                <img src="/image_webp/down-arrow.webp" alt="下矢印" className="absolute mt-[-64px] ml-[-64px]"/>
               </AnimatedItem>
             ))}
           </ul>
         </div>
-        <img src="/footer-image-portfolio01.png" alt="エンジニアの仕事中の画像" className="mx-auto" />
+        <img src="/image_webp/footer-image-portfolio01.webp" alt="エンジニアの仕事中の画像" className="mx-auto" />
       </div>
     </section>
   );

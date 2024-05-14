@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </div>
           <div className="m-auto mb-8 order-1 sm:order-2">
-            <img src="/engineer-image.png" alt="エンジニアの仕事道具" />
+            <img src="/image_webp/engineer-image.webp" alt="エンジニアの仕事道具" />
           </div>
         </AnimatedItem>
       </div>

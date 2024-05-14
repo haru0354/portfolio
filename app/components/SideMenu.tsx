@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const SideMenu = () => {
@@ -27,7 +26,7 @@ const SideMenu = () => {
           return (
             <Link href={sideMenuList.slug} key={sideMenuList.id}>
               <li className=" text-center p-4 hover:bg-blue-200">
-                <Image
+                <img
                   src={sideMenuList.src}
                   width={200}
                   height={180}

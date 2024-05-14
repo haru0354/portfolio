@@ -89,7 +89,7 @@ const Modal: React.FC<ModalProps> = ({
             </div>
             <div className="mx-10">
               <img
-                src="/merlion.jpg"
+                src="/image_webp/merlion.webp"
                 alt="a"
                 width={300}
                 height={250}
