@@ -36,10 +36,10 @@ const Work = () => {
       title: "SSGブログwithMD",
       items: [
         { image: "/image_webp/merlion.webp", text: "テキスト1" },
-        { image: "/image_webp/merlion.webp", text: "テキスト2" },
+        { image: "/image_webp/sg_thumbnail_02", text: "パーツもMDで簡単に設置" },
         { image: "/image_webp/merlion.webp", text: "テキスト3" },
       ],
-            overview:
+      overview:
         "MDファイルを利用して記事を管理することができる、Next.jsのSSGブログ。コンポーネントを変更することで、デザインの変更ができるようになっています。jpegなどpublicフォルダに入れた画像はwebp形式に圧縮変換して生成し、表示することで軽量化されます。",
       technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14",
       partOfThePackage: "gray-matter,html-react-parser,remark,sharp",
@@ -58,9 +58,10 @@ const Work = () => {
       title: "SSGブログwithMDX",
       items: [
         { image: "/image_webp/merlion.webp", text: "テキスト1" },
-        { image: "/image_webp/merlion.webp", text: "テキスト2" },
+        { image: "/image_webp/sg_thumbnail_02", text: "パーツもMDXで簡単に設置" },
         { image: "/image_webp/merlion.webp", text: "テキスト3" },
-      ],      overview:
+      ],
+      overview:
         "MDXを利用することでMDを利用しつつ、コンポーネントなどの利用もできる、Next.jsのSSGブログ。画像はsharpを使用し、jpegなどの形式をwebp形式にして表示。MDファイルで記事を管理しつつ、ブログのデザインパーツをコンポーネントで再利用し、簡単に本格的なブログ構築ができます。",
       technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.js14",
       partOfThePackage:
@@ -74,18 +75,25 @@ const Work = () => {
     },
     {
       id: 4,
-      src: "/image_webp/merlion.webp",
+      src: "/image_webp/portfolio_thumbnail.webp",
       slug: "/work",
       alt: "ポートフォリオ",
       title: "ポートフォリオ",
       items: [
-        { image: "/image_webp/merlion.webp", text: "テキスト1" },
-        { image: "/image_webp/merlion.webp", text: "テキスト2" },
-        { image: "/image_webp/merlion.webp", text: "テキスト3" },
-      ],      overview:
+        { image: "/image_webp/portfolio_thumbnail.webp", text: "PCデザイン" },
+        {
+          image: "/image_webp/portfolio_thumbnail_02.webp",
+          text: "レスポンシブデザイン",
+        },
+        {
+          image: "/image_webp/portfolio_thumbnail_03.webp",
+          text: "画像のスライダー機能・画像は圧縮してwebpに変換して表示",
+        },
+      ],
+      overview:
         "SSGで作成。Next.jsのImageコンポーネントの代わりに、sharpで画像を圧縮してwebp形式での画像を表示。",
-      technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14",
-      partOfThePackage: "FramerMotion,sharp",
+      technology: "HTML/CSS(TailwindCSS) , TypeScript , React , Next.Js14",
+      partOfThePackage: "FramerMotion , sharp , react-slic",
       reasonForCreation: "就職活動の為",
       commitment:
         "作成したMDXのブログを利用しようかと思いましたが、復習の意味を込めて、あえて一から作成をしました。やはりデザインを考えるのが苦手であり、そしてダサい・・・。",
@@ -107,7 +115,7 @@ const Work = () => {
         >
           <div className="relative">
             <Image
-              src="/image_webp/merlion.webp"
+              src="/image_webp/itinerary_thumbnail.webp"
               alt="a"
               width={550}
               height={550}
@@ -122,13 +130,15 @@ const Work = () => {
           </p>
           <Modal
             modalType="button"
-            src="/merlion.jpg"
+            src="/image_webp/itinerary_thumbnail.webp"
             alt="src"
             title="旅程表作成アプリ"
             items={[
-              { image: "/image_webp/merlion.webp", text: "テキスト1" },
-              { image: "/image_webp/merlion.webp", text: "テキスト2" },
-              { image: "/image_webp/merlion.webp", text: "テキスト3" },
+              { image: "/image_webp/itinerary_thumbnail.webp", text: "旅程表作成アプリ" },
+              { image: "/image_webp/merlion.webp", text: "旅程が簡単に作成可能" },
+              { image: "/image_webp/merlion.webp", text: "行き方や海外旅行保険などメモが可能" },
+              { image: "/image_webp/merlion.webp", text: "複数の旅のしおりが作成可能" },
+              { image: "/image_webp/merlion.webp", text: "同行者やSNSで旅程表の共有が可能" },
             ]}
             technology="HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14,Node.js,認証:NextAuth.js,DB:Supabase"
             partOfThePackage="zustand,zod,FramerMotion,react-hook-form,react-hot-toast,react-textarea-autosize,bcrypt,dompurify"
