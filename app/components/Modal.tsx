@@ -61,10 +61,10 @@ const Modal: React.FC<ModalProps> = ({
         >
           <Image
             src={src}
-            width={450}
-            height={450}
+            width={460}
+            height={330}
             alt={alt}
-            className="mx-auto block rounded-lg"
+            className="mx-auto block border border-gray-300 rounded-lg"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
             {title}
