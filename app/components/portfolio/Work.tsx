@@ -10,6 +10,11 @@ const Work = () => {
       slug: "/",
       alt: "ISRブログ",
       title: "ISRブログ",
+      items: [
+        { image: "/image_webp/merlion.webp", text: "テキスト1" },
+        { image: "/image_webp/merlion.webp", text: "テキスト2" },
+        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+      ],
       overview:
         "Next.jsのISRブログ。記事はデータベースで管理を行い、ログイン機能にはNext.Auth.jsを利用。Next.jsのServer Actionとprismaを使用しています。",
       technology:
@@ -29,7 +34,12 @@ const Work = () => {
       slug: "/skill",
       alt: "SSGブログwithMD",
       title: "SSGブログwithMD",
-      overview:
+      items: [
+        { image: "/image_webp/merlion.webp", text: "テキスト1" },
+        { image: "/image_webp/merlion.webp", text: "テキスト2" },
+        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+      ],
+            overview:
         "MDファイルを利用して記事を管理することができる、Next.jsのSSGブログ。コンポーネントを変更することで、デザインの変更ができるようになっています。jpegなどpublicフォルダに入れた画像はwebp形式に圧縮変換して生成し、表示することで軽量化されます。",
       technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14",
       partOfThePackage: "gray-matter,html-react-parser,remark,sharp",
@@ -46,7 +56,11 @@ const Work = () => {
       slug: "/work",
       alt: "SSGブログwithMDX",
       title: "SSGブログwithMDX",
-      overview:
+      items: [
+        { image: "/image_webp/merlion.webp", text: "テキスト1" },
+        { image: "/image_webp/merlion.webp", text: "テキスト2" },
+        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+      ],      overview:
         "MDXを利用することでMDを利用しつつ、コンポーネントなどの利用もできる、Next.jsのSSGブログ。画像はsharpを使用し、jpegなどの形式をwebp形式にして表示。MDファイルで記事を管理しつつ、ブログのデザインパーツをコンポーネントで再利用し、簡単に本格的なブログ構築ができます。",
       technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.js14",
       partOfThePackage:
@@ -64,7 +78,11 @@ const Work = () => {
       slug: "/work",
       alt: "ポートフォリオ",
       title: "ポートフォリオ",
-      overview:
+      items: [
+        { image: "/image_webp/merlion.webp", text: "テキスト1" },
+        { image: "/image_webp/merlion.webp", text: "テキスト2" },
+        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+      ],      overview:
         "SSGで作成。Next.jsのImageコンポーネントの代わりに、sharpで画像を圧縮してwebp形式での画像を表示。",
       technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14",
       partOfThePackage: "FramerMotion,sharp",
@@ -107,6 +125,11 @@ const Work = () => {
             src="/merlion.jpg"
             alt="src"
             title="旅程表作成アプリ"
+            items={[
+              { image: "/image_webp/merlion.webp", text: "テキスト1" },
+              { image: "/image_webp/merlion.webp", text: "テキスト2" },
+              { image: "/image_webp/merlion.webp", text: "テキスト3" },
+            ]}
             technology="HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14,Node.js,認証:NextAuth.js,DB:Supabase"
             partOfThePackage="zustand,zod,FramerMotion,react-hook-form,react-hot-toast,react-textarea-autosize,bcrypt,dompurify"
             overview="英語が話せない人でも安心して海外旅行に行けるのを目的の旅程表作成アプリです。旅行中に撮影した写真をアップロードして、思い出のしおりとして残せるようになっています。Vercelを利用しているので、集客用のブログはSSGではなく、あえて試してみる為にもISRで作成しました。"
@@ -125,6 +148,7 @@ const Work = () => {
                   src={imageList.src}
                   alt={imageList.alt}
                   title={imageList.title}
+                  items={imageList.items}
                   technology={imageList.technology}
                   partOfThePackage={imageList.partOfThePackage}
                   overview={imageList.overview}
