@@ -6,14 +6,23 @@ const Work = () => {
   const imageLists = [
     {
       id: 1,
-      src: "/image_webp/merlion.webp",
+      src: "/image_webp/isr_thumbnail.webp",
       slug: "/",
       alt: "ISRブログ",
       title: "ISRブログ",
       items: [
-        { image: "/image_webp/merlion.webp", text: "テキスト1" },
-        { image: "/image_webp/merlion.webp", text: "テキスト2" },
-        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+        {
+          image: "/image_webp/isr_thumbnail_02.webp",
+          text: "envに記載の「ID」と「パスワード」で管理画面にログイン",
+        },
+        {
+          image: "/image_webp/isr_thumbnail_03.webp",
+          text: "ダッシュボードで今後のブログの制作予定がメモ可能",
+        },
+        {
+          image: "/image_webp/isr_thumbnail_04.webp",
+          text: "画像の追加・公開設定が可能。記事の公開でページが作成される。",
+        },
       ],
       overview:
         "Next.jsのISRブログ。記事はデータベースで管理を行い、ログイン機能にはNext.Auth.jsを利用。Next.jsのServer Actionとprismaを使用しています。",
@@ -30,14 +39,23 @@ const Work = () => {
     },
     {
       id: 2,
-      src: "/image_webp/merlion.webp",
+      src: "/image_webp/sg_thumbnail.webp",
       slug: "/skill",
       alt: "SSGブログwithMD",
       title: "SSGブログwithMD",
       items: [
-        { image: "/image_webp/merlion.webp", text: "テキスト1" },
-        { image: "/image_webp/sg_thumbnail_02", text: "パーツもMDで簡単に設置" },
-        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+        {
+          image: "/image_webp/sg_thumbnail_02.webp",
+          text: "記事だけでなく様々なパーツをMDファイルに記載で簡単に設置",
+        },
+        {
+          image: "/image_webp/sg_thumbnail_04.webp",
+          text: "SEOを考慮して内部リンクの集まるカテゴリも作りこみ可能",
+        },
+        {
+          image: "/image_webp/sg_thumbnail_03.webp",
+          text: "MDXのコンテンツエリアに記載なしで記事一覧のみを表示",
+        },
       ],
       overview:
         "MDファイルを利用して記事を管理することができる、Next.jsのSSGブログ。コンポーネントを変更することで、デザインの変更ができるようになっています。jpegなどpublicフォルダに入れた画像はwebp形式に圧縮変換して生成し、表示することで軽量化されます。",
@@ -52,14 +70,23 @@ const Work = () => {
     },
     {
       id: 3,
-      src: "/image_webp/merlion.webp",
+      src: "/image_webp/sg_thumbnail_04.webp",
       slug: "/work",
       alt: "SSGブログwithMDX",
       title: "SSGブログwithMDX",
       items: [
-        { image: "/image_webp/merlion.webp", text: "テキスト1" },
-        { image: "/image_webp/sg_thumbnail_02", text: "パーツもMDXで簡単に設置" },
-        { image: "/image_webp/merlion.webp", text: "テキスト3" },
+        {
+          image: "/image_webp/sg_thumbnail_04.webp",
+          text: "SEOを考慮して内部リンクの集まるカテゴリも作りこみ可能",
+        },
+        {
+          image: "/image_webp/sg_thumbnail_03.webp",
+          text: "MDXにコンテンツが無ければカテゴリの記事一覧を表示",
+        },
+        {
+          image: "/image_webp/sg_thumbnail.webp",
+          text: "MDXにすることでコンテンツ部分にコンポーネントの再利用が可能",
+        },
       ],
       overview:
         "MDXを利用することでMDを利用しつつ、コンポーネントなどの利用もできる、Next.jsのSSGブログ。画像はsharpを使用し、jpegなどの形式をwebp形式にして表示。MDファイルで記事を管理しつつ、ブログのデザインパーツをコンポーネントで再利用し、簡単に本格的なブログ構築ができます。",
@@ -113,18 +140,13 @@ const Work = () => {
           elementType="div"
           className="bg-blue-100 rounded-lg w-full mb-10 py-10 p-2 "
         >
-          <div className="relative">
-            <Image
-              src="/image_webp/itinerary_thumbnail.webp"
-              alt="a"
-              width={550}
-              height={550}
-              className="m-auto block rounded-lg mb-8"
-            />
-            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-              旅程表作成アプリ
-            </div>
-          </div>
+          <Image
+            src="/image_webp/itinerary_thumbnail.webp"
+            alt="a"
+            width={550}
+            height={550}
+            className="m-auto block rounded-lg mb-8 border border-gray-300 shadow-lg"
+          />
           <p className="text-center">
             英語が話せない人でも安心して海外旅行に行けるのを目的の旅程表作成アプリです。が作れる
           </p>
@@ -134,11 +156,26 @@ const Work = () => {
             alt="src"
             title="旅程表作成アプリ"
             items={[
-              { image: "/image_webp/itinerary_thumbnail.webp", text: "旅程表作成アプリ" },
-              { image: "/image_webp/merlion.webp", text: "旅程が簡単に作成可能" },
-              { image: "/image_webp/merlion.webp", text: "行き方や海外旅行保険などメモが可能" },
-              { image: "/image_webp/merlion.webp", text: "複数の旅のしおりが作成可能" },
-              { image: "/image_webp/merlion.webp", text: "同行者やSNSで旅程表の共有が可能" },
+              {
+                image: "/image_webp/itinerary_thumbnail.webp",
+                text: "旅程表作成アプリ",
+              },
+              {
+                image: "/image_webp/itinerary_thumbnail_02.webp",
+                text: "旅程が簡単に作成可能",
+              },
+              {
+                image: "/image_webp/itinerary_thumbnail_03.webp",
+                text: "行き方や海外旅行保険などメモが可能",
+              },
+              {
+                image: "/image_webp/itinerary_thumbnail_01.webp",
+                text: "複数の旅のしおりが作成可能",
+              },
+              {
+                image: "/image_webp/itinerary_thumbnail_04.webp",
+                text: "同行者やSNSで旅程表の共有が可能",
+              },
             ]}
             technology="HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14,Node.js,認証:NextAuth.js,DB:Supabase"
             partOfThePackage="zustand,zod,FramerMotion,react-hook-form,react-hot-toast,react-textarea-autosize,bcrypt,dompurify"

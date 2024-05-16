@@ -24,8 +24,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
         <Image
           src={items[i].image}
           alt={`Thumbnail ${i + 1}`}
-          width={120}
-          height={60}
+          width={140}
+          height={94}
         />
       </a>
     ),
@@ -41,7 +41,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
               alt={`Slide ${index + 1}`}
               width={380}
               height={250}
-              className="mx-auto mb-4"
+              className="mx-auto mb-4 border border-gray-300 shadow rounded"
             />
             <p className="text-center">{item.text}</p>
           </div>

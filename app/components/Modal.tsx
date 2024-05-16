@@ -25,8 +25,7 @@ type ModalProps = {
 type Items = {
   image: string;
   text: string;
-}
-
+};
 
 const Modal: React.FC<ModalProps> = ({
   src,
@@ -65,7 +64,7 @@ const Modal: React.FC<ModalProps> = ({
         <AnimatedItem
           elementType="div"
           animation="fadeInRotate"
-          className="text-center p-1 m-1 max-w-[520px] relative rounded-lg border-2 border-blue-50  hover:border-blue-500  cursor-pointer"
+          className="text-center p-1 m-1 max-w-[520px] relative rounded-lg cursor-pointer"
           onClick={toggleModal}
         >
           <Image
@@ -73,10 +72,12 @@ const Modal: React.FC<ModalProps> = ({
             width={460}
             height={330}
             alt={alt}
-            className="mx-auto block border border-gray-300 rounded-lg"
+            className="mx-auto block border border-gray-300 rounded-lg shadow-lg"
           />
-          <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold">
-            {title}
+          <p className="mt-4  font-semibold text-sky-600">{title}</p>
+
+          <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold rounded-lg opacity-0 border-2 transition duration-8000 hover:bg-gray-500 hover:border-blue-500 hover:opacity-90">
+            <p className="border border-white bg-white rounded p-8">{title}の詳細へ</p>
           </div>
         </AnimatedItem>
       )}
@@ -98,7 +99,7 @@ const Modal: React.FC<ModalProps> = ({
               <CloseButton onClick={closeModal} />
             </div>
             <div className="mx-10">
-              <ImageSlider items={items}/>
+              <ImageSlider items={items} />
               <p className="mt-6">{overview}</p>
               <ul>
                 <li>
@@ -128,8 +129,12 @@ const Modal: React.FC<ModalProps> = ({
                 使用技術
               </h4>
               <p className="break-words whitespace-pre-wrap">{technology}</p>
-              <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">使用パッケージの一部</h4>
-              <p className="break-words whitespace-pre-wrap">{partOfThePackage}</p>
+              <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
+                使用パッケージの一部
+              </h4>
+              <p className="break-words whitespace-pre-wrap">
+                {partOfThePackage}
+              </p>
               <h4 className="text-lg pl-4 mt-8 mb-4 border-b-2 border-dashed border-gray-700">
                 作成したきっかけ
               </h4>
