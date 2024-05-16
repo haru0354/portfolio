@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedItem from "../lib/AnimatedItem";
 
 const About = () => {
@@ -35,7 +36,7 @@ const About = () => {
             </p>
           </div>
           <div className="m-auto mb-8 order-1 sm:order-2">
-            <img src="/engineer-image.png" alt="エンジニアの仕事道具" />
+            <Image src="/image_webp/engineer-image.webp" width={360} height={220} alt="エンジニアの仕事道具" priority />
           </div>
         </AnimatedItem>
       </div>

@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "./portfolio/HamburgerMenu";
 import HeaderMenu from "./portfolio/HeaderMenu";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -12,10 +12,10 @@ const Header = () => {
         <Link href="/">
           <h1>
             <Image
-              src="/logo-portfolio.png"
-              alt="マイポートフォリオ(30代エンジニアのポートフォリオ)"
+              src="/image_webp/logo-portfolio.webp"
               width="200"
               height="48"
+              alt="マイポートフォリオ(30代エンジニア未経験のポートフォリオ)"
               priority
             />
           </h1>

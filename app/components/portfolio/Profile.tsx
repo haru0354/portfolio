@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedItem from "../lib/AnimatedItem";
 
 const Profile = () => {
@@ -38,7 +39,7 @@ const Profile = () => {
       content: "高校生の時に行ったwebサイトを作っていたのは、楽しかったのと・ずっと挑戦してみたいと思っていたので、アルバイトを止め開始する。1年ほど経って収入が大きくなったので、個人事業主として開業。(高校生の時には就職してからも収入はあったが副業として続けず1年ほどで辞めた)",
     },
     {
-      id: 7,
+      id: 8,
       title: "現在に至る",
       content: "36歳で未経験でのエンジニア志望。職歴もボロボロ。ただ、自分の中であきらめられるまで走り続けるだけ。",
     },
@@ -56,18 +57,19 @@ const Profile = () => {
               <AnimatedItem
                 animation="fadeInRight"
                 elementType="li"
-                className="my-20 bg-gray-300 p-4 "
+                className="my-20 bg-gray-300 p-4"
+                key={ProfileList.id}
               >
                 <h3 className="text-xl text-gray-800 font-semibold mb-4 pb-2 border-b border-dashed border-gray-700">
                   {ProfileList.title}
                 </h3>
                 <p>{ProfileList.content}</p>
-                <img src="/down-arrow.png" alt="下矢印" className="absolute mt-[-64px] ml-[-64px]"/>
+                <Image src="/image_webp/down-arrow.webp" width={40} height={40} alt="下矢印" className="absolute mt-[-64px] ml-[-64px]"/>
               </AnimatedItem>
             ))}
           </ul>
         </div>
-        <img src="/footer-image-portfolio01.png" alt="エンジニアの仕事中の画像" className="mx-auto" />
+        <Image src="/image_webp/footer-image-portfolio01.webp" width={801} height={320} alt="エンジニアの仕事中の画像" className="mx-auto" />
       </div>
     </section>
   );
