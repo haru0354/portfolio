@@ -2,7 +2,7 @@ import AnimatedItem from "../lib/AnimatedItem";
 
 const Skill = () => {
   return (
-    <section id="skill" className="bg-gray-50 pt-10 pb-20 w-full">
+    <section id="skill" className="bg-gray-50 py-4 sm:pt-10 pb-10 sm:pb-20 w-full">
       <div className="max-w-[1050px] mx-auto">
         <h2 className="block w-full text-center text-3xl font-bold my-10">
           エンジニアとしての技術
@@ -76,7 +76,7 @@ const Skill = () => {
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"
-            className="mx-4 sm:mx-4 my-4 p-4 w-full max-w-[650px] border border-gray-400 rounded bg-white shadow-lg"
+            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[650px] border border-gray-400 rounded bg-white shadow-lg"
           >
             <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
               学習教材

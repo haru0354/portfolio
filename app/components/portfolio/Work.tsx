@@ -130,7 +130,7 @@ const Work = () => {
   ];
 
   return (
-    <section id="works" className="bg-blue-50 pt-10 pb-20 w-full">
+    <section id="works" className="bg-blue-50 py-4 sm:pt-10 sm:pb-20 w-full">
       <div className="max-w-[1050px] mx-auto p-2">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
           Works
@@ -157,7 +157,7 @@ const Work = () => {
           <p className="text-center mb-0">
             「英語が話せない人でも安心して海外旅行に行ける」をコンセプトにした旅程表作成アプリです。
           </p>
-          <ul className="list-disc text-left my-4 p-2 mx-4 sm:mx-60 sm:p-8 border border-dashed border-gray-400">
+          <ul className="list-disc text-left my-4 py-4 px-12 mx-8 sm:mx-60 sm:p-8 border border-dashed border-gray-400">
             <li>複数の旅行のしおりを作成</li>
             <li>旅程の作成</li>
             <li>メモの作成</li>
@@ -167,7 +167,7 @@ const Work = () => {
           <p>
             友人をはじめて海外旅行に誘うと<span className="font-semibold">「興味はあるけど英語が話せない」</span>を理由に、今まで行ったことが無い人が多かったです。
           </p>
-          <p className=" mb-0">
+          <p className="sm:mb-0">
             移住するのと違い旅行なら、<span className="underline decoration-sky-500 ">必要事項を事前にメモ</span>しておけば、国内と同じように海外旅行はできます。
           </p>
           <p>

@@ -3,7 +3,7 @@ import AnimatedItem from "../lib/AnimatedItem";
 
 const About = () => {
   return (
-    <section id="about" className="bg-gray-50 pt-10 pb-20 w-full">
+    <section id="about" className="bg-gray-50 pt-10 sm:pb-20 w-full">
       <div className="max-w-[1050px] mx-auto py-4 mt-10">
         <h2 className="block w-full text-3xl text-center font-bold my-10 ">
           30代エンジニアのポートフォリオサイト
