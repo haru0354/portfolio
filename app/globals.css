@@ -16,3 +16,37 @@ body {
 p {
   margin-bottom: 1.4rem;
 }
+
+/* スライダー用の追加スタイル */
+.custom-dots {
+  @apply flex flex-wrap justify-center items-center list-none p-0;
+}
+
+.custom-dots li {
+  @apply mx-1 mb-4 w-[100px] sm:w-[130px] border border-gray-300 rounded;
+}
+
+.custom-dots button {
+  @apply p-0 border-none w-full h-full; 
+}
+
+.custom-dots li.slick-active {
+  @apply border-2 border-sky-800 rounded;
+}
+
+.custom-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slick-prev,.slick-next  {
+  right: -20px !important;
+  top: 35% !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #120e4e !important;
+  font-size: 25px !important;
+}
