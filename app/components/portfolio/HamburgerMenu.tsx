@@ -32,8 +32,8 @@ const HamburgerMenu = () => {
           onClick={closeModal}
           className="h-screen w-screen fixed inset-0 opacity-70"
         >
-          <div className="w-[200px] h-screen ml-auto bg-white border-l">
-            <HeaderMenu liClass="my-8" ulClass="p-4" />
+          <div className="w-[200px] h-screen ml-auto bg-white border-l shadow-xl">
+            <HeaderMenu liClass="" ulClass="pt-20" />
           </div>
         </AnimatedItem>
       )}
