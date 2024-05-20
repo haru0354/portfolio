@@ -2,7 +2,10 @@ import AnimatedItem from "../lib/AnimatedItem";
 
 const Skill = () => {
   return (
-    <section id="skill" className="bg-gray-50 py-4 sm:pt-10 pb-10 sm:pb-20 w-full">
+    <section
+      id="skill"
+      className="bg-gray-50 py-4 sm:pt-10 pb-10 sm:pb-20 w-full"
+    >
       <div className="max-w-[1050px] mx-auto">
         <h2 className="block w-full text-center text-3xl font-bold my-10">
           エンジニアとしての技術
@@ -76,16 +79,64 @@ const Skill = () => {
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"
-            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[650px] border border-gray-400 rounded bg-white shadow-lg"
+            className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[750px] border border-gray-400 rounded bg-white shadow-lg"
           >
             <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
               学習教材
             </h3>
-            <ol className="list-decimal mx-8 my-8">
-              <li className="mb-1"><a href="https://www.udemy.com/course/front-dev-tutorial/" target="blank" className="text-blue-500">【2023年最新】【JavaScript＆CSS】ガチで学びたい人のためのWEB開発実践入門（フロントエンド編）</a></li>
-              <li className="mb-1"><a href="https://www.udemy.com/course/react-complete-guide/" target="blank" className="text-blue-500">【2024年最新】React(v18)完全入門ガイド｜Hooks、Next14、Redux、TypeScript</a></li>
-              <li className="mb-1"><a href="https://www.udemy.com/course/nodejs-comp-guide/" target="blank" className="text-blue-500">Node.jsで学ぶWebシステムとソフトウェア開発基礎！</a></li>
-              <li className="mb-1"><a href="https://www.udemy.com/course/web-app-development/" target="blank" className="text-blue-500">【HTML,CSS,JS,PHP,Git,Docker】プログラミング初心者OK！ ゼロからわかるWebシステム開発</a></li>
+            <p className="mt-8 mb-2 font-semibold">フロントエンド</p>
+            <ol className="list-decimal mx-8">
+              <li className="mb-1">
+                <a
+                  href="https://www.udemy.com/course/front-dev-tutorial/"
+                  target="blank"
+                  className="text-blue-500"
+                >
+                  【2023年最新】【JavaScript＆CSS】ガチで学びたい人のためのWEB開発実践入門
+                </a>
+              </li>
+              <li className="mb-1">
+                <a
+                  href="https://www.udemy.com/course/react-complete-guide/"
+                  target="blank"
+                  className="text-blue-500"
+                >
+                  【2024年最新】React(v18)完全入門ガイド｜Hooks、Next14、Redux、TypeScript
+                </a>
+              </li>
+            </ol>
+            <p className="mt-8 mb-2 font-semibold">バックエンド</p>
+            <ol className="list-decimal mx-8">
+              <li className="mb-1">
+                <a
+                  href="https://www.udemy.com/course/nodejs-comp-guide/"
+                  target="blank"
+                  className="text-blue-500"
+                >
+                  Node.jsで学ぶWebシステムとソフトウェア開発基礎！
+                </a>
+              </li>
+              <li className="mb-1">
+                <a
+                  href="https://www.udemy.com/course/phpbeginnertolaravel/"
+                  target="blank"
+                  className="text-blue-500"
+                >
+                  PHPからLaravelまで サーバーサイドをとことんやってみよう
+                </a>
+              </li>
+            </ol>
+            <p className="mt-8 mb-2 font-semibold">web開発全般</p>
+            <ol className="list-decimal mx-8 mb-8">
+              <li className="mb-1">
+                <a
+                  href="https://www.udemy.com/course/web-app-development/"
+                  target="blank"
+                  className="text-blue-500"
+                >
+                  【HTML,CSS,JS,PHP,Git,Docker】ゼロからわかるWebシステム開発
+                </a>
+              </li>
             </ol>
           </AnimatedItem>
         </div>
