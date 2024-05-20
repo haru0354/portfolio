@@ -130,15 +130,22 @@ const Work = () => {
   ];
 
   return (
-    <section id="works" className="bg-blue-50 pt-10 pb-20 w-full">
+    <section id="works" className="bg-blue-50 py-4 sm:pt-10 sm:pb-20 w-full">
       <div className="max-w-[1050px] mx-auto p-2">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
           Works
         </h2>
+        <p className="text-center mb-0">
+          「Next.js
+          14」「Node.js」「TypeScript」で作成されたオリジナルの自作アプリの一覧です。
+        </p>
+        <p className="text-center">
+          現在は初の「Express」を使用したアプリと初の「Laravel」を使用したアプリの2種類を開発中。
+        </p>
         <AnimatedItem
           animation="fadeInScale"
           elementType="div"
-          className="bg-blue-100 rounded-lg w-full mb-10 py-10 p-2 "
+          className="bg-blue-100 rounded-lg w-full mb-10 py-10 p-2 text-center"
         >
           <Image
             src="/image_webp/itinerary_thumbnail.webp"
@@ -147,8 +154,30 @@ const Work = () => {
             height={550}
             className="m-auto block rounded-lg mb-8 border border-gray-300 shadow-lg"
           />
-          <p className="text-center">
-            英語が話せない人でも安心して海外旅行に行けるのを目的の旅程表作成アプリです。が作れる
+          <p className="text-center mb-0">
+            「英語が話せない人でも安心して海外旅行に行ける」をコンセプトにした旅程表作成アプリです。
+          </p>
+          <ul className="list-disc text-left my-4 py-4 px-12 mx-8 sm:mx-60 sm:p-8 border border-dashed border-gray-400">
+            <li>複数の旅行のしおりを作成</li>
+            <li>旅程の作成</li>
+            <li>メモの作成</li>
+            <li>共有が可能(同行者やSNSで共有し誰でも見れるページの自動作成)</li>
+            <li>旅行後に撮影した写真で思い出の旅の記録へ</li>
+          </ul>
+          <p>
+            友人をはじめて海外旅行に誘うと<span className="font-semibold">「興味はあるけど英語が話せない」</span>を理由に、今まで行ったことが無い人が多かったです。
+          </p>
+          <p className="sm:mb-0">
+            移住するのと違い旅行なら、<span className="underline decoration-sky-500 ">必要事項を事前にメモ</span>しておけば、国内と同じように海外旅行はできます。
+          </p>
+          <p>
+            私自身も英語が話せないですが、事前に「観光地への行き方」や「乗り換え方法」などなど、事前にメモを取り友人と旅行をしてきました。
+          </p>
+          <p>
+           そのため、私の経験を元に<span className="font-semibold">国内だけでなく海外でも使える</span>ように、必要な部分にメモが書き込めるようにもなっています。
+          </p>
+          <p>
+            「英語が話せない人が安心して海外旅行へ行け」、かつ「旅の記録を見て楽しめるアプリ」として開発しています。
           </p>
           <Modal
             modalType="button"

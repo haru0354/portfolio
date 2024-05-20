@@ -66,12 +66,12 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
   };
 
   const fadeInScale = {
-    hidden: { scale: 0 },
+    hidden: { scale: 0.5 },
     visible: {
       scale: 1,
       transition: {
         delay: delay || 0,
-        duration: 1,
+        duration: 0.8,
       },
     },
   };
