@@ -6,11 +6,15 @@ const Work = () => {
   const imageLists = [
     {
       id: 1,
-      src: "/image_webp/isr_thumbnail.webp",
+      src: "/image_webp/isr_thumbnail_04.webp",
       slug: "/",
       alt: "ISRブログ",
       title: "ISRブログ",
       items: [
+        {
+          image: "/image_webp/isr_thumbnail.webp",
+          text: "",
+        },
         {
           image: "/image_webp/isr_thumbnail_02.webp",
           text: "envに記載の「ID」と「パスワード」で管理画面にログイン",

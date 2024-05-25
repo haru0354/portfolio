@@ -18,7 +18,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ navClass, liClass, ulClass }) =
   return (
     <nav>
       <ul className={`${ulClass}`}>
-        <li className={`${liClass}`}>
+      <li className={`${liClass} p-4 hover:bg-sky-400 hover:text-white`} >
           <a
             onClick={() => scrollToSection("about")}
             className="cursor-pointer"
@@ -26,7 +26,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ navClass, liClass, ulClass }) =
             About
           </a>
         </li>
-        <li className={`${liClass}`}>
+        <li className={`${liClass} p-4 hover:bg-sky-400 hover:text-white`} >
           <a
             onClick={() => scrollToSection("works")}
             className="cursor-pointer"
@@ -34,7 +34,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ navClass, liClass, ulClass }) =
             Works
           </a>
         </li>
-        <li className={`${liClass}`}>
+        <li className={`${liClass} p-4 hover:bg-sky-400 hover:text-white`} >
           <a
             onClick={() => scrollToSection("skill")}
             className="cursor-pointer"
@@ -42,7 +42,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ navClass, liClass, ulClass }) =
             Skills
           </a>
         </li>
-        <li className={`${liClass}`}>
+        <li className={`${liClass} p-4 hover:bg-sky-400 hover:text-white`} >
           <a
             onClick={() => scrollToSection("profile")}
             className="cursor-pointer"
