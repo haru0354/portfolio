@@ -8,14 +8,14 @@ const WorkItinerary = () => {
       <AnimatedItem
         elementType="div"
         animation="fadeInRight"
-        className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700 "
+        className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700"
       >
         <div className="mx-auto py-4 my-10">
-          <h3 className="block w-full text-3xl text-center font-bold my-10 ">
+          <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
           「旅のメモリーブック」旅程表作成アプリ
           </h3>
           <div className="w-full flex flex-col sm:flex-row">
-            <div className="w-full px-10 sm:flex-1 order-2 sm:order-1">
+            <div className="w-full px-2 md:px-10 sm:flex-1 order-2 sm:order-1">
               <p>
                 「英語が話せない人でも安心して海外旅行に行ける」
                 をコンセプトに、かつ「旅の記録として残し」見て楽しむことも出来るアプリとして開発しています。

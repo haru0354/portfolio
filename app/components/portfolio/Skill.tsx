@@ -10,7 +10,7 @@ const Skill = () => {
         <h2 className="block w-full text-center text-3xl font-bold my-10">
           エンジニアとしての技術
         </h2>
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center px-2">
           <AnimatedItem
             animation="fadeInDown"
             elementType="div"

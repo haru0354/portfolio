@@ -8,14 +8,15 @@ const WorkBooksMemo = () => {
       <AnimatedItem
         elementType="div"
         animation="fadeInLeft"
-        className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700 "
+        className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700;
+"
       >
         <div className="mx-auto py-4 my-10">
-          <h3 className="block w-full text-3xl text-center font-bold my-10 ">
+          <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
           「メモブックノート」本型メモアプリ
           </h3>
           <div className="w-full flex flex-col sm:flex-row">
-            <div className="w-full px-10 sm:flex-1 order-2 sm:order-2">
+            <div className="w-full px-2 sm:px-10 sm:flex-1 order-2 sm:order-2">
               <p>
               「旅程表アプリと全て違った技術」で作られ、私自身の悩みを解決する為に作成始めたアプリで「エンジニアの学習」「働き始めた時を見据えて」「個人的な部分」の3つの目的の為に開発しています。
               </p>
