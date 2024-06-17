@@ -1,11 +1,9 @@
 type HeaderMenuProps = {
-  navClass?: string;
   liClass?: string;
   ulClass?: string;
 };
 
 const HeaderMenu: React.FC<HeaderMenuProps> = ({
-  navClass,
   liClass,
   ulClass,
 }) => {
