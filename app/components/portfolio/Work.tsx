@@ -135,7 +135,7 @@ const Work = () => {
 
   return (
     <section id="works" className="bg-blue-50 py-4 sm:pt-10 sm:pb-20 w-full">
-      <div className="max-w-[1050px] mx-auto p-2 overflow-x-hidden">
+      <div className="max-w-[1050px] mx-auto p-2 overflow-hidden">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
           Works
         </h2>
@@ -151,7 +151,6 @@ const Work = () => {
         </p>
         <WorkItinerary />
         <WorkBooksMemo />
-
         <h3 className="block w-full text-3xl text-center font-bold my-10 leading-relaxed">
         Next.js製のブログ作成アプリ
         </h3>

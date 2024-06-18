@@ -8,8 +8,7 @@ const WorkBooksMemo = () => {
       <AnimatedItem
         elementType="div"
         animation="fadeInLeft"
-        className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700;
-"
+        className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700"
       >
         <div className="mx-auto py-4 my-10">
           <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
@@ -88,10 +87,6 @@ const WorkBooksMemo = () => {
             {
               image: "/image_webp/itinerary_thumbnail_05.webp",
               text: "複数の本が登録可能",
-            },
-            {
-              image: "/image_webp/memo_book_thumbnail_002.webp",
-              text: "どんなメモがあるか即時分かる",
             },
           ]}
           technology="HTML/CSS(Emotion), JavaScript, React, Node.js(Express,js), 認証:Firebase, DB:MongoDB, 状態管理:Redux/Toolkit"
