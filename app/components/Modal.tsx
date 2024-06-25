@@ -75,7 +75,6 @@ const Modal: React.FC<ModalProps> = ({
             className="mx-auto block border border-gray-300 rounded-lg shadow-lg"
           />
           <p className="mt-4 font-semibold text-sky-600">{title}</p>
-
           <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold rounded-lg opacity-0 border-2 transition duration-8000 hover:bg-gray-500 hover:border-blue-500 hover:opacity-90">
             <p className="border border-white bg-white rounded p-8">{title}の詳細へ</p>
           </div>
@@ -107,7 +106,7 @@ const Modal: React.FC<ModalProps> = ({
                   <a
                     href={`${githubURL}`}
                     target="blank"
-                    className="text-blue-500 block"
+                    className="text-blue-600 block"
                   >
                     {githubURL}
                   </a>
@@ -118,7 +117,7 @@ const Modal: React.FC<ModalProps> = ({
                     <a
                       href={`${appURL}`}
                       target="blank"
-                      className="text-blue-500 block"
+                      className="text-blue-600 block"
                     >
                       {appURL}
                     </a>

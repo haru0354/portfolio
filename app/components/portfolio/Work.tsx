@@ -13,7 +13,7 @@ const Work = () => {
       items: [
         {
           image: "/image_webp/isr_thumbnail.webp",
-          text: "",
+          text: "旅程表アプリの集客用として作成",
         },
         {
           image: "/image_webp/isr_thumbnail_02.webp",
@@ -39,7 +39,7 @@ const Work = () => {
       commitment:
         "旅程表アプリと同時に作りはじめたので、同じく初作成のアプリとも言えると思います。(こちらの作成の方が時間がかかった)。ダッシュボードも含め、何度も変更を加えたりと、時間がかかりましたがその分、学びも多かったです。",
       githubURL: "https://github.com/haru0354/next-blog-isr",
-      appURL: "",
+      appURL: "https://www.travel-memory-life.com/",
     },
     {
       id: 2,

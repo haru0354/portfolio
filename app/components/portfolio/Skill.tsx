@@ -92,7 +92,7 @@ const Skill = () => {
                 <a
                   href="https://www.udemy.com/course/front-dev-tutorial/"
                   target="blank"
-                  className="text-blue-500"
+                  className="text-blue-600"
                 >
                   【2023年最新】【JavaScript＆CSS】ガチで学びたい人のためのWEB開発実践入門
                 </a>
@@ -101,7 +101,7 @@ const Skill = () => {
                 <a
                   href="https://www.udemy.com/course/react-complete-guide/"
                   target="blank"
-                  className="text-blue-500"
+                  className="text-blue-600"
                 >
                   【2024年最新】React(v18)完全入門ガイド｜Hooks、Next14、Redux、TypeScript
                 </a>
@@ -113,7 +113,7 @@ const Skill = () => {
                 <a
                   href="https://www.udemy.com/course/nodejs-comp-guide/"
                   target="blank"
-                  className="text-blue-500"
+                  className="text-blue-600"
                 >
                   Node.jsで学ぶWebシステムとソフトウェア開発基礎！
                 </a>
@@ -122,7 +122,7 @@ const Skill = () => {
                 <a
                   href="https://www.udemy.com/course/phpbeginnertolaravel/"
                   target="blank"
-                  className="text-blue-500"
+                  className="text-blue-600"
                 >
                   PHPからLaravelまで サーバーサイドをとことんやってみよう
                 </a>（学習中）
@@ -134,7 +134,7 @@ const Skill = () => {
                 <a
                   href="https://www.udemy.com/course/web-app-development/"
                   target="blank"
-                  className="text-blue-500"
+                  className="text-blue-600"
                 >
                   【HTML,CSS,JS,PHP,Git,Docker】ゼロからわかるWebシステム開発
                 </a>（Git/Docker/PHP/Laravelの項目のみ使用）

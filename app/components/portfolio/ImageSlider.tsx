@@ -29,7 +29,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ items }) => {
         />
       </a>
     ),
-    dotsClass: "custom-dots", // カスタムクラスを設定
+    dotsClass: "custom-dots", 
   };
 
   return (

@@ -23,13 +23,12 @@ const About = () => {
               28歳の時に「wordPress」などを利用しwebメディアを作成し、web広告業として個人事業主として開業をし、生計を立てて今に至ります。
               36歳の時にエンジニアの職種に就きたいと決意し、勉強を開始しています。
             </p>
-
             <p>
               GitHub:
               <a
                 href="https://github.com/haru0354"
                 target="blank"
-                className="text-blue-500 my-4"
+                className="text-blue-600 my-4"
               >
                 https://github.com/haru0354
               </a>
