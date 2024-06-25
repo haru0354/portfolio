@@ -18,7 +18,7 @@ const Header = () => {
             priority
           />
         </Link>
-        <HeaderMenu liClass="" ulClass="hidden sm:flex" />
+        <HeaderMenu ulClass="hidden sm:flex" />
         <HamburgerMenu />
       </div>
     </header>

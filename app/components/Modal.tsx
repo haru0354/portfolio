@@ -46,7 +46,7 @@ const Modal: React.FC<ModalProps> = ({
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
     if (!isModalOpen) {
-      document.body.style.overflow = "hidden"; // 背景を固定
+      document.body.style.overflow = "hidden"; 
     } else {
       document.body.style.overflow = "";
     }

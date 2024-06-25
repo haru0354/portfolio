@@ -8,6 +8,7 @@ type AnimatedItemProps = {
   elementType: "div" | "h2" | "h3" | "li";
   animation:
     | "fadeInRight"
+    | "fadeInLeft"
     | "fadeInDown"
     | "fadeInRotate"
     | "fadeInScale"
@@ -29,6 +30,19 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 60 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: delay || 0,
+        duration: 1,
+      },
+    },
+  };
+
+
+  const fadeInLeft = {
+    hidden: { opacity: 0, x: -60 },
     visible: {
       opacity: 1,
       x: 0,
@@ -89,6 +103,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
 
   const Animations = {
     fadeInRight,
+    fadeInLeft,
     fadeInDown,
     fadeInRotate,
     fadeInScale,

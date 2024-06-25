@@ -3,7 +3,7 @@ import { notoSansJp } from "./components/util/Font";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MY PORTFOLIO(30代エンジニア未経験のポートフォリオサイト)",
+  title: "「MY PORTFOLIO」30代エンジニア未経験のポートフォリオサイト",
   description: "webエンジニアの自己制作アプリを掲載しています。主にフロントエンドで「Next.js」「React」「TypeScript」バックエンドで「Node.js」が使われたwebアプリを作成しています。30代エンジニア未経験のポートフォリオサイトです。",
 };
 

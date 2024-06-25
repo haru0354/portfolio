@@ -1,6 +1,6 @@
-import Image from "next/image";
-import AnimatedItem from "../lib/AnimatedItem";
 import Modal from "../Modal";
+import WorkItinerary from "./WorkItinerary";
+import WorkBooksMemo from "./WorkBooksMemo";
 
 const Work = () => {
   const imageLists = [
@@ -33,7 +33,7 @@ const Work = () => {
       technology:
         "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14,Node.js,認証:NextAuth.js,DB:Supabase",
       partOfThePackage:
-        "zustand,zod,FramerMotion,react-hook-form,react-hot-toast,react-textarea-autosize,bcrypt,dompurify",
+        "zod,FramerMotion,react-hook-form,react-textarea-autosize,bcrypt,dompurify",
       reasonForCreation:
         "旅程表アプリの集客用ブログとして作成をしました。Vercelにデプロイするので、ISRは他のサーバーだと作成しづらい点から、どうせならとSSGやSSRではなくISRを採用。",
       commitment:
@@ -135,90 +135,27 @@ const Work = () => {
 
   return (
     <section id="works" className="bg-blue-50 py-4 sm:pt-10 sm:pb-20 w-full">
-      <div className="max-w-[1050px] mx-auto p-2">
+      <div className="max-w-[1050px] mx-auto p-2 overflow-hidden">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
           Works
         </h2>
-        <p className="text-center mb-0">
-          「Next.js
-          14」「Node.js」「TypeScript」で作成されたオリジナルの自作アプリの一覧です。
+        <p className="px-2 md:text-center">オリジナルの自作アプリの一覧です。</p>
+        <p className="px-2 md:text-center">
+          「JavaScript/TypeScript」「React/Next.js」「Node.js/Express」「PostgreSQL/MongoDB」
         </p>
-        <p className="text-center">
-          現在は初の「Express」を使用したアプリと初の「Laravel」を使用したアプリの2種類を開発中。
+        <p className="px-2 md:text-center">
+          目的を持って作成していますが、基本的に新たなアプリ作成時は「未使用の技術を使用」しており、学習としての意味もあります。
         </p>
-        <AnimatedItem
-          animation="fadeInScale"
-          elementType="div"
-          className="bg-blue-100 rounded-lg w-full mb-10 py-10 p-2 text-center"
-        >
-          <Image
-            src="/image_webp/itinerary_thumbnail.webp"
-            alt="a"
-            width={550}
-            height={550}
-            className="m-auto block rounded-lg mb-8 border border-gray-300 shadow-lg"
-          />
-          <p className="text-center mb-0">
-            「英語が話せない人でも安心して海外旅行に行ける」をコンセプトにした旅程表作成アプリです。
-          </p>
-          <ul className="list-disc text-left my-4 py-4 px-12 mx-8 sm:mx-60 sm:p-8 border border-dashed border-gray-400">
-            <li>複数の旅行のしおりを作成</li>
-            <li>旅程の作成</li>
-            <li>メモの作成</li>
-            <li>共有が可能(同行者やSNSで共有し誰でも見れるページの自動作成)</li>
-            <li>旅行後に撮影した写真で思い出の旅の記録へ</li>
-          </ul>
-          <p>
-            友人をはじめて海外旅行に誘うと<span className="font-semibold">「興味はあるけど英語が話せない」</span>を理由に、今まで行ったことが無い人が多かったです。
-          </p>
-          <p className="sm:mb-0">
-            移住するのと違い旅行なら、<span className="underline decoration-sky-500 ">必要事項を事前にメモ</span>しておけば、国内と同じように海外旅行はできます。
-          </p>
-          <p>
-            私自身も英語が話せないですが、事前に「観光地への行き方」や「乗り換え方法」などなど、事前にメモを取り友人と旅行をしてきました。
-          </p>
-          <p>
-           そのため、私の経験を元に<span className="font-semibold">国内だけでなく海外でも使える</span>ように、必要な部分にメモが書き込めるようにもなっています。
-          </p>
-          <p>
-            「英語が話せない人が安心して海外旅行へ行け」、かつ「旅の記録を見て楽しめるアプリ」として開発しています。
-          </p>
-          <Modal
-            modalType="button"
-            src="/image_webp/itinerary_thumbnail.webp"
-            alt="src"
-            title="旅程表作成アプリ"
-            items={[
-              {
-                image: "/image_webp/itinerary_thumbnail.webp",
-                text: "旅程表作成アプリ",
-              },
-              {
-                image: "/image_webp/itinerary_thumbnail_02.webp",
-                text: "旅程が簡単に作成可能",
-              },
-              {
-                image: "/image_webp/itinerary_thumbnail_03.webp",
-                text: "行き方や海外旅行保険などメモが可能",
-              },
-              {
-                image: "/image_webp/itinerary_thumbnail_01.webp",
-                text: "複数の旅のしおりが作成可能",
-              },
-              {
-                image: "/image_webp/itinerary_thumbnail_04.webp",
-                text: "同行者やSNSで旅程表の共有が可能",
-              },
-            ]}
-            technology="HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14,Node.js,認証:NextAuth.js,DB:Supabase"
-            partOfThePackage="zustand,zod,FramerMotion,react-hook-form,react-hot-toast,react-textarea-autosize,bcrypt,dompurify"
-            overview="英語が話せない人でも安心して海外旅行に行けるのを目的の旅程表作成アプリです。旅行中に撮影した写真をアップロードして、思い出のしおりとして残せるようになっています。Vercelを利用しているので、集客用のブログはSSGではなく、あえて試してみる為にもISRで作成しました。"
-            reasonForCreation="英語を話せない友人や家族と海外旅行に何度か行きました。しかし、英語話者がいません。そのため、私から誘ったのもありトラブルがあろうと全て対処できるように、色々とメモをメモ帳やエクセルなどに作成し印刷をしておくなど、準備をしています。ただ、時間がかかったのと友人に共有するのも面倒だった経緯があります。そのため、自分で利用したいと思うアプリを作成しました。"
-            commitment="調べては実装しての日々。途中で、Next.jsのServer Actionを使用してみたくて作り治したり、仕事に就いた時のことを考えて、この場面ならコンポ―ネントにするのではやpropsで渡せるように変更など、問題なく動くけどコードの変更したりを何度もしました。今、思えばまずは作ってからと思いますが、反面で色々と学びが多かったです。また、最初に実装の計画を立てるのが重要だと経験できました。ただ、初めてのアプリだったので、あの時には何の実装の方針も立てれなかったはずです。"
-            githubURL="https://github.com/haru0354/trip-abroad-itinerary"
-            appURL="https://www.travel-memory-life.com/memorybook"
-          />
-        </AnimatedItem>
+        <p className="px-2 md:text-center">
+          次は「PHP」「Laravel」を使用したアプリ開発をし、それ以降は使いこなせるように、Next.jsの簡単なアプリを複数作成予定。
+        </p>
+        <WorkItinerary />
+        <WorkBooksMemo />
+        <h3 className="block w-full text-3xl text-center font-bold my-10 leading-relaxed">
+        Next.js製のブログ作成アプリ
+        </h3>
+        <p className="text-center">「作成したアプリの集客用」「個人での利用」</p>
+        <p className="text-center">以上の2つの目的に作成されたブログアプリです。</p>
         <div className="flex flex-wrap w-full justify-center">
           {imageLists.map((imageList) => {
             return (
