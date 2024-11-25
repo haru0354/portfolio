@@ -36,6 +36,19 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# image
-/public
+
+# public フォルダ内のファイルを無視
+
+public/engineer-image.png
+public/down-arrow.png
+public/footer-image-portfolio01.png
+public/footer-image-portfolio02.png
+
+public/image_webp/engineer-image.webp
+public/image_webp/down-arrow.webp
+public/image_webp/footer-image-portfolio01.webp
+public/image_webp/footer-image-portfolio02.webp
+
+
+
 
