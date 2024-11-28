@@ -1,6 +1,6 @@
 import Modal from "../Modal";
-import WorkItinerary from "./WorkItinerary";
-import WorkBooksMemo from "./WorkBooksMemo";
+import WorkItinerary from "../portfolio/WorkItinerary";
+import WorkBooksMemo from "../portfolio/WorkBooksMemo";
 
 const Work = () => {
   const imageLists = [
