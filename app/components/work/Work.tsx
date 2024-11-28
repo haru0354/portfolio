@@ -1,6 +1,6 @@
 import Modal from "../Modal";
-import WorkItinerary from "../portfolio/WorkItinerary";
 import MemoBooksNote from "./apps/MemoBooksNote";
+import MemoryBook from "./apps/MemoryBook";
 
 const Work = () => {
   const imageLists = [
@@ -149,7 +149,7 @@ const Work = () => {
         <p className="px-2 md:text-center">
           次は「PHP」「Laravel」を使用したアプリ開発をし、それ以降は使いこなせるように、Next.jsの簡単なアプリを複数作成予定。
         </p>
-        <WorkItinerary />
+        <MemoryBook />
         <MemoBooksNote />
         <h3 className="block w-full text-3xl text-center font-bold my-10 leading-relaxed">
         Next.js製のブログ作成アプリ

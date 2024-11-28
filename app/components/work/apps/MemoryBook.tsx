@@ -1,8 +1,8 @@
 import Image from "next/image";
-import AnimatedItem from "../lib/AnimatedItem";
-import Modal from "../Modal";
+import AnimatedItem from "../../lib/AnimatedItem";
+import Modal from "../../Modal";
 
-const WorkItinerary = () => {
+const MemoryBook = () => {
   return (
     <>
       <AnimatedItem
@@ -113,4 +113,4 @@ const WorkItinerary = () => {
   );
 };
 
-export default WorkItinerary;
+export default MemoryBook;
