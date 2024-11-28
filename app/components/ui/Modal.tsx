@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import AnimatedItem from "./lib/AnimatedItem";
-import CloseButton from "./ui/CloseButton";
-import Button from "./ui/Button";
 import Image from "next/image";
-import ImageSlider from "./ui/ImageSlider";
+import AnimatedItem from "../lib/AnimatedItem";
+import CloseButton from "./CloseButton";
+import Button from "./Button";
+import ImageSlider from "./ImageSlider";
 
 type ModalProps = {
   modalType: "image" | "button";

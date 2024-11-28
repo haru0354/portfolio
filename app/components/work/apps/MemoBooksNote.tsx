@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AnimatedItem from "../../lib/AnimatedItem";
-import Modal from "../../Modal";
+import Modal from "../../ui/Modal";
 
 const MemoBooksNote = () => {
   return (
