@@ -5,7 +5,7 @@ import AnimatedItem from "./lib/AnimatedItem";
 import CloseButton from "./ui/CloseButton";
 import Button from "./ui/Button";
 import Image from "next/image";
-import ImageSlider from "./portfolio/ImageSlider";
+import ImageSlider from "./ui/ImageSlider";
 
 type ModalProps = {
   modalType: "image" | "button";
