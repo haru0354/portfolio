@@ -1,4 +1,4 @@
-import About from "./components/portfolio/About";
+import About from "./components/section/About";
 import Work from "./components/portfolio/Work";
 import Skill from "./components/portfolio/Skill";
 import Profile from "./components/portfolio/Profile";
