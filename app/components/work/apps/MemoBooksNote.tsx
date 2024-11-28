@@ -1,8 +1,8 @@
 import Image from "next/image";
-import AnimatedItem from "../lib/AnimatedItem";
-import Modal from "../Modal";
+import AnimatedItem from "../../lib/AnimatedItem";
+import Modal from "../../Modal";
 
-const WorkBooksMemo = () => {
+const MemoBooksNote = () => {
   return (
     <>
       <AnimatedItem
@@ -102,4 +102,4 @@ const WorkBooksMemo = () => {
   );
 };
 
-export default WorkBooksMemo;
+export default MemoBooksNote;
