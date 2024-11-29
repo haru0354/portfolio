@@ -3,7 +3,9 @@ import AnimatedItem from "../lib/AnimatedItem";
 type BoxInListProps = {
   title: string;
   lists: string[];
-  className?: string;
+  contents?: string[];
+  maxWidth?: string;
+  minHeight?: string;
   animation?: boolean;
   animationStyle?:
     | "fadeInDown"
@@ -17,11 +19,12 @@ type BoxInListProps = {
 const BoxInList: React.FC<BoxInListProps> = ({
   title,
   lists,
-  className,
+  contents,
+  maxWidth = "max-w-[450px]",
+  minHeight = "min-h-[310px]",
   animation,
   animationStyle = "fadeInDown",
 }) => {
-  const changeStyle = className || "max-w-[450px] min-h-[200px]";
   const defaultClasses =
     "w-full h-full mx-1 sm:mx-4 my-4 p-3 border border-gray-400 rounded bg-white shadow-lg";
 
@@ -37,6 +40,12 @@ const BoxInList: React.FC<BoxInListProps> = ({
           </li>
         ))}
       </ul>
+      {contents &&
+        contents.map((content, index) => (
+          <p key={index} className="mx-8">
+            {content}
+          </p>
+        ))}
     </>
   );
 
@@ -46,12 +55,12 @@ const BoxInList: React.FC<BoxInListProps> = ({
         <AnimatedItem
           animation={animationStyle}
           elementType="div"
-          className={`${defaultClasses} ${changeStyle}`}
+          className={`${defaultClasses} ${maxWidth} ${minHeight}`}
         >
           <Contents />
         </AnimatedItem>
       ) : (
-        <div className={`${defaultClasses} ${changeStyle}`}>
+        <div className={`${defaultClasses} ${maxWidth} ${minHeight}`}>
           <Contents />
         </div>
       )}
