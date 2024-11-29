@@ -1,4 +1,5 @@
 import AnimatedItem from "../lib/AnimatedItem";
+import BoxInList from "../ui/BoxInList";
 
 const Skill = () => {
   return (
@@ -141,6 +142,10 @@ const Skill = () => {
               </li>
             </ol>
           </AnimatedItem>
+          <BoxInList title="アプリの機能の一部" lists={["aaa", "bbb"]} />
+          <BoxInList title="アプリの機能の一部" lists={["aaa", "bbb"]} />
+          <BoxInList title="アプリの機能の一部" lists={["aaa",]} />
+          <BoxInList animation={true} title="アプリの機能の一部" lists={["aaa", "bbb"]} />
         </div>
       </div>
     </section>
