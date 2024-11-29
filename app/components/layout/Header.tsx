@@ -1,9 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import HamburgerMenu from "./portfolio/HamburgerMenu";
-import HeaderMenu from "./portfolio/HeaderMenu";
 import Image from "next/image";
+import HamburgerMenu from "./header-parts/HamburgerMenu";
+import HeaderMenu from "./header-parts/HeaderMenu";
 
 const Header = () => {
   return (

@@ -1,10 +1,10 @@
+import Header from "./components/layout/Header";
 import About from "./components/section/About";
 import Work from "./components/work/Work";
 import Skill from "./components/section/Skill";
 import Profile from "./components/section/Profile";
-import BackToTopButton from "./components/ui/BackToTopButton";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import BackToTopButton from "./components/ui/BackToTopButton";
 
 export default function Home() {
   return (
