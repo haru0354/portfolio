@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AnimatedItem from "../../lib/AnimatedItem";
 import Modal from "../../ui/Modal";
+import BoxInList from "../../ui/BoxInList";
 
 const MemoBooksNote = () => {
   return (
@@ -12,12 +13,12 @@ const MemoBooksNote = () => {
       >
         <div className="mx-auto py-4 my-10">
           <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
-          「メモブックノート」本型メモアプリ
+            「メモブックノート」本型メモアプリ
           </h3>
           <div className="w-full flex flex-col sm:flex-row">
             <div className="w-full px-2 sm:px-10 sm:flex-1 order-2 sm:order-2">
               <p>
-              「旅程表アプリと全て違った技術」で作られ、私自身の悩みを解決する為に作成始めたアプリで「エンジニアの学習」「働き始めた時を見据えて」「個人的な部分」の3つの目的の為に開発しています。
+                「旅程表アプリと全て違った技術」で作られ、私自身の悩みを解決する為に作成始めたアプリで「エンジニアの学習」「働き始めた時を見据えて」「個人的な部分」の3つの目的の為に開発しています。
               </p>
               <p>
                 他のメモアプリを利用していましたが、見たい位置をスクロールして探すのに時間がかかったり、見やすいように装飾したりと無駄な時間がかかっていました。
@@ -39,32 +40,30 @@ const MemoBooksNote = () => {
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center">
-          <div className="w-full max-w-[450px] min-h-[365px] mx-1 sm:mx-4 my-4 p-4 border border-gray-400 rounded bg-white shadow-lg">
-            <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
-              アプリの機能の一部
-            </h3>
-            <ul className="list-disc mx-8 my-8">
-              <li className="mb-1">複数の本の作成ができる</li>
-              <li className="mb-1">チャプターごとに複数のメモを管理できる</li>
-              <li className="mb-1">目次で何のメモがしてあるか即時に分かる</li>
-              <li className="mb-1">目次で見たいメモにスクロールし即時確認</li>
-              <li className="mb-1">基本モーダルで即時CRUDが可能</li>
-            </ul>
-          </div>
-          <div className="w-full max-w-[450px] min-h-[365px] mx-1 sm:mx-4 my-4 p-4 border border-gray-400 rounded bg-white shadow-lg">
-            <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
-              使用技術の一部
-            </h3>
-            <ul className="list-disc mx-8 my-8">
-              <li className="mb-1">JavaScript</li>
-              <li className="mb-1">React</li>
-              <li className="mb-1">Node.Js(Express.js)</li>
-              <li className="mb-1">DB: MongoDB</li>
-              <li className="mb-1">スタイル: Emotion</li>
-              <li className="mb-1">認証: Firebase</li>
-              <li className="mb-1">状態管理： Redux/Toolkit</li>
-            </ul>
-          </div>
+          <BoxInList
+            title="アプリの機能の一部"
+            lists={[
+              "複数の本の作成ができる",
+              "チャプターごとに複数のメモを管理できる",
+              "目次で何のメモがしてあるか即時に分かる",
+              "目次で見たいメモにスクロールし即時確認",
+              "基本モーダルで即時CRUDが可能",
+            ]}
+            minHeight="min-h-[342px]"
+          />
+          <BoxInList
+            title="使用技術の一部"
+            lists={[
+              "JavaScript",
+              "React",
+              "Node.js (Express.js)",
+              "DB: MongoDB",
+              "スタイル: Emotion",
+              "認証: Firebase",
+              "状態管理: Redux/Toolkit",
+            ]}
+            minHeight="min-h-[342px]"
+          />
         </div>
         <Modal
           modalType="button"
