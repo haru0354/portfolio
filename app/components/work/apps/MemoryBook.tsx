@@ -1,8 +1,9 @@
 import Image from "next/image";
-import AnimatedItem from "../lib/AnimatedItem";
-import Modal from "../Modal";
+import AnimatedItem from "../../lib/AnimatedItem";
+import Modal from "../../ui/Modal";
+import BoxInList from "../../ui/BoxInList";
 
-const WorkItinerary = () => {
+const MemoryBook = () => {
   return (
     <>
       <AnimatedItem
@@ -12,7 +13,7 @@ const WorkItinerary = () => {
       >
         <div className="mx-auto py-4 my-10">
           <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
-          「旅のメモリーブック」旅程表作成アプリ
+            「旅のメモリーブック」旅程表作成アプリ
           </h3>
           <div className="w-full flex flex-col sm:flex-row">
             <div className="w-full px-2 md:px-10 sm:flex-1 order-2 sm:order-1">
@@ -25,7 +26,11 @@ const WorkItinerary = () => {
                 <span className="font-semibold">
                   「興味はあるけど英語が話せない」
                 </span>
-                を理由に、行ったことが無い人しかいませんでした。また、<span className="border-b border-dashed border-gray-500">検索市場でも同じように「行きたいけど英語が話せない」と悩んでいる人の一定の需要</span>もありました。
+                を理由に、行ったことが無い人しかいませんでした。また、
+                <span className="border-b border-dashed border-gray-500">
+                  検索市場でも同じように「行きたいけど英語が話せない」と悩んでいる人の一定の需要
+                </span>
+                もありました。
               </p>
               <p>
                 私の経験を元に作成したアプリで、「私自身が利用する」かつ「海外旅行に興味はあるけど英語が話せない人」の悩みを解決するアプリとして開発しています。
@@ -45,33 +50,27 @@ const WorkItinerary = () => {
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center">
-          <div className=" mx-1 sm:mx-4 my-4 p-4 w-full max-w-[450px] min-h-[300px] border border-gray-400 rounded bg-white shadow-lg">
-            <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
-              アプリの機能の一部
-            </h3>
-            <ul className="list-disc mx-8 my-8">
-              <li className="mb-1">複数の旅行のしおりを作成</li>
-              <li className="mb-1">旅程表の作成</li>
-              <li className="mb-1">メモの作成</li>
-              <li className="mb-1">
-                共有が可能(同行者やSNSに共有し認証なしで見れるページの自動作成)
-              </li>
-              <li className="mb-1">撮影した写真をアップロードし旅の記録へ</li>
-            </ul>
-          </div>
-          <div className="mx-1 sm:mx-4 my-4 p-4 w-full max-w-[450px] min-h-[300px] border border-gray-400 rounded bg-white shadow-lg">
-            <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
-              使用技術の一部
-            </h3>
-            <ul className="list-disc mx-8 my-8">
-              <li className="mb-1">TypeScript</li>
-              <li className="mb-1">Next.js(ServerAction)</li>
-              <li className="mb-1">DB: PostgreSQL(Prisma)</li>
-              <li className="mb-1">スタイル: TailwindCSS</li>
-              <li className="mb-1">認証: NextAuth.js</li>
-              <li className="mb-1">Supabase: (DB/storage)</li>
-            </ul>
-          </div>
+          <BoxInList
+            title="アプリの機能の一部"
+            lists={[
+              "複数の旅行のしおりを作成",
+              "旅程表の作成",
+              "メモの作成",
+              "共有が可能(同行者やSNSに共有し認証なしで見れるページの自動作成)",
+              "撮影した写真をアップロードし旅の記録へ",
+            ]}
+          />
+          <BoxInList
+            title="使用技術の一部"
+            lists={[
+              "TypeScript",
+              "Next.js (ServerAction)",
+              "DB: PostgreSQL (Prisma)",
+              "スタイル: TailwindCSS",
+              "認証: NextAuth.js",
+              "Supabase (DB/storage)",
+            ]}
+          />
         </div>
         <Modal
           modalType="button"
@@ -113,4 +112,4 @@ const WorkItinerary = () => {
   );
 };
 
-export default WorkItinerary;
+export default MemoryBook;

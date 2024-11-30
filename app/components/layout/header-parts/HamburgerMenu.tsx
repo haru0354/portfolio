@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import HeaderMenu from "./HeaderMenu";
-import AnimatedItem from "../lib/AnimatedItem";
+import AnimatedItem from "../../lib/AnimatedItem";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

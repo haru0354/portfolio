@@ -1,22 +1,10 @@
 import fs from "fs";
 import path from "path";
 import sharp from "sharp";
-import { fileURLToPath } from "url";
 
 const convertToWebp = async () => {
-  const __filename = fileURLToPath(import.meta.url);
-
-  // ディレクトリ名を取得
-  const __dirname = path.dirname(__filename);
-  const inputDirectory = path.join(__dirname, "..", "..", "..", "public");
-  const outputDirectory = path.join(
-    __dirname,
-    "..",
-    "..",
-    "..",
-    "public",
-    "image_webp"
-  );
+  const inputDirectory = path.join(process.cwd(), "public");
+  const outputDirectory = path.join(process.cwd(), "public", "image_webp");
 
   const fileNames = fs.readdirSync(inputDirectory);
 
@@ -28,13 +16,14 @@ const convertToWebp = async () => {
 
   // 変換済みのファイル名のリストを読み込み
   const convertedFilePath = path.join(
-    __dirname,
-    "ConvertedFileNameList.json"
+    process.cwd(),
+    "scripts",
+    "convertedFileNameList.json"
   );
 
   let convertedFileNames = [];
   if (fs.existsSync(convertedFilePath)) {
-    const data = fs.readFileSync(convertedFilePath, "utf8");
+    const data = fs.readFileSync(convertedFilePath);
     convertedFileNames = JSON.parse(data);
   }
 
