@@ -7,7 +7,7 @@ const MemoryBook = () => {
     <AnimatedItem
       elementType="div"
       animation="fadeInRight"
-      className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700"
+      className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700"
     >
       <AppDetail
         title="「旅のメモリーブック」旅程表作成アプリ"

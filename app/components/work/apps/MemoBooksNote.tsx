@@ -7,7 +7,7 @@ const MemoBooksNote = () => {
     <AnimatedItem
       elementType="div"
       animation="fadeInLeft"
-      className="w-full max-w-[1050px] my-6 pb-14 border-b border-dashed border-gray-700"
+      className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700"
     >
       <AppDetail
         title="「メモブックノート」本型メモアプリ"

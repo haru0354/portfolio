@@ -7,9 +7,9 @@ type AppDetailProps = {
   contents: string[];
   src?: string;
   alt?: string;
+  imageRight?: boolean;
   featureList: string[];
   techStack: string[];
-  imageRight?: boolean;
 };
 
 const AppDetail: React.FC<AppDetailProps> = ({
@@ -17,9 +17,9 @@ const AppDetail: React.FC<AppDetailProps> = ({
   contents,
   src = "/image_webp/no_image.webp",
   alt = "画像準備中",
+  imageRight = false,
   featureList,
   techStack,
-  imageRight = false,
 }) => {
   const imagePosition = imageRight ? "sm:order-2" : "sm:order-1";
 
@@ -31,8 +31,8 @@ const AppDetail: React.FC<AppDetailProps> = ({
         </h3>
         <div className="w-full flex flex-col sm:flex-row">
           <div className="w-full px-2 sm:px-10 sm:flex-1 order-2 sm:order-2">
-            {contents.map((content) => (
-              <p>{content}</p>
+            {contents.map((content, index) => (
+              <p key={index}>{content}</p>
             ))}
           </div>
           <div className={`m-auto pb-5 sm:pb-0 order-1 ${imagePosition}`}>
