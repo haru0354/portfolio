@@ -1,6 +1,6 @@
 import AnimatedItem from "../../lib/AnimatedItem";
-import Modal from "../../ui/Modal";
 import AppDetail from "../AppDetail";
+import Modal from "../../ui/Modal";
 
 const MemoryBook = () => {
   return (
@@ -18,6 +18,7 @@ const MemoryBook = () => {
         ]}
         src="/image_webp/itinerary_thumbnail.webp"
         alt="旅のメモリーブック"
+        imageRight={true}
         featureList={[
           "複数の旅行のしおりを作成",
           "旅程表の作成",

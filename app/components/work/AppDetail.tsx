@@ -9,6 +9,7 @@ type AppDetailProps = {
   alt?: string;
   featureList: string[];
   techStack: string[];
+  imageRight?: boolean;
 };
 
 const AppDetail: React.FC<AppDetailProps> = ({
@@ -18,7 +19,10 @@ const AppDetail: React.FC<AppDetailProps> = ({
   alt = "画像準備中",
   featureList,
   techStack,
+  imageRight = false,
 }) => {
+  const imagePosition = imageRight ? "sm:order-2" : "sm:order-1";
+
   return (
     <>
       <div className="mx-auto py-4 my-10">
@@ -31,7 +35,7 @@ const AppDetail: React.FC<AppDetailProps> = ({
               <p>{content}</p>
             ))}
           </div>
-          <div className="m-auto pb-5 sm:pb-0 order-1 sm:order-1">
+          <div className={`m-auto pb-5 sm:pb-0 order-1 ${imagePosition}`}>
             <Image
               src={src}
               width={360}
