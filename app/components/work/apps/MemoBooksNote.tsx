@@ -18,6 +18,7 @@ const MemoBooksNote = () => {
         ]}
         src="/image_webp/memo_book_thumbnail_002.webp"
         alt="メモブック"
+        imageRight={true}
         featureList={[
           "複数の本の作成ができる",
           "チャプターごとに複数のメモを管理できる",

@@ -1,6 +1,7 @@
 import MemoryBook from "./apps/MemoryBook";
 import MemoBooksNote from "./apps/MemoBooksNote";
 import Blog from "./apps/Blog";
+import AppIntroduction from "./apps/AppIntroduction";
 
 const Work = () => {
   const contents = [
@@ -25,6 +26,7 @@ const Work = () => {
       </div>
       <MemoryBook />
       <MemoBooksNote />
+      <AppIntroduction />
       <Blog />
     </section>
   );
