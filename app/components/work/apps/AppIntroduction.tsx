@@ -19,7 +19,6 @@ const AppIntroduction = () => {
         ]}
         src="/image_webp/web-app-introduction_thumbnail_001.webp"
         alt="自作アプリ公開WEB"
-        imageRight={true}
         featureList={[
           "自作したアプリの掲載ができる",
           "プロフィールの登録ができる",
