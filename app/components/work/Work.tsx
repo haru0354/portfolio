@@ -14,7 +14,7 @@ const Work = () => {
   return (
     <section
       id="works"
-      className="bg-blue-50 px-2 py-4 sm:pt-10 sm:pb-20 w-full"
+      className="w-full px-2 py-4 sm:pt-10 sm:pb-10 bg-gray-100"
     >
       <div className="max-w-[1050px] mx-auto p-2 text-center">
         <h2 className="block w-full text-center text-3xl font-bold my-10 ">
