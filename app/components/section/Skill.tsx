@@ -5,7 +5,7 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="bg-gray-50 py-4 sm:pt-10 pb-10 sm:pb-20 w-full"
+      className="w-full py-4 sm:pt-10 pb-20 bg-blue-100"
     >
       <div className="max-w-[1050px] mx-auto">
         <h2 className="block w-full text-center text-3xl font-bold my-10">
