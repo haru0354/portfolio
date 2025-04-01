@@ -27,7 +27,7 @@ const HamburgerMenu = () => {
             onClick={closeModal}
             className="h-screen w-screen fixed inset-0 opacity-70"
           >
-            <div className="w-[180px] h-screen ml-auto bg-white border-l shadow-xl">
+            <div className="w-[180px] h-screen ml-auto border-l shadow-xl border-gray-300 bg-gray-200 ">
               <HeaderMenu liClass="" ulClass="pt-20" />
               <button className=" mt-14 border-b-2 border-gray-500 hover:bg-gray-500 hover:text-white" onClick={toggleOpen}>← 閉じる</button>
             </div>
