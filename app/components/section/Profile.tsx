@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AnimatedItem from "../lib/AnimatedItem";
+import AnimatedItem from "../ui/AnimatedItem";
 
 const Profile = () => {
   const ProfileLists = [

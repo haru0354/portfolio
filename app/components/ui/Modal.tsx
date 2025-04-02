@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import AnimatedItem from "../lib/AnimatedItem";
+
+import AnimatedItem from "./AnimatedItem";
 import CloseButton from "./CloseButton";
 import Button from "./Button";
 import ImageSlider from "./ImageSlider";

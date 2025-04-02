@@ -1,4 +1,4 @@
-import AnimatedItem from "../lib/AnimatedItem";
+import AnimatedItem from "./AnimatedItem";
 
 type BoxInListProps = {
   title: string;
