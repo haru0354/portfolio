@@ -3,10 +3,7 @@ import BoxInList from "../ui/BoxInList";
 
 const Skill = () => {
   return (
-    <section
-      id="skill"
-      className="w-full py-4 sm:pt-10 pb-20 bg-blue-100"
-    >
+    <section id="skill" className="w-full py-4 sm:pt-10 pb-20 bg-blue-100">
       <div className="max-w-[1050px] mx-auto">
         <h2 className="block w-full text-center text-3xl font-bold my-10">
           エンジニアとしての技術
@@ -71,7 +68,8 @@ const Skill = () => {
               <li className="mb-1">
                 <a
                   href="https://www.udemy.com/course/front-dev-tutorial/"
-                  target="blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600"
                 >
                   【2023年最新】【JavaScript＆CSS】ガチで学びたい人のためのWEB開発実践入門
@@ -80,7 +78,8 @@ const Skill = () => {
               <li className="mb-1">
                 <a
                   href="https://www.udemy.com/course/react-complete-guide/"
-                  target="blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600"
                 >
                   【2024年最新】React(v18)完全入門ガイド｜Hooks、Next14、Redux、TypeScript
@@ -92,7 +91,8 @@ const Skill = () => {
               <li className="mb-1">
                 <a
                   href="https://www.udemy.com/course/nodejs-comp-guide/"
-                  target="blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600"
                 >
                   Node.jsで学ぶWebシステムとソフトウェア開発基礎！
@@ -101,7 +101,8 @@ const Skill = () => {
               <li className="mb-1">
                 <a
                   href="https://www.udemy.com/course/phpbeginnertolaravel/"
-                  target="blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600"
                 >
                   PHPからLaravelまで サーバーサイドをとことんやってみよう
@@ -114,7 +115,8 @@ const Skill = () => {
               <li className="mb-1">
                 <a
                   href="https://www.udemy.com/course/web-app-development/"
-                  target="blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600"
                 >
                   【HTML,CSS,JS,PHP,Git,Docker】ゼロからわかるWebシステム開発

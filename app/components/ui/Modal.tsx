@@ -110,7 +110,8 @@ const Modal: React.FC<ModalProps> = ({
                   GitHub:
                   <a
                     href={`${githubURL}`}
-                    target="blank"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-blue-600"
                   >
                     {githubURL}
@@ -121,6 +122,8 @@ const Modal: React.FC<ModalProps> = ({
                     URL:
                     <a
                       href={`${appURL}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block text-blue-600"
                     >
                       {appURL}
