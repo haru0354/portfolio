@@ -1,4 +1,4 @@
-import AnimatedItem from "../../lib/AnimatedItem";
+import AnimatedItem from "../../ui/AnimatedItem";
 import Modal from "../../ui/Modal";
 import AppDetail from "../AppDetail";
 

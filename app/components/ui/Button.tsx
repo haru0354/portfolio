@@ -1,13 +1,19 @@
 type ButtonProps = {
   children: React.ReactNode;
+  type?: "submit" | "button";
   onClick?: () => void;
 };
 
-const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  type = "submit",
+  onClick,
+}) => {
   return (
     <button
       onClick={onClick}
-      className="mx-auto block w-[180px] font-semibold my-4 py-3 px-4 bg-gray-800 text-white border border-gray-800 rounded hover:bg-blue-100 hover:text-gray-800"
+      type={type}
+      className="block w-[180px] mx-auto my-4 py-3 px-4 font-semibold border rounded text-white hover:text-gray-800 border-gray-800 bg-gray-800 hover:bg-blue-100 transition duration-300"
     >
       {children}
     </button>
