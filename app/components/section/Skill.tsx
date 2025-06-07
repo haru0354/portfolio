@@ -11,7 +11,7 @@ const Skill = () => {
         <div className="flex flex-wrap items-center justify-center px-2">
           <BoxInList
             animation={true}
-            title="自己開発で使用した技術等"
+            title="フロントエンド"
             lists={[
               "HTML5",
               "CSS3 (Tailwind CSS/Emotion)",
@@ -19,28 +19,31 @@ const Skill = () => {
               "TypeScript",
               "React",
               "Next.js",
-              "Node.js (Express.js)",
             ]}
-            minHeight="min-h-[342px]"
+            minHeight="min-h-[310px]"
           />
           <BoxInList
             animation={true}
-            title="基礎を学習または現在学習中の技術(未開発)"
-            lists={["PHP (学習中)", "Laravel (学習中)", "SCSS (基礎を学習)"]}
-            contents={[
-              "「教材で学習した程度です。そのため、少し分かる程度で自身のない技術の一覧です。」",
+            title="バックエンド"
+            lists={[
+              "PHP",
+              "Laravel ",
+              "Node.js",
+              "Express.js",
+              "Prisma (ORM)",
+              "DB(PostgreSQL / MongoDB / MySQL)",
             ]}
-            minHeight="min-h-[342px]"
+            minHeight="min-h-[310px]"
           />
           <BoxInList
             animation={true}
             title="その他"
             lists={[
-              "DB (PostgreSQL/MongoDB)",
+              "NextAuth",
               "Firebase (認証)",
               "Supabase (DB/storage)",
               "Git/GitHub",
-              "Docker (学習時に少し触れた程度)",
+              "Docker",
               "SEO",
             ]}
           />
@@ -107,7 +110,6 @@ const Skill = () => {
                 >
                   PHPからLaravelまで サーバーサイドをとことんやってみよう
                 </a>
-                （学習中）
               </li>
             </ol>
             <p className="mt-8 mb-2 font-semibold">web開発全般</p>
@@ -121,7 +123,7 @@ const Skill = () => {
                 >
                   【HTML,CSS,JS,PHP,Git,Docker】ゼロからわかるWebシステム開発
                 </a>
-                （Git/Docker/PHP/Laravelの項目のみ使用）
+                （Git/Docker/PHP/Laravelの項目のみ）
               </li>
             </ol>
           </AnimatedItem>
