@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 type HeaderMenuProps = {
   liClass?: string;
@@ -16,33 +16,25 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({ liClass, ulClass }) => {
     }
   };
 
+  const items = [
+    { id: "about", name: "About" },
+    { id: "works", name: "Works" },
+    { id: "skill", name: "Skills" },
+    { id: "profile", name: "Profile" },
+  ];
+
   return (
     <nav>
       <ul className={`${ulClass}`}>
-        <li
-          className={`${liClass} p-4 hover:bg-sky-400 hover:text-white cursor-pointer`}
-          onClick={() => scrollToSection("about")}
-        >
-          <span>About</span>
-        </li>
-        <li
-          className={`${liClass} p-4 hover:bg-sky-400 hover:text-white cursor-pointer`}
-          onClick={() => scrollToSection("works")}
-        >
-          <span>Works</span>
-        </li>
-        <li
-          className={`${liClass} p-4 hover:bg-sky-400 hover:text-white cursor-pointer`}
-          onClick={() => scrollToSection("skill")}
-        >
-          <span>Skills</span>
-        </li>
-        <li
-          className={`${liClass} p-4 hover:bg-sky-400 hover:text-white cursor-pointer`}
-          onClick={() => scrollToSection("profile")}
-        >
-          <span>Profile</span>
-        </li>
+        {items.map((item) => (
+          <li
+            key={item.id}
+            className={`${liClass} p-4 hover:bg-sky-400 hover:text-white cursor-pointer`}
+            onClick={() => scrollToSection(item.id)}
+          >
+            <span>{item.name}</span>
+          </li>
+        ))}
       </ul>
     </nav>
   );
