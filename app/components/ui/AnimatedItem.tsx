@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 type AnimatedItemProps = {
   children: ReactNode;
-  elementType: "div" | "h1" |"h2" | "h3" | "li";
+  elementType: "div" | "h1" | "h2" | "h3" | "li";
   animation:
     | "fadeInRight"
     | "fadeInLeft"
@@ -35,11 +35,10 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       x: 0,
       transition: {
         delay: delay || 0,
-        duration: 1,
+        duration: 0.6,
       },
     },
   };
-
 
   const fadeInLeft = {
     hidden: { opacity: 0, x: -60 },
@@ -48,7 +47,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       x: 0,
       transition: {
         delay: delay || 0,
-        duration: 1,
+        duration: 0.6,
       },
     },
   };
@@ -60,7 +59,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       y: 0,
       transition: {
         delay: delay || 0,
-        duration: 1,
+        duration: 0.6,
       },
     },
   };
@@ -75,6 +74,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
         stiffness: 100,
         damping: 30,
         delay: delay || 0,
+        duration: 0.6,
       },
     },
   };
@@ -85,7 +85,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       scale: 1,
       transition: {
         delay: delay || 0,
-        duration: 0.8,
+        duration: 0.6,
       },
     },
   };
@@ -96,7 +96,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       opacity: 1,
       transition: {
         delay: delay || 0,
-        duration: 1,
+        duration: 0.6,
       },
     },
   };
