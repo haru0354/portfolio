@@ -4,6 +4,12 @@ import Section from "./Section";
 import AnimatedItem from "../ui/AnimatedItem";
 
 const About = () => {
+  const texts = [
+    "このサイトは36歳エンジニア未経験のポートフォリオサイトです。",
+    "高校3年生の時に「ホームページビルダー」や「無料ブログサービス」を利用しつつ、約1年間の間、htmlとcssを少し勉強しながら収益を得ていました。その後、関係ない職種に就職。",
+    "28歳の時に「wordPress」などを利用しwebメディアを作成し、web広告業として個人事業主として開業をし、生計を立てて今に至ります。36歳の時にエンジニアの職種に就きたいと決意し、勉強を開始しています。",
+  ];
+
   return (
     <Section
       id="about"
@@ -17,15 +23,9 @@ const About = () => {
         className="w-full flex flex-col sm:flex-row"
       >
         <div className="w-full px-4 sm:flex-1 order-2 sm:order-1">
-          <p>このサイトは36歳エンジニア未経験のポートフォリオサイトです。</p>
-          <p>
-            高校3年生の時に「ホームページビルダー」や「無料ブログ
-            サービス」を利用しつつ、約1年間の間、htmlとcssを少し勉強しながら収益を得ていました。その後、関係ない職種に就職。
-          </p>
-          <p>
-            28歳の時に「wordPress」などを利用しwebメディアを作成し、web広告業として個人事業主として開業をし、生計を立てて今に至ります。
-            36歳の時にエンジニアの職種に就きたいと決意し、勉強を開始しています。
-          </p>
+          {texts.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))}
           <p>
             GitHub:
             <a
