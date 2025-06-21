@@ -1,3 +1,5 @@
+import AnimatedItem from "../ui/AnimatedItem";
+
 type SectionProps = {
   id: string;
   title: string;
@@ -17,15 +19,23 @@ const Section: React.FC<SectionProps> = ({
 
   return (
     <section id={id} className={`w-full pt-10 sm:pb-10 ${bgColor}`}>
-      <div className="max-w-[1050px] mx-auto  mt-10 py-4">
+      <div className="max-w-[1050px] mx-auto mt-10 px-2 py-4">
         {h1 ? (
-          <h1 className="w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
+          <AnimatedItem
+            animation="fadeInOpacity"
+            elementType="h1"
+            className="w-full text-3xl text-center font-bold my-10 leading-relaxed"
+          >
             {title}
-          </h1>
+          </AnimatedItem>
         ) : (
-          <h2 className="w-full text-center text-3xl font-bold my-10 px-2 leading-relaxed">
+          <AnimatedItem
+            animation="fadeInOpacity"
+            elementType="h2"
+            className="w-full text-center text-3xl font-bold my-10 leading-relaxed"
+          >
             {title}
-          </h2>
+          </AnimatedItem>
         )}
         {children}
       </div>

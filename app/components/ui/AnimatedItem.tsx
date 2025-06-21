@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 type AnimatedItemProps = {
   children: ReactNode;
-  elementType: "div" | "h2" | "h3" | "li";
+  elementType: "div" | "h1" |"h2" | "h3" | "li";
   animation:
     | "fadeInRight"
     | "fadeInLeft"
