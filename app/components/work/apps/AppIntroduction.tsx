@@ -1,9 +1,10 @@
+import AppContainer from "../AppContainer";
 import AppDetail from "../AppDetail";
 import Modal from "../../ui/Modal";
 
 const AppIntroduction = () => {
   return (
-    <div className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700">
+    <AppContainer>
       <AppDetail
         title="「自作アプリ公開WEB」- 自作したアプリを無料掲載 -"
         contents={[
@@ -58,7 +59,7 @@ const AppIntroduction = () => {
         githubURL="https://github.com/haru0354/web-app-introduction"
         appURL=""
       />
-    </div>
+    </AppContainer>
   );
 };
 

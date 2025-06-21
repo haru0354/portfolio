@@ -1,9 +1,10 @@
+import AppContainer from "../AppContainer";
 import AppDetail from "../AppDetail";
 import Modal from "../../ui/Modal";
 
 const MemoryBook = () => {
   return (
-    <div className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700">
+    <AppContainer>
       <AppDetail
         title="「旅のメモリーブック」旅程表作成アプリ"
         contents={[
@@ -64,7 +65,7 @@ const MemoryBook = () => {
         githubURL="https://github.com/haru0354/trip-abroad-itinerary"
         appURL="https://www.travel-memory-life.com/memorybook"
       />
-    </div>
+    </AppContainer>
   );
 };
 
