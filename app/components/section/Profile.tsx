@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+import Section from "./Section";
 import AnimatedItem from "../ui/AnimatedItem";
 
 const Profile = () => {
@@ -67,44 +69,39 @@ const Profile = () => {
   ];
 
   return (
-    <section id="profile" className="bg-blue-50 py-4 sm:pt-10 sm:pb-20 w-full overflow-x-hidden">
-      <div className="max-w-[1050px] mx-auto">
-        <h2 className="block w-full text-3xl text-center font-bold my-10 ">
-          プロフィール
-        </h2>
-        <div className="border-l-8 ml-10 border-gray-700">
-          <ul className="mx-6">
-            {ProfileLists.map((ProfileList) => (
-              <AnimatedItem
-                animation="fadeInRight"
-                elementType="li"
-                className="my-20 bg-gray-300 p-4 relative"
-                key={ProfileList.id}
-              >
-                <Image
-                  src="/image_webp/down-arrow.webp"
-                  width={40}
-                  height={40}
-                  alt="下矢印"
-                  className="absolute inset-0 my-auto ml-[-48px]"
-                />
-                <h3 className="text-xl text-gray-800 font-semibold mb-4 pb-2 border-b border-dashed border-gray-700">
-                  {ProfileList.title}
-                </h3>
-                <p>{ProfileList.content}</p>
-              </AnimatedItem>
-            ))}
-          </ul>
-        </div>
-        <Image
-          src="/image_webp/footer-image-portfolio01.webp"
-          width={801}
-          height={320}
-          alt="エンジニアの仕事中の画像"
-          className="mx-auto"
-        />
+    <Section id="profile" title="プロフィール">
+      <div className="border-l-8 ml-10 border-gray-700">
+        <ul className="mx-6">
+          {ProfileLists.map((ProfileList) => (
+            <AnimatedItem
+              animation="fadeInRight"
+              elementType="li"
+              className="my-20 bg-gray-300 p-4 relative"
+              key={ProfileList.id}
+            >
+              <Image
+                src="/image_webp/down-arrow.webp"
+                width={40}
+                height={40}
+                alt="下矢印"
+                className="absolute inset-0 my-auto ml-[-48px]"
+              />
+              <h3 className="text-xl text-gray-800 font-semibold mb-4 pb-2 border-b border-dashed border-gray-700">
+                {ProfileList.title}
+              </h3>
+              <p>{ProfileList.content}</p>
+            </AnimatedItem>
+          ))}
+        </ul>
       </div>
-    </section>
+      <Image
+        src="/image_webp/footer-image-portfolio01.webp"
+        width={801}
+        height={320}
+        alt="エンジニアの仕事中の画像"
+        className="mx-auto"
+      />
+    </Section>
   );
 };
 
