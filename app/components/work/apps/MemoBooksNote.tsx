@@ -1,14 +1,9 @@
-import AnimatedItem from "../../ui/AnimatedItem";
 import AppDetail from "../AppDetail";
 import Modal from "../../ui/Modal";
 
 const MemoBooksNote = () => {
   return (
-    <AnimatedItem
-      elementType="div"
-      animation="fadeInLeft"
-      className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700"
-    >
+    <div className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700">
       <AppDetail
         title="「メモブックノート」本型メモアプリ"
         contents={[
@@ -67,7 +62,7 @@ const MemoBooksNote = () => {
         githubURL="https://github.com/haru0354/memo-books-mern"
         appURL="https://www.memo-book-note.com/"
       />
-    </AnimatedItem>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import BoxInList from "../ui/BoxInList";
+import AnimatedItem from "../ui/AnimatedItem";
 
 type AppDetailProps = {
   title: string;
@@ -22,10 +23,15 @@ const AppDetail: React.FC<AppDetailProps> = ({
   techStack,
 }) => {
   const imagePosition = imageRight ? "sm:order-2" : "sm:order-1";
-
+  const animation = imageRight ? "fadeInLeft" : "fadeInRight";
+  
   return (
     <>
-      <div className="mx-auto py-4 my-10">
+      <AnimatedItem
+        elementType="div"
+        animation={animation}
+        className="mx-auto py-4 my-10"
+      >
         <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
           {title}
         </h3>
@@ -46,17 +52,19 @@ const AppDetail: React.FC<AppDetailProps> = ({
             />
           </div>
         </div>
-      </div>
+      </AnimatedItem>
       <div className="flex flex-wrap items-center justify-center">
         <BoxInList
           title="アプリの機能の一部"
           lists={featureList}
           minHeight="min-h-[342px]"
+          animation={true}
         />
         <BoxInList
           title="使用技術の一部"
           lists={techStack}
           minHeight="min-h-[342px]"
+          animation={true}
         />
       </div>
     </>
