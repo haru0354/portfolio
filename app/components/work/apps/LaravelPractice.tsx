@@ -75,7 +75,7 @@ const LaravelPractice = () => {
   return (
     <AppContainer border={false}>
       <AnimatedItem animation="fadeInOpacity" elementType="div" className="text-center" >
-        <h3 className="block w-full text-3xl font-bold my-10 leading-relaxed">
+        <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
           Laravelの学習目的に旅程表アプリ
         </h3>
         <p>

@@ -1,3 +1,5 @@
+import AppContainer from "../AppContainer";
+import AnimatedItem from "../../ui/AnimatedItem";
 import Modal from "../../ui/Modal";
 
 const Blog = () => {
@@ -5,7 +7,6 @@ const Blog = () => {
     {
       id: 1,
       src: "/image_webp/isr_thumbnail_04.webp",
-      slug: "/",
       alt: "ISRブログ",
       title: "ISRブログ",
       items: [
@@ -42,7 +43,6 @@ const Blog = () => {
     {
       id: 2,
       src: "/image_webp/sg_thumbnail.webp",
-      slug: "/skill",
       alt: "SSGブログwithMD",
       title: "SSGブログwithMD",
       items: [
@@ -73,7 +73,6 @@ const Blog = () => {
     {
       id: 3,
       src: "/image_webp/sg_thumbnail_04.webp",
-      slug: "/work",
       alt: "SSGブログwithMDX",
       title: "SSGブログwithMDX",
       items: [
@@ -105,7 +104,6 @@ const Blog = () => {
     {
       id: 4,
       src: "/image_webp/portfolio_thumbnail.webp",
-      slug: "/work",
       alt: "ポートフォリオ",
       title: "ポートフォリオ",
       items: [
@@ -132,14 +130,18 @@ const Blog = () => {
   ];
 
   return (
-    <>
-      <h3 className="block w-full text-3xl text-center font-bold my-10 leading-relaxed">
-        Next.js製のブログ作成アプリ
-      </h3>
-      <p className="text-center">「作成したアプリの集客用」「個人での利用」</p>
-      <p className="text-center">
-        以上の2つの目的に作成されたブログアプリです。
-      </p>
+    <AppContainer>
+      <AnimatedItem
+        animation="fadeInOpacity"
+        elementType="div"
+        className="text-center"
+      >
+        <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
+          Next.js製のブログ作成アプリ
+        </h3>
+        <p>「作成したアプリの集客用」「個人での利用」</p>
+        <p>以上の2つの目的に作成されたブログアプリです。</p>
+      </AnimatedItem>
       <div className="flex flex-wrap w-full justify-center">
         {imageLists.map((imageList) => {
           return (
@@ -162,7 +164,7 @@ const Blog = () => {
           );
         })}
       </div>
-    </>
+    </AppContainer>
   );
 };
 
