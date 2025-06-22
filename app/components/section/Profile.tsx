@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+import Section from "./Section";
 import AnimatedItem from "../ui/AnimatedItem";
 
 const Profile = () => {
@@ -53,13 +55,13 @@ const Profile = () => {
         "コンテンツの作成の部分は微妙なものの、サイトの構成やどう利益を上げるかなど考えたり、デザインなどをいじっているのは楽しかった。そのため、エンジニアの仕事に就きたいなと考えるようになる。",
     },
     {
-      id: 8,
+      id: 9,
       title: "続けられるか学習",
       content:
         "売り上げも無くなり転職をしようと考える。どうせならエンジニアに挑戦したいと思い、試しに続けられるか学習して見るも、ひたすら楽しむことができたので仕事にしたいと思う。",
     },
     {
-      id: 8,
+      id: 10,
       title: "現在に至る",
       content:
         "エンジニアになりたいと学習したのを除けば、HTMLやCSSを少しいじってwordpressを使いサイト作成やSEOの知識だけ。36歳での未経験のエンジニア志望。色々調べても現実的に考えて難しい・・・。幸いすぐに生活は困らないものの、貯金が減っていくのは悲しいので、厳しそうなら他に働きながら、あきらめられるまで続けるだけ。",
@@ -67,44 +69,39 @@ const Profile = () => {
   ];
 
   return (
-    <section id="profile" className="bg-blue-50 py-4 sm:pt-10 sm:pb-20 w-full overflow-x-hidden">
-      <div className="max-w-[1050px] mx-auto">
-        <h2 className="block w-full text-3xl text-center font-bold my-10 ">
-          プロフィール
-        </h2>
-        <div className="border-l-8 ml-10 border-gray-700">
-          <ul className="mx-6">
-            {ProfileLists.map((ProfileList) => (
-              <AnimatedItem
-                animation="fadeInRight"
-                elementType="li"
-                className="my-20 bg-gray-300 p-4 relative"
-                key={ProfileList.id}
-              >
-                <Image
-                  src="/image_webp/down-arrow.webp"
-                  width={40}
-                  height={40}
-                  alt="下矢印"
-                  className="absolute inset-0 my-auto ml-[-48px]"
-                />
-                <h3 className="text-xl text-gray-800 font-semibold mb-4 pb-2 border-b border-dashed border-gray-700">
-                  {ProfileList.title}
-                </h3>
-                <p>{ProfileList.content}</p>
-              </AnimatedItem>
-            ))}
-          </ul>
-        </div>
-        <Image
-          src="/image_webp/footer-image-portfolio01.webp"
-          width={801}
-          height={320}
-          alt="エンジニアの仕事中の画像"
-          className="mx-auto"
-        />
+    <Section id="profile" title="プロフィール">
+      <div className="border-l-8 ml-10 border-gray-700">
+        <ul className="mx-6">
+          {ProfileLists.map((ProfileList) => (
+            <AnimatedItem
+              animation="fadeInRight"
+              elementType="li"
+              className="my-20 bg-gray-300 p-4 relative"
+              key={ProfileList.id}
+            >
+              <Image
+                src="/image_webp/down-arrow.webp"
+                width={40}
+                height={40}
+                alt="下矢印"
+                className="absolute inset-0 my-auto ml-[-48px]"
+              />
+              <h3 className="text-xl text-gray-800 font-semibold mb-4 pb-2 border-b border-dashed border-gray-700">
+                {ProfileList.title}
+              </h3>
+              <p>{ProfileList.content}</p>
+            </AnimatedItem>
+          ))}
+        </ul>
       </div>
-    </section>
+      <Image
+        src="/image_webp/footer-image-portfolio01.webp"
+        width={801}
+        height={320}
+        alt="エンジニアの仕事中の画像"
+        className="mx-auto"
+      />
+    </Section>
   );
 };
 

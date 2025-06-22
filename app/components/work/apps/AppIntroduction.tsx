@@ -1,14 +1,10 @@
-import AnimatedItem from "../../ui/AnimatedItem";
-import Modal from "../../ui/Modal";
+import AppContainer from "../AppContainer";
 import AppDetail from "../AppDetail";
+import Modal from "../../ui/Modal";
 
 const AppIntroduction = () => {
   return (
-    <AnimatedItem
-      elementType="div"
-      animation="fadeInLeft"
-      className="w-full max-w-[1050px] mx-auto my-6 pb-14 border-b border-dashed border-gray-700"
-    >
+    <AppContainer>
       <AppDetail
         title="「自作アプリ公開WEB」- 自作したアプリを無料掲載 -"
         contents={[
@@ -17,7 +13,6 @@ const AppIntroduction = () => {
           "初アプリを作成したものの、無料で作成したアプリを認知させる為の場所が、まだまだ少ないなと感じました。そのため、私自信で今度様々なアプリを作成した上で、利用したいと思ったので制作をしました。",
           "「自作アプリの作成を完成した！しかし、どうやってユーザーを増やそう・・・」。数分で出来る一つ目の手段の選択肢としていかがでしょうか？",
         ]}
-        src="/image_webp/web-app-introduction_thumbnail_001.webp"
         alt="自作アプリ公開WEB"
         featureList={[
           "自作したアプリの掲載ができる",
@@ -64,7 +59,7 @@ const AppIntroduction = () => {
         githubURL="https://github.com/haru0354/web-app-introduction"
         appURL=""
       />
-    </AnimatedItem>
+    </AppContainer>
   );
 };
 

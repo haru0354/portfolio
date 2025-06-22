@@ -1,7 +1,8 @@
+import Section from "../section/Section";
 import MemoryBook from "./apps/MemoryBook";
 import MemoBooksNote from "./apps/MemoBooksNote";
-import Blog from "./apps/Blog";
 import AppIntroduction from "./apps/AppIntroduction";
+import Blog from "./apps/Blog";
 
 const Work = () => {
   const contents = [
@@ -12,23 +13,15 @@ const Work = () => {
   ];
 
   return (
-    <section
-      id="works"
-      className="w-full px-2 py-4 sm:pt-10 sm:pb-10 bg-gray-100"
-    >
-      <div className="max-w-[1050px] mx-auto p-2 text-center">
-        <h2 className="block w-full text-center text-3xl font-bold my-10 ">
-          Works
-        </h2>
-        {contents.map((content, index) => (
-          <p key={index}>{content}</p>
-        ))}
-      </div>
+    <Section id="works" title="Works">
+      {contents.map((content, index) => (
+        <p key={index} className="text-center">{content}</p>
+      ))}
       <MemoryBook />
       <MemoBooksNote />
       <AppIntroduction />
       <Blog />
-    </section>
+    </Section>
   );
 };
 
