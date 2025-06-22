@@ -4,6 +4,7 @@ import MemoBooksNote from "./apps/MemoBooksNote";
 import AppIntroduction from "./apps/AppIntroduction";
 import Blog from "./apps/Blog";
 import LaravelPractice from "./apps/LaravelPractice";
+import LaravelAcademy from "./apps/LaravelAcademy";
 
 const Work = () => {
   const contents = [
@@ -23,6 +24,7 @@ const Work = () => {
       <MemoryBook />
       <MemoBooksNote />
       <AppIntroduction />
+      <LaravelAcademy />
       <Blog />
       <LaravelPractice />
     </Section>
