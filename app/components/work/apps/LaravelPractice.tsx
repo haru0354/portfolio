@@ -30,8 +30,7 @@ const LaravelPractice = () => {
       partOfThePackage: "",
       reasonForCreation:
         "PHP、Laravelの基礎学習後、アウトプットとしてアプリを制作を検討。自身の初作成アプリの旅程表をLaravelバージョンとして学習目的に作成",
-      commitment:
-        "",
+      commitment: "",
       githubURL: "https://github.com/haru0354/laravel-restful-itinerary",
       appURL: "",
     },
@@ -55,14 +54,15 @@ const LaravelPractice = () => {
         },
       ],
       overview:
-        "MDファイルを利用して記事を管理することができる、Next.jsのSSGブログ。コンポーネントを変更することで、デザインの変更ができるようになっています。jpegなどpublicフォルダに入れた画像はwebp形式に圧縮変換して生成し、表示することで軽量化されます。",
-      technology: "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14",
-      partOfThePackage: "gray-matter,html-react-parser,remark,sharp",
+        "「Laravel Livewire」を使用して作られた「Laravel」フルスタックの旅程表アプリ。「Laravel」と「Livewire」学習目的として制作したアプリ。",
+      technology:
+        "HTML/CSS(TailwindCSS), PHP, Laravel 12, Laravel Livewire, 認証:Laravel Breeze , DB:mysql",
+      partOfThePackage: "",
       reasonForCreation:
-        "SSGでのブログだとどれぐらいの表示速度なのかを知りたかった為。また、自作アプリやブログに利用をする為。",
+        "Livewireの存在を知って、これは使ってみたいと思って、学習目的としてすぐに作成開始。",
       commitment:
-        "Next.Jsのイメージコンポーネントが使えないので、代替え手段を探してsharpを利用したりと、良い学習の機会にもなったと思います。",
-      githubURL: "https://github.com/haru0354/next-blog-ssg-md",
+        "先に「React」「Next.js」でアプリを複数制作している経験があり、同じような感覚で作成をすることができました。フロントにReactなどを選択せずに、Laravelのフルスタックアプリを作成するなら、Livewireは凄く便利だと思います。",
+      githubURL: "https://github.com/haru0354/laravel-livewire-itinerary",
       appURL: "",
     },
   ];
