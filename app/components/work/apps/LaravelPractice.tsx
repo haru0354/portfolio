@@ -56,7 +56,7 @@ const LaravelPractice = () => {
       overview:
         "「Laravel Livewire」を使用して作られた「Laravel」フルスタックの旅程表アプリ。「Laravel」と「Livewire」学習目的として制作したアプリ。",
       technology:
-        "HTML/CSS(TailwindCSS), PHP, Laravel 12, Laravel Livewire, 認証:Laravel Breeze , DB:mysql",
+        "HTML/CSS(TailwindCSS),PHP, Laravel 12, Laravel Livewire, 認証:Laravel Breeze , DB:mysql",
       partOfThePackage: "",
       reasonForCreation:
         "Livewireの存在を知って、これは使ってみたいと思って、学習目的としてすぐに作成開始。",
