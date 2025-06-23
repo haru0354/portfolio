@@ -11,52 +11,47 @@ const LaravelPractice = () => {
       title: "Laravel RESTful",
       items: [
         {
-          image: "/image_webp/isr_thumbnail.webp",
-          text: "旅程表アプリの集客用として作成",
+          image: "/",
+          text: "",
         },
         {
-          image: "/image_webp/isr_thumbnail_02.webp",
-          text: "envに記載の「ID」と「パスワード」で管理画面にログイン",
+          image: "/",
+          text: "",
         },
         {
-          image: "/image_webp/isr_thumbnail_03.webp",
-          text: "ダッシュボードで今後のブログの制作予定がメモ可能",
-        },
-        {
-          image: "/image_webp/isr_thumbnail_04.webp",
-          text: "画像の追加・公開設定が可能。記事の公開でページが作成される。",
+          image: "/",
+          text: "",
         },
       ],
       overview:
-        "Next.jsのISRブログ。記事はデータベースで管理を行い、ログイン機能にはNext.Auth.jsを利用。Next.jsのServer Actionとprismaを使用しています。",
+        "RESTful設計でのLaravelフルスタックの旅程表アプリ。基礎学習した内容を元にアウトプットとして簡易的に短時間で制作した学習目的のアプリ。",
       technology:
-        "HTML/CSS(TailwindCSS),TypeScript,React,Next.Js14,Node.js,認証:NextAuth.js,DB:Supabase",
-      partOfThePackage:
-        "zod,FramerMotion,react-hook-form,react-textarea-autosize,bcrypt,dompurify",
+        "HTML/CSS(TailwindCSS),PHP,Laravel 12, ,認証:Laravel Breeze ,DB:mysql",
+      partOfThePackage: "",
       reasonForCreation:
-        "旅程表アプリの集客用ブログとして作成をしました。Vercelにデプロイするので、ISRは他のサーバーだと作成しづらい点から、どうせならとSSGやSSRではなくISRを採用。",
+        "PHP、Laravelの基礎学習後、アウトプットとしてアプリを制作を検討。自身の初作成アプリの旅程表をLaravelバージョンとして学習目的に作成",
       commitment:
-        "旅程表アプリと同時に作りはじめたので、同じく初作成のアプリとも言えると思います。(こちらの作成の方が時間がかかった)。ダッシュボードも含め、何度も変更を加えたりと、時間がかかりましたがその分、学びも多かったです。",
-      githubURL: "https://github.com/haru0354/next-blog-isr",
-      appURL: "https://www.travel-memory-life.com/",
+        "",
+      githubURL: "https://github.com/haru0354/laravel-restful-itinerary",
+      appURL: "",
     },
     {
       id: 2,
-      src: "/image_webp/sg_thumbnail.webp",
+      src: "/",
       alt: "Laravel Livewire",
       title: "Laravel Livewire",
       items: [
         {
-          image: "/image_webp/sg_thumbnail_02.webp",
-          text: "記事だけでなく様々なパーツをMDファイルに記載で簡単に設置",
+          image: "",
+          text: "",
         },
         {
-          image: "/image_webp/sg_thumbnail_04.webp",
-          text: "SEOを考慮して内部リンクの集まるカテゴリも作りこみ可能",
+          image: "",
+          text: "",
         },
         {
-          image: "/image_webp/sg_thumbnail_03.webp",
-          text: "MDXのコンテンツエリアに記載なしで記事一覧のみを表示",
+          image: "",
+          text: "",
         },
       ],
       overview:
@@ -74,13 +69,15 @@ const LaravelPractice = () => {
 
   return (
     <AppContainer border={false}>
-      <AnimatedItem animation="fadeInOpacity" elementType="div" className="text-center" >
+      <AnimatedItem
+        animation="fadeInOpacity"
+        elementType="div"
+        className="text-center"
+      >
         <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
           Laravelの学習目的に旅程表アプリ
         </h3>
-        <p>
-          Laravelを学習して知識の定着の為に、学習目的に制作したアプリです。
-        </p>
+        <p>Laravelを学習して知識の定着の為に、学習目的に制作したアプリです。</p>
         <ul className="mb-4">
           <li> 「Livewireを使用したLaravelのフルスタック」</li>
           <li> 「RESTful設計のLaravelのフルスタック」</li>
