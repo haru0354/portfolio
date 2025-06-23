@@ -11,15 +11,19 @@ import ModalSectionBlock from "./ModalSectionBlock";
 
 type ModalProps = {
   modalType: "image" | "button";
-  src: string;
-  alt: string;
   title: string;
-  items: Items[];
+  firstImage: FirstImage;
+  sliderItems: SliderItems[];
   explanations: Explanations;
   urls: URLs;
 };
 
-type Items = {
+type FirstImage = {
+  src: string;
+  alt: string;
+};
+
+type SliderItems = {
   image: string;
   text: string;
 };
@@ -38,10 +42,9 @@ type URLs = {
 };
 
 const Modal: React.FC<ModalProps> = ({
-  src,
-  alt,
   title,
-  items,
+  firstImage,
+  sliderItems,
   modalType,
   explanations,
   urls,
@@ -73,10 +76,10 @@ const Modal: React.FC<ModalProps> = ({
           onClick={toggleModal}
         >
           <Image
-            src={src}
+            src={firstImage.src}
             width={460}
             height={330}
-            alt={alt}
+            alt={firstImage.alt}
             className="block mx-auto border rounded-lg shadow-lg border-gray-300"
           />
           <p className="mt-4 font-semibold text-sky-600">{title}</p>
@@ -107,7 +110,7 @@ const Modal: React.FC<ModalProps> = ({
               <CloseButton onClick={closeModal} />
             </div>
             <div className="mx-10">
-              <ImageSlider items={items} />
+              <ImageSlider items={sliderItems} />
               <p className="mt-6">{explanations.overview}</p>
               <ul>
                 <li>

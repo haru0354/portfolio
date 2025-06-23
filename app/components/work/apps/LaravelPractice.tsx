@@ -3,13 +3,15 @@ import AnimatedItem from "../../ui/AnimatedItem";
 import Modal from "../../ui/Modal";
 
 const LaravelPractice = () => {
-  const imageLists = [
+  const modalLists = [
     {
       id: 1,
-      src: "/",
-      alt: "Laravel RESTful",
       title: "Laravel RESTful",
-      items: [
+      firstImage: {
+        src: "/",
+        alt: "Laravel RESTful",
+      },
+      sliderItems: [
         {
           image: "/",
           text: "",
@@ -23,23 +25,26 @@ const LaravelPractice = () => {
           text: "",
         },
       ],
-      overview:
-        "RESTful設計でのLaravelフルスタックの旅程表アプリ。基礎学習した内容を元にアウトプットとして簡易的に短時間で制作した学習目的のアプリ。",
-      technology:
-        "HTML/CSS(TailwindCSS),PHP,Laravel 12, ,認証:Laravel Breeze ,DB:mysql",
-      partOfThePackage: "",
-      reasonForCreation:
-        "PHP、Laravelの基礎学習後、アウトプットとしてアプリを制作を検討。自身の初作成アプリの旅程表をLaravelバージョンとして学習目的に作成",
-      commitment: "",
-      githubURL: "https://github.com/haru0354/laravel-restful-itinerary",
-      appURL: "",
+      explanations: {
+        overview:
+          "RESTful設計でのLaravelフルスタックの旅程表アプリ。基礎学習した内容を元にアウトプットとして簡易的に短時間で制作した学習目的のアプリ。",
+        technology:
+          "HTML/CSS(TailwindCSS),PHP,Laravel 12, ,認証:Laravel Breeze ,DB:mysql",
+        reasonForCreation:
+          "PHP、Laravelの基礎学習後、アウトプットとしてアプリを制作を検討。自身の初作成アプリの旅程表をLaravelバージョンとして学習目的に作成",
+      },
+      urls: {
+        githubURL: "https://github.com/haru0354/laravel-restful-itinerary",
+      },
     },
     {
       id: 2,
-      src: "/",
-      alt: "Laravel Livewire",
       title: "Laravel Livewire",
-      items: [
+      firstImage: {
+        src: "/",
+        alt: "Laravel Livewire",
+      },
+      sliderItems: [
         {
           image: "",
           text: "",
@@ -53,17 +58,19 @@ const LaravelPractice = () => {
           text: "",
         },
       ],
-      overview:
-        "「Laravel Livewire」を使用して作られた「Laravel」フルスタックの旅程表アプリ。「Laravel」と「Livewire」学習目的として制作したアプリ。",
-      technology:
-        "HTML/CSS(TailwindCSS),PHP, Laravel 12, Laravel Livewire, 認証:Laravel Breeze , DB:mysql",
-      partOfThePackage: "",
-      reasonForCreation:
-        "Livewireの存在を知って、これは使ってみたいと思って、学習目的としてすぐに作成開始。",
-      commitment:
-        "先に「React」「Next.js」でアプリを複数制作している経験があり、同じような感覚で作成をすることができました。フロントにReactなどを選択せずに、Laravelのフルスタックアプリを作成するなら、Livewireは凄く便利だと思います。",
-      githubURL: "https://github.com/haru0354/laravel-livewire-itinerary",
-      appURL: "",
+      explanations: {
+        overview:
+          "「Laravel Livewire」を使用して作られた「Laravel」フルスタックの旅程表アプリ。「Laravel」と「Livewire」学習目的として制作したアプリ。",
+        technology:
+          "HTML/CSS(TailwindCSS),PHP, Laravel 12, Laravel Livewire, 認証:Laravel Breeze , DB:mysql",
+        reasonForCreation:
+          "Livewireの存在を知って、これは使ってみたいと思って、学習目的としてすぐに作成開始。",
+        commitment:
+          "先に「React」「Next.js」でアプリを複数制作している経験があり、同じような感覚で作成をすることができました。フロントにReactなどを選択せずに、Laravelのフルスタックアプリを作成するなら、Livewireは凄く便利だと思います。",
+      },
+      urls: {
+        githubURL: "https://github.com/haru0354/laravel-livewire-itinerary",
+      },
     },
   ];
 
@@ -87,22 +94,16 @@ const LaravelPractice = () => {
         </p>
       </AnimatedItem>
       <div className="flex flex-wrap w-full justify-center">
-        {imageLists.map((imageList) => {
+        {modalLists.map((modalList) => {
           return (
-            <div key={imageList.id}>
+            <div key={modalList.id}>
               <Modal
                 modalType="image"
-                src={imageList.src}
-                alt={imageList.alt}
-                title={imageList.title}
-                items={imageList.items}
-                technology={imageList.technology}
-                partOfThePackage={imageList.partOfThePackage}
-                overview={imageList.overview}
-                reasonForCreation={imageList.reasonForCreation}
-                commitment={imageList.commitment}
-                githubURL={imageList.githubURL}
-                appURL={imageList.appURL}
+                title={modalList.title}
+                firstImage={modalList.firstImage}
+                sliderItems={modalList.sliderItems}
+                explanations={modalList.explanations}
+                urls={modalList.urls}
               />
             </div>
           );
