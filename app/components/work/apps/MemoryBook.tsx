@@ -32,10 +32,12 @@ const MemoryBook = () => {
       />
       <Modal
         modalType="button"
-        src="/image_webp/itinerary_thumbnail.webp"
-        alt="src"
         title="旅程表作成アプリ"
-        items={[
+        firstImage={{
+          src: "/image_webp/itinerary_thumbnail.webp",
+          alt: "旅程表アプリのサムネイル",
+        }}
+        sliderItems={[
           {
             image: "/image_webp/itinerary_thumbnail.webp",
             text: "旅程表作成アプリ",
@@ -57,13 +59,22 @@ const MemoryBook = () => {
             text: "同行者やSNSで旅程表の共有が可能",
           },
         ]}
-        technology="HTML/CSS(TailwindCSS), TypeScript, React, Next.Js14, Node.js, 認証:NextAuth.js, DB:Supabase"
-        partOfThePackage="zod,FramerMotion,react-hot-toast,react-textarea-autosize,bcrypt,dompurify"
-        overview="英語が話せない人でも安心して海外旅行に行けるのを目的の旅程表作成アプリです。旅行中に撮影した写真をアップロードして、思い出のしおりとして残せるようになっています。Vercelを利用しているので、集客用のブログはSSGではなく、あえて試してみる為にもISRで作成しました。"
-        reasonForCreation="英語を話せない友人や家族と海外旅行に何度か行きました。しかし、英語話者がいません。そのため、私から誘ったのもありトラブルがあろうと全て対処できるように、色々とメモをメモ帳やエクセルなどに作成し印刷をしておくなど、準備をしています。ただ、時間がかかったのと友人に共有するのも面倒だった経緯があります。そのため、自分で利用したいと思うアプリを作成しました。"
-        commitment="調べては実装しての日々。Udemyで学んだのがNext.js12までだったので、公式のドキュメントのデモで学んだり、途中でServer Actionを使用してみたくて作り治したり右方作法していました。仕事に就いた時のことを考えて、この場面ならコンポ―ネントにするのではやpropsで渡せるように変更など、問題なく動くけどコードの変更したりを何度もしました。今、思えばまずはある程度完成させてからと思いますが、反面で色々と学びが多かったです。また、最初に実装の計画を立てるのが重要だと経験できました。ただ、初めてのアプリだったので、あの時には何の実装の方針も立てれなかったはずです。"
-        githubURL="https://github.com/haru0354/trip-abroad-itinerary"
-        appURL="https://www.travel-memory-life.com/memorybook"
+        explanations={{
+          technology:
+            "HTML/CSS(TailwindCSS), TypeScript, React, Next.Js14, Node.js, 認証:NextAuth.js, DB:Supabase",
+          partOfThePackage:
+            "zod,FramerMotion,react-hot-toast,react-textarea-autosize,bcrypt,dompurify",
+          overview:
+            "英語が話せない人でも安心して海外旅行に行けるのを目的の旅程表作成アプリです。旅行中に撮影した写真をアップロードして、思い出のしおりとして残せるようになっています。Vercelを利用しているので、集客用のブログはSSGではなく、あえて試してみる為にもISRで作成しました。",
+          reasonForCreation:
+            "英語を話せない友人や家族と海外旅行に何度か行きました。しかし、英語話者がいません。そのため、私から誘ったのもありトラブルがあろうと全て対処できるように、色々とメモをメモ帳やエクセルなどに作成し印刷をしておくなど、準備をしています。ただ、時間がかかったのと友人に共有するのも面倒だった経緯があります。そのため、自分で利用したいと思うアプリを作成しました。",
+          commitment:
+            "調べては実装しての日々。Udemyで学んだのがNext.js12までだったので、公式のドキュメントのデモで学んだり、途中でServer Actionを使用してみたくて作り治したり右方作法していました。仕事に就いた時のことを考えて、この場面ならコンポ―ネントにするのではやpropsで渡せるように変更など、問題なく動くけどコードの変更したりを何度もしました。今、思えばまずはある程度完成させてからと思いますが、反面で色々と学びが多かったです。また、最初に実装の計画を立てるのが重要だと経験できました。ただ、初めてのアプリだったので、あの時には何の実装の方針も立てれなかったはずです。",
+        }}
+        urls={{
+          githubURL: "https://github.com/haru0354/trip-abroad-itinerary",
+          appURL: "https://www.travel-memory-life.com/memorybook",
+        }}
       />
     </AppContainer>
   );
