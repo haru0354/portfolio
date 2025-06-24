@@ -30,10 +30,12 @@ const AppIntroduction = () => {
       />
       <Modal
         modalType="button"
-        src="/image_webp/itinerary_thumbnail.webp"
-        alt="src"
         title="自作アプリ公開WEB"
-        items={[
+        firstImage={{
+          src: "/image_webp/isr_thumbnail_04.webp",
+          alt: "ISRブログ",
+        }}
+        sliderItems={[
           {
             image: "/image_webp/web-app-introduction_thumbnail_002.webp",
             text: "自作アプリ公開WEBのTOPサムネイル",
@@ -51,13 +53,21 @@ const AppIntroduction = () => {
             text: "ユーザー登録後の管理画面",
           },
         ]}
-        technology="HTML/CSS(Emotion), JavaScript, Next.js, DB:MongoDB, 認証:NextAuth,  状態管理:Redux/Toolkit"
-        partOfThePackage="Prisma, bcrypt, react-slick, react-textarea-autosize, zod,"
-        overview="自分で作成したアプリの公開をする場として作成をしたアプリ。"
-        reasonForCreation="初アプリを作成した際にアプリのマーケティング部分は難しいなと思いました。「ブログを作成し検索からの流入」「Qiita・ｘ・noteなどなど記事作成などによる流入」「有料広告を使った認知」・・・。作成したアプリを登録して掲載するなら「手間がかからない」「関連性のあるサイトからの被リンク」と無料で始める一つ目のマーケティング手段として最も適していると思い作成しました。また、意外に同様のアプリが少なかったのもあり自作しようとした経緯があります。"
-        commitment="とにかくデザインのセンスがひどい。色々とWEBサーフィンして参考にしたりするものの、古臭い感じになってしまう。デザインに関しての知識ともっと様々なサイトを見ることも必要だと思いました。"
-        githubURL="https://github.com/haru0354/web-app-introduction"
-        appURL=""
+        explanations={{
+          technology:
+            "HTML/CSS(Emotion), JavaScript, Next.js, DB:MongoDB, 認証:NextAuth,  状態管理:Redux/Toolkit",
+          partOfThePackage:
+            "Prisma, bcrypt, react-slick, react-textarea-autosize, zod,",
+          overview:
+            "自分で作成したアプリの公開をする場として作成をしたアプリ。",
+          reasonForCreation:
+            "初アプリを作成した際にアプリのマーケティング部分は難しいなと思いました。「ブログを作成し検索からの流入」「Qiita・ｘ・noteなどなど記事作成などによる流入」「有料広告を使った認知」・・・。作成したアプリを登録して掲載するなら「手間がかからない」「関連性のあるサイトからの被リンク」と無料で始める一つ目のマーケティング手段として最も適していると思い作成しました。また、意外に同様のアプリが少なかったのもあり自作しようとした経緯があります。",
+          commitment:
+            "とにかくデザインのセンスがひどい。色々とWEBサーフィンして参考にしたりするものの、古臭い感じになってしまう。デザインに関しての知識ともっと様々なサイトを見ることも必要だと思いました。",
+        }}
+        urls={{
+          githubURL: "https://github.com/haru0354/web-app-introduction",
+        }}
       />
     </AppContainer>
   );
