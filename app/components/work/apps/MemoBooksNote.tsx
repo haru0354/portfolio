@@ -34,10 +34,12 @@ const MemoBooksNote = () => {
       />
       <Modal
         modalType="button"
-        src="/image_webp/itinerary_thumbnail.webp"
-        alt="src"
+        firstImage={{
+          src: "/image_webp/itinerary_thumbnail.webp",
+          alt: "本型メモアプリのサムネイル",
+        }}
         title="本型メモアプリ"
-        items={[
+        sliderItems={[
           {
             image: "/image_webp/memo_book_thumbnail_01.webp",
             text: "本型メモアプリ",
@@ -55,13 +57,22 @@ const MemoBooksNote = () => {
             text: "複数の本が登録可能",
           },
         ]}
-        technology="HTML/CSS(Emotion), JavaScript, React, Node.js(Express,js), 認証:Firebase, DB:MongoDB, 状態管理:Redux/Toolkit"
-        partOfThePackage="react-slick, zod, react-hook-form, axios, express-validator, mongoose, "
-        overview="旅程表アプリと全て違った技術で作成したアプリ。「私自身のエンジニア学習」「働き始めた時を見据えて」の為に作成し始めたアプリで、かつ自己学習の為でもあるのでバックエンドも実装したアプリ。"
-        reasonForCreation="他のメモアプリを使用し、エンジニアの学習をしている時にメモを取っていたが、個人的に使いづらかった部分がありました。「メモの記述位置を探してスクロール」「見やすいように装飾」など無駄だと感じる手間がかかりました。また、エンジニアとして働き始めた時に、メモを見たいのもあったので、自分のPCで作成し、仕事用のPCで閲覧する為にも作成しました。"
-        commitment="使ったことがない技術でのアプリ作成をすることで色々な学びがありました。また、プログラミングへの理解度が上がってるのを実感することができました。状態管理のReduxは学習時には難しいなと思ったものの、改めて学んでみるとすんなりと理解ができる。また、バックエンドのExpressも学んでみても、すんなりと理解がしやすく、フロントとバックの仕組みもより分かりました。「リレーショナルDB」でなく「ドキュメント型DB」、「TypeScript」でなく「JavaScript」、「Next.js」でなく「React」、「Firebase」「Emotion」...。自分でこれらの技術で作成してみて、より便利な点や面倒な点など、これらの違いが分かることができたと思います。"
-        githubURL="https://github.com/haru0354/memo-books-mern"
-        appURL="https://www.memo-book-note.com/"
+        explanations={{
+          technology:
+            "HTML/CSS(Emotion), JavaScript, React, Node.js(Express,js), 認証:Firebase, DB:MongoDB, 状態管理:Redux/Toolkit",
+          partOfThePackage:
+            "react-slick, zod, react-hook-form, axios, express-validator, mongoose, ",
+          overview:
+            "旅程表アプリと全て違った技術で作成したアプリ。「私自身のエンジニア学習」「働き始めた時を見据えて」の為に作成し始めたアプリで、かつ自己学習の為でもあるのでバックエンドも実装したアプリ。",
+          reasonForCreation:
+            "他のメモアプリを使用し、エンジニアの学習をしている時にメモを取っていたが、個人的に使いづらかった部分がありました。「メモの記述位置を探してスクロール」「見やすいように装飾」など無駄だと感じる手間がかかりました。また、エンジニアとして働き始めた時に、メモを見たいのもあったので、自分のPCで作成し、仕事用のPCで閲覧する為にも作成しました。",
+          commitment:
+            "使ったことがない技術でのアプリ作成をすることで色々な学びがありました。また、プログラミングへの理解度が上がってるのを実感することができました。状態管理のReduxは学習時には難しいなと思ったものの、改めて学んでみるとすんなりと理解ができる。また、バックエンドのExpressも学んでみても、すんなりと理解がしやすく、フロントとバックの仕組みもより分かりました。「リレーショナルDB」でなく「ドキュメント型DB」、「TypeScript」でなく「JavaScript」、「Next.js」でなく「React」、「Firebase」「Emotion」...。自分でこれらの技術で作成してみて、より便利な点や面倒な点など、これらの違いが分かることができたと思います。",
+        }}
+        urls={{
+          githubURL: "https://github.com/haru0354/memo-books-mern",
+          appURL: "https://www.memo-book-note.com/",
+        }}
       />
     </AppContainer>
   );
