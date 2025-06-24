@@ -32,7 +32,7 @@ const AppDetail: React.FC<AppDetailProps> = ({
         animation={animation}
         className="mx-auto py-4 my-10"
       >
-        <h3 className="block w-full text-3xl text-center font-bold my-10 px-2 leading-relaxed">
+        <h3 className="block w-full text-3xl text-center font-bold mb-10 px-2 leading-relaxed">
           {title}
         </h3>
         <div className="w-full flex flex-col sm:flex-row">

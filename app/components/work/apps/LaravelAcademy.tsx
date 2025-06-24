@@ -2,38 +2,41 @@ import AppContainer from "../AppContainer";
 import AppDetail from "../AppDetail";
 import Modal from "../../ui/Modal";
 
-const AppIntroduction = () => {
+const LaravelAcademy = () => {
   return (
     <AppContainer>
       <AppDetail
-        title="「自作アプリ公開WEB」- 自作したアプリを無料掲載 -"
+        title="「●●アカデミー」- 4択/フラッシュカード 学習アプリ -"
         contents={[
-          "自作アプリ制作者や私自信が、時間をかけずに手軽にできるマーケティング手法として利用するのを目的に、作成したアプリです。",
-          "「サイト利用者からの認知」「関連性が高く運営歴があるサイトからの被リンク」",
-          "初アプリを作成したものの、無料で作成したアプリを認知させる為の場所が、まだまだ少ないなと感じました。そのため、私自信で今度様々なアプリを作成した上で、利用したいと思ったので制作をしました。",
-          "「自作アプリの作成を完成した！しかし、どうやってユーザーを増やそう・・・」。数分で出来る一つ目の手段の選択肢としていかがでしょうか？",
+          "「4択クイズ」と「フラッシュカード」機能を備えた学習用 Web アプリケーションです。",
+          "複数の4択クイズをまとめた、レッスンを作成することができます。また、作成したレッスンデータを元にフラッシュカードモードが生成されます。",
+          "「電車での移動中」「待ち合わせ時間」「すき間時間の利用」",
+          "私自信が利用するプログラミングの学習手段として、作成をしはじめました。",
+          "",
         ]}
         alt="自作アプリ公開WEB"
         featureList={[
-          "自作したアプリの掲載ができる",
-          "プロフィールの登録ができる",
-          "ランダムの登録したアプリがTOPに表示",
+          "レッスンのCRUD",
+          "4 択の学習ができる（レッスン）",
+          "フラッシュカードモードの自動生成",
+          "Livewireでページ遷移なしで学習に集中",
         ]}
         techStack={[
-          "TypeScript",
-          "Next.js",
-          "DB: MongoDB",
+          "PHP",
+          "Laravel 10",
+          "Laravel Livewire（フロントエンド動作)",
+          "Alpine.js（簡易的なフロントエンド動作）",
+          "DB: MySQL",
           "スタイル: Tailwind CSS",
-          "認証: NextAuth",
-          "状態管理: Redux/Toolkit",
         ]}
+        imageRight={true}
       />
       <Modal
         modalType="button"
         title="自作アプリ公開WEB"
         firstImage={{
-          src: "/image_webp/isr_thumbnail_04.webp",
-          alt: "ISRブログ",
+          src: "/image_webp/itinerary_thumbnail.webp",
+          alt: "src",
         }}
         sliderItems={[
           {
@@ -73,4 +76,4 @@ const AppIntroduction = () => {
   );
 };
 
-export default AppIntroduction;
+export default LaravelAcademy;

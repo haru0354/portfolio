@@ -24,7 +24,7 @@ const Section: React.FC<SectionProps> = ({
         <AnimatedItem
           animation="fadeInOpacity"
           elementType={elementType}
-          className="w-full text-3xl text-center font-bold my-10 leading-relaxed"
+          className="w-full text-3xl text-center font-bold mb-10 leading-relaxed"
         >
           {title}
         </AnimatedItem>

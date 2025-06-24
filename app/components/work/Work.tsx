@@ -3,6 +3,8 @@ import MemoryBook from "./apps/MemoryBook";
 import MemoBooksNote from "./apps/MemoBooksNote";
 import AppIntroduction from "./apps/AppIntroduction";
 import Blog from "./apps/Blog";
+import LaravelPractice from "./apps/LaravelPractice";
+import LaravelAcademy from "./apps/LaravelAcademy";
 
 const Work = () => {
   const contents = [
@@ -15,12 +17,16 @@ const Work = () => {
   return (
     <Section id="works" title="Works">
       {contents.map((content, index) => (
-        <p key={index} className="text-center">{content}</p>
+        <p key={index} className="text-center">
+          {content}
+        </p>
       ))}
       <MemoryBook />
       <MemoBooksNote />
       <AppIntroduction />
+      <LaravelAcademy />
       <Blog />
+      <LaravelPractice />
     </Section>
   );
 };

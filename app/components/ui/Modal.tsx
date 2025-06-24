@@ -7,40 +7,47 @@ import AnimatedItem from "./AnimatedItem";
 import CloseButton from "./CloseButton";
 import Button from "./Button";
 import ImageSlider from "./ImageSlider";
+import ModalSectionBlock from "./ModalSectionBlock";
 
 type ModalProps = {
   modalType: "image" | "button";
-  src: string;
-  alt: string;
   title: string;
-  items: Items[];
-  overview: string;
-  technology: string;
-  partOfThePackage: string;
-  reasonForCreation: string;
-  commitment: string;
-  githubURL: string;
-  appURL?: string;
+  firstImage: FirstImage;
+  sliderItems: SliderItems[];
+  explanations: Explanations;
+  urls: URLs;
 };
 
-type Items = {
+type FirstImage = {
+  src: string;
+  alt: string;
+};
+
+type SliderItems = {
   image: string;
   text: string;
 };
 
+type Explanations = {
+  overview: string;
+  technology?: string;
+  partOfThePackage?: string;
+  reasonForCreation?: string;
+  commitment?: string;
+};
+
+type URLs = {
+  githubURL: string;
+  appURL?: string;
+};
+
 const Modal: React.FC<ModalProps> = ({
-  src,
-  alt,
   title,
-  items,
-  overview,
-  technology,
-  partOfThePackage,
-  reasonForCreation,
-  commitment,
+  firstImage,
+  sliderItems,
   modalType,
-  githubURL,
-  appURL,
+  explanations,
+  urls,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -69,10 +76,10 @@ const Modal: React.FC<ModalProps> = ({
           onClick={toggleModal}
         >
           <Image
-            src={src}
+            src={firstImage.src}
             width={460}
             height={330}
-            alt={alt}
+            alt={firstImage.alt}
             className="block mx-auto border rounded-lg shadow-lg border-gray-300"
           />
           <p className="mt-4 font-semibold text-sky-600">{title}</p>
@@ -97,58 +104,64 @@ const Modal: React.FC<ModalProps> = ({
         >
           <div className="max-w-[90%] sm:w-[800px] h-[85%] pb-20 border rounded bg-gray-100 overflow-y-auto">
             <div className="flex justify-between mb-4">
-              <h3 className="text-lg font-semibold px-4 py-2 rounded text-white bg-gray-700">
+              <h3 className="text-lg font-semibold px-4 py-3 rounded text-white bg-gray-700">
                 {title}
               </h3>
               <CloseButton onClick={closeModal} />
             </div>
             <div className="mx-10">
-              <ImageSlider items={items} />
-              <p className="mt-6">{overview}</p>
+              <ImageSlider items={sliderItems} />
+              <p className="mt-6">{explanations.overview}</p>
               <ul>
                 <li>
                   GitHub:
                   <a
-                    href={`${githubURL}`}
+                    href={`${urls.githubURL}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-blue-600"
                   >
-                    {githubURL}
+                    {urls.githubURL}
                   </a>
                 </li>
-                {appURL && (
+                {urls.appURL && (
                   <li>
                     URL:
                     <a
-                      href={`${appURL}`}
+                      href={`${urls.appURL}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-blue-600"
                     >
-                      {appURL}
+                      {urls.appURL}
                     </a>
                   </li>
                 )}
               </ul>
-              <h4 className="pl-4 mt-8 mb-4 text-lg border-b-2 border-dashed border-gray-700">
-                使用技術
-              </h4>
-              <p className="break-words whitespace-pre-wrap">{technology}</p>
-              <h4 className="pl-4 mt-8 mb-4 text-lg border-b-2 border-dashed border-gray-700">
-                使用パッケージの一部
-              </h4>
-              <p className="break-words whitespace-pre-wrap">
-                {partOfThePackage}
-              </p>
-              <h4 className="pl-4 mt-8 mb-4 text-lg border-b-2 border-dashed border-gray-700">
-                作成したきっかけ
-              </h4>
-              {reasonForCreation}
-              <h4 className="pl-4 mt-8 mb-4 text-lg border-b-2 border-dashed border-gray-700">
-                作成をしてみて
-              </h4>
-              {commitment}
+              {explanations.technology && (
+                <ModalSectionBlock
+                  title="使用技術"
+                  contents={explanations.technology}
+                />
+              )}
+              {explanations.partOfThePackage && (
+                <ModalSectionBlock
+                  title="使用パッケージの一部"
+                  contents={explanations.partOfThePackage}
+                />
+              )}
+              {explanations.reasonForCreation && (
+                <ModalSectionBlock
+                  title="作成したきっかけ"
+                  contents={explanations.reasonForCreation}
+                />
+              )}
+              {explanations.commitment && (
+                <ModalSectionBlock
+                  title="作成をしてみて"
+                  contents={explanations.commitment}
+                />
+              )}
             </div>
           </div>
         </AnimatedItem>
