@@ -8,21 +8,29 @@ const LaravelPractice = () => {
       id: 1,
       title: "Laravel RESTful",
       firstImage: {
-        src: "/",
-        alt: "Laravel RESTful",
+        src: "/image_webp/laravel-restful-shiori.webp",
+        alt: "Laravel RESTfulのサムネイル",
       },
       sliderItems: [
         {
-          image: "/",
-          text: "",
+          image: "/image_webp/laravel-restful-shiori.webp",
+          text: "複数の旅のしおりを作成が可能",
         },
         {
-          image: "/",
-          text: "",
+          image: "/image_webp/laravel-restful-ryoteihyou.webp",
+          text: "各しおりには「旅程表」の作成が可能",
         },
         {
-          image: "/",
-          text: "",
+          image: "/image_webp/laravel-restful-memo.webp",
+          text: "各しおりには「メモ」の作成が可能",
+        },
+        {
+          image: "/image_webp/laravel-restful-form.webp",
+          text: "フォームバリデーション",
+        },
+        {
+          image: "/image_webp/laravel-restful-sumaho.webp",
+          text: "スマホ表示。フッターメニュー。",
         },
       ],
       explanations: {
