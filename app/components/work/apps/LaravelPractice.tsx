@@ -8,7 +8,7 @@ const LaravelPractice = () => {
       id: 1,
       title: "Laravel RESTful",
       firstImage: {
-        src: "/image_webp/laravel-restful-shiori.webp",
+        src: "/image_webp/laravel-restful-ryoteihyou.webp",
         alt: "Laravel RESTfulのサムネイル",
       },
       sliderItems: [
@@ -49,22 +49,30 @@ const LaravelPractice = () => {
       id: 2,
       title: "Laravel Livewire",
       firstImage: {
-        src: "/",
-        alt: "Laravel Livewire",
+        src: "/image_webp/laravel-livewire-tabinoshiori01.webp",
+        alt: "Laravel Livewireのサムネイル",
       },
       sliderItems: [
         {
-          image: "",
-          text: "",
+          image: "/image_webp/laravel-livewire-tabinoshiori01.webp",
+          text: "複数の旅のしおりを作成が可能",
         },
         {
-          image: "",
-          text: "",
+          image: "/image_webp/laravel-livewire-tabinoshiori.webp",
+          text: "モーダルとlivewireでページ遷移なく追加/編集/削除",
         },
         {
-          image: "",
-          text: "",
+          image: "/image_webp/laravel-livewire-ryoteihyou.webp",
+          text: "各しおりには「旅程表」「メモ」の作成が可能",
         },
+        {
+          image: "/image_webp/laravel-livewire-ryoteihyou-add.webp",
+          text: "「旅程表」「メモ」の追加/編集/削除も同様にモーダルとlivewireでページ遷移なし",
+        },
+        {
+          image: "/image_webp/laravel-livewire-form.webp",
+          text: "フォームバリデーション",
+        }
       ],
       explanations: {
         overview:
