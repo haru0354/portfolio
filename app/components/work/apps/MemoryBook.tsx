@@ -12,7 +12,7 @@ const MemoryBook = () => {
           "今まで一緒に海外旅行をした友人は「興味はあるけど英語が話せない」を理由に、行ったことが無い人しかいませんでした。また、検索市場でも同じように「行きたいけど英語が話せない」と悩んでいる人の一定の需要もありました。",
           "私の経験を元に作成したアプリで、「私自身が利用する」かつ「海外旅行に興味はあるけど英語が話せない人」の悩みを解決するアプリとして開発しています。",
         ]}
-        src="/image_webp/itinerary_thumbnail.webp"
+        src="/image_webp/itinerary_thumbnail_02.webp"
         alt="旅のメモリーブック"
         featureList={[
           "複数の旅行のしおりを作成",
@@ -39,24 +39,32 @@ const MemoryBook = () => {
         }}
         sliderItems={[
           {
-            image: "/image_webp/itinerary_thumbnail.webp",
-            text: "旅程表作成アプリ",
-          },
-          {
-            image: "/image_webp/itinerary_thumbnail_02.webp",
-            text: "旅程が簡単に作成可能",
-          },
-          {
-            image: "/image_webp/itinerary_thumbnail_03.webp",
-            text: "行き方や海外旅行保険などメモが可能",
-          },
-          {
-            image: "/image_webp/itinerary_thumbnail_01.webp",
+            image: "/image_webp/itinerary-shiori01.webp",
             text: "複数の旅のしおりが作成可能",
           },
           {
-            image: "/image_webp/itinerary_thumbnail_04.webp",
-            text: "同行者やSNSで旅程表の共有が可能",
+            image: "/image_webp/itinerary_thumbnail_02.webp",
+            text: "簡単に旅程が作成可能・帰国後は撮影した写真で思い出に！",
+          },
+          {
+            image: "/image_webp/itinerary-memo.webp",
+            text: "海外旅行保険など旅先で確認したいメモが作成可能",
+          },
+          {
+            image: "/image_webp/itinerary-auto-date01.webp",
+            text: "自動で「同じ日付は1度表示」と「日時で並び変え」",
+          },
+          {
+            image: "/image_webp/itinerary-manual.webp",
+            text: "初回はマニュアル表示",
+          },
+          {
+            image: "/image_webp/itinerary-share.webp",
+            text: "「同行者」や「SNS」で旅程表の共有が可能",
+          },
+          {
+            image: "/image_webp/itinerary_thumbnail.webp",
+            text: "様々な箇所でアニメーション",
           },
         ]}
         explanations={{
