@@ -98,7 +98,7 @@ const LaravelPractice = () => {
         className="text-center"
       >
         <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
-          Laravelの学習目的に旅程表アプリ
+          Laravelの学習目的に作成した旅程表アプリ
         </h3>
         <p>Laravelを学習して知識の定着の為に、学習目的に制作したアプリです。</p>
         <ul className="mb-4">
