@@ -8,21 +8,29 @@ const LaravelPractice = () => {
       id: 1,
       title: "Laravel RESTful",
       firstImage: {
-        src: "/",
-        alt: "Laravel RESTful",
+        src: "/image_webp/laravel-restful-ryoteihyou.webp",
+        alt: "Laravel RESTfulのサムネイル",
       },
       sliderItems: [
         {
-          image: "/",
-          text: "",
+          image: "/image_webp/laravel-restful-shiori.webp",
+          text: "複数の旅のしおりを作成が可能",
         },
         {
-          image: "/",
-          text: "",
+          image: "/image_webp/laravel-restful-ryoteihyou.webp",
+          text: "各しおりには「旅程表」の作成が可能",
         },
         {
-          image: "/",
-          text: "",
+          image: "/image_webp/laravel-restful-memo.webp",
+          text: "各しおりには「メモ」の作成が可能",
+        },
+        {
+          image: "/image_webp/laravel-restful-form.webp",
+          text: "フォームバリデーション",
+        },
+        {
+          image: "/image_webp/laravel-restful-sumaho.webp",
+          text: "スマホ表示。フッターメニュー。",
         },
       ],
       explanations: {
@@ -41,22 +49,30 @@ const LaravelPractice = () => {
       id: 2,
       title: "Laravel Livewire",
       firstImage: {
-        src: "/",
-        alt: "Laravel Livewire",
+        src: "/image_webp/laravel-livewire-tabinoshiori01.webp",
+        alt: "Laravel Livewireのサムネイル",
       },
       sliderItems: [
         {
-          image: "",
-          text: "",
+          image: "/image_webp/laravel-livewire-tabinoshiori01.webp",
+          text: "複数の旅のしおりを作成が可能",
         },
         {
-          image: "",
-          text: "",
+          image: "/image_webp/laravel-livewire-tabinoshiori.webp",
+          text: "モーダルとlivewireでページ遷移なく追加/編集/削除",
         },
         {
-          image: "",
-          text: "",
+          image: "/image_webp/laravel-livewire-ryoteihyou.webp",
+          text: "各しおりには「旅程表」「メモ」の作成が可能",
         },
+        {
+          image: "/image_webp/laravel-livewire-ryoteihyou-add.webp",
+          text: "「旅程表」「メモ」の追加/編集/削除も同様にモーダルとlivewireでページ遷移なし",
+        },
+        {
+          image: "/image_webp/laravel-livewire-form.webp",
+          text: "フォームバリデーション",
+        }
       ],
       explanations: {
         overview:
@@ -82,7 +98,7 @@ const LaravelPractice = () => {
         className="text-center"
       >
         <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
-          Laravelの学習目的に旅程表アプリ
+          Laravelの学習目的に作成した旅程表アプリ
         </h3>
         <p>Laravelを学習して知識の定着の為に、学習目的に制作したアプリです。</p>
         <ul className="mb-4">

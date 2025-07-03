@@ -121,29 +121,35 @@ const Blog = () => {
       id: 4,
       title: "ポートフォリオ",
       firstImage: {
-        src: "/image_webp/portfolio_thumbnail.webp",
+        src: "/image_webp/portfolio-thumbnail-top-image.webp",
         alt: "ポートフォリオ",
       },
       sliderItems: [
-        { image: "/image_webp/portfolio_thumbnail.webp", text: "PCデザイン" },
         {
-          image: "/image_webp/portfolio_thumbnail_02.webp",
-          text: "レスポンシブデザイン",
+          image: "/image_webp/portfolio-thumbnail-top-image.webp",
+          text: "ファーストビューに目立つようにスキルセットを画像表示",
         },
         {
-          image: "/image_webp/portfolio_thumbnail_03.webp",
-          text: "画像のスライダー機能・画像は圧縮してwebpに変換して表示",
+          image: "/image_webp/portfolio-thumbnail-main-work.webp",
+          text: "workでは「使用技術」「機能」を載せ最低限の情報を記載",
+        },
+        {
+          image: "/image_webp/portfolio-thumbnail-modal-slider.webp",
+          text: "モーダル・スライダーでシンプルなWEBサイトながら動きを!",
+        },
+        {
+          image: "/image_webp/portfolio-thumbnail-skill.webp",
+          text: "改めて今までに学んだ技術の詳細を記載",
         },
       ],
 
       explanations: {
         overview:
-          "SSGで作成。Next.jsのImageコンポーネントの代わりに、sharpで画像を圧縮してwebp形式での画像を表示。",
+          "Next.jsのSSGで作成。エンジニアではなく「忙しい人事の人が見るのを想定」して、「ファーストビューに画像で言語を表示」モーダルとスライダーで「HTML/CSS以外も使用」、「アニメーションでとにかく動かす」など、考えてシンプルで必要最低限の情報のみ記載しているポートフォリオサイトです。一応、内部ではsharpで画像を圧縮してwebp形式での画像を表示などもしています。",
         technology: "HTML/CSS(TailwindCSS) , TypeScript , React , Next.Js14",
         partOfThePackage: "FramerMotion , sharp , react-slic",
-        reasonForCreation: "就職活動の為",
         commitment:
-          "作成したMDXのブログを利用しようかと思いましたが、復習の意味を込めて、あえて一から作成をしました。やはりデザインを考えるのが苦手であり、そしてダサい・・・。",
+          "「何かしらのクローンアプリ」や「教材の丸ぱくり」など、オリジナルアプリを制作しない応募者も多いと言うのを目にしました。そのため、人事の人も「さらっとした見ない」「提出はさせるけど見ない」人もいるなど見聞きしました。そのため、とにかく「何人ものポートフォリオを見て、嫌気もさし時間の無い人事が見る」のを想定して、シンプルながら一応ファーストビューで画像でスキルセットなど、出来るだけアピールをどうするかを考えました。",
       },
       urls: {
         githubURL: "https://github.com/haru0354/portfolio",

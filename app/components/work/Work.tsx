@@ -23,7 +23,6 @@ const Work = () => {
       ))}
       <MemoryBook />
       <MemoBooksNote />
-      <AppIntroduction />
       <LaravelAcademy />
       <Blog />
       <LaravelPractice />
