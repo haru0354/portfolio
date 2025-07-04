@@ -26,7 +26,7 @@ const BoxInList: React.FC<BoxInListProps> = ({
   animationStyle = "fadeInDown",
 }) => {
   const defaultClasses =
-    "w-full h-full mx-1 sm:mx-4 my-4 p-3 border border-gray-400 rounded bg-white shadow-lg";
+    "w-full h-full mx-1 sm:mx-4 my-4 p-3 border border-gray-400 rounded bg-white shadow-lg bg-gradient-to-br from-white to-blue-100";
 
   const Contents = () => (
     <>
