@@ -76,7 +76,7 @@ const Profile = () => {
             <AnimatedItem
               animation="fadeInRight"
               elementType="li"
-              className="my-20 bg-gray-300 p-4 relative"
+              className="my-20  p-4 relative border border-gray-300 bg-gradient-to-br from-indigo-50 to-sky-100"
               key={ProfileList.id}
             >
               <Image
