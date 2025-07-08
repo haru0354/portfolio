@@ -13,8 +13,7 @@ const Profile = () => {
     },
     {
       id: 2,
-      title:
-        "いくつかの仕事に就く",
+      title: "いくつかの仕事に就く",
       content:
         "高校卒業後は食品関係の貿易会社の内勤として就職し、その後に、不動産営業・イベント設営・警備会社とフリータ期間あり。",
     },
@@ -27,12 +26,12 @@ const Profile = () => {
     {
       id: 4,
       title: "廃業",
-      content: "収入もなくなり2024年に個人事業主としてWEB運営業の廃業を行う。もともと、wordPressを使用してweb運営中に知識無しながらPHPのテンプレートやCSSを編集していて興味がありました。そのため、年齢的に厳しいとは思うものの、エンジニアに興味が強くあったため、学習を開始。",
+      content:
+        "収入もなくなり2024年に個人事業主としてWEB運営業の廃業を行う。もともと、wordPressを使用してweb運営中に知識無しながらPHPのテンプレートやCSSを編集していて興味がありました。そのため、年齢的に厳しいとは思うものの、エンジニアに興味が強くあったため、学習を開始。",
     },
     {
       id: 5,
-      title:
-        "エンジニアの勉強開始（2024年初め）",
+      title: "エンジニアの勉強開始（2024年初め）",
       content:
         "JavaScript,React,TypeScript,Next.jsとフロントエンドの学習をしていき、小さいアプリをアウトプットとして作成しつつ、自身初となる「旅程表アプリ」を完成させる。その後、いくつかアプリを作成した後、バックエンドの学習としてNode.js、Expressのアプリ作成後に、PHP・Laravelの学習を行い「レッスンアカデミー」の作成を行う。",
     },
@@ -70,13 +69,15 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <Image
-        src="/image_webp/footer-image-portfolio01.webp"
-        width={801}
-        height={320}
-        alt="エンジニアの仕事中の画像"
-        className="mx-auto"
-      />
+      <AnimatedItem animation="fadeInDown" elementType="div">
+        <Image
+          src="/image_webp/footer-image-portfolio01.webp"
+          width={801}
+          height={320}
+          alt="エンジニアの仕事中の画像"
+          className="mx-auto"
+        />
+      </AnimatedItem>
     </Section>
   );
 };
