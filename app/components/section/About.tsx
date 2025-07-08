@@ -17,12 +17,12 @@ const About = () => {
       bgBlue={true}
       h1={true}
     >
-      <AnimatedItem
-        elementType="div"
-        animation="fadeInDown"
-        className="w-full flex flex-col sm:flex-row"
-      >
-        <div className="w-full px-4 sm:flex-1 order-2 sm:order-1">
+      <div className="w-full flex flex-col sm:flex-row">
+        <AnimatedItem
+          elementType="div"
+          animation="fadeInDown"
+          className="w-full px-4 sm:flex-1 order-2 sm:order-1"
+        >
           {texts.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
@@ -37,8 +37,12 @@ const About = () => {
               https://github.com/haru0354
             </a>
           </p>
-        </div>
-        <div className="m-auto pb-5 sm:pb-0 order-1 sm:order-2">
+        </AnimatedItem>
+        <AnimatedItem
+          elementType="div"
+          animation="fadeInScale"
+          className="m-auto pb-5 sm:pb-0 order-1 sm:order-2"
+        >
           <Image
             src="/image_webp/engineer-image.webp"
             width={360}
@@ -46,8 +50,8 @@ const About = () => {
             alt="エンジニアの仕事道具"
             priority
           />
-        </div>
-      </AnimatedItem>
+        </AnimatedItem>
+      </div>
     </Section>
   );
 };

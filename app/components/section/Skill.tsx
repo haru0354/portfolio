@@ -88,7 +88,7 @@ const Skill = () => {
         <AnimatedItem
           animation="fadeInDown"
           elementType="div"
-          className="w-full max-w-[750px] mx-1 sm:mx-4 my-4 pt-4 pb-8 px-4 border rounded shadow-lg border-gray-400 bg-white"
+          className="w-full max-w-[750px] mx-1 sm:mx-4 my-4 pt-4 pb-8 px-4 border rounded shadow-lg border-gray-400 bg-gradient-to-br from-white to-blue-100"
         >
           <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
             Udemyで学習した教材

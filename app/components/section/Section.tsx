@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = ({
   bgBlue = false,
   h1 = false,
 }) => {
-  const bgColor = bgBlue ? "bg-blue-100" : "bg-white";
+  const bgColor = bgBlue ? "bg-gradient-to-br from-white to-blue-200" : "bg-white";
   const elementType = h1 ? "h1" : "h2";
 
   return (

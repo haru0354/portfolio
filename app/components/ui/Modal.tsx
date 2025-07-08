@@ -91,9 +91,11 @@ const Modal: React.FC<ModalProps> = ({
         </AnimatedItem>
       )}
       {modalType === "button" && (
-        <Button onClick={toggleModal} type="button">
-          詳細はコチラ
-        </Button>
+        <AnimatedItem elementType="div" animation="fadeInScale">
+          <Button onClick={toggleModal} type="button">
+            詳細はコチラ
+          </Button>
+        </AnimatedItem>
       )}
       {isModalOpen && (
         <AnimatedItem
