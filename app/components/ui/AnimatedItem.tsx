@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 type AnimatedItemProps = {
   children: ReactNode;
-  elementType: "div" | "h1" | "h2" | "h3" | "li";
+  elementType: "div" | "h1" | "h2" | "h3" | "li" | "header" | "footer";
   animation:
     | "fadeInRight"
     | "fadeInLeft"
@@ -80,9 +80,10 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
   };
 
   const fadeInScale = {
-    hidden: { scale: 0.5 },
+    hidden: { scale: 0.5, opacity: 0 },
     visible: {
       scale: 1,
+      opacity: 1,
       transition: {
         delay: delay || 0,
         duration: 0.6,
