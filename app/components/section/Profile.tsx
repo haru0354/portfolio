@@ -52,7 +52,7 @@ const Profile = () => {
             <AnimatedItem
               animation="fadeInRight"
               elementType="li"
-              className="my-20  p-4 relative border border-gray-300 bg-gradient-to-br from-indigo-50 to-sky-100"
+              className="relative my-20 p-4 border border-gray-300 bg-gradient-to-br from-indigo-50 to-sky-100"
               key={ProfileList.id}
             >
               <Image
@@ -62,7 +62,7 @@ const Profile = () => {
                 alt="下矢印"
                 className="absolute inset-0 my-auto ml-[-48px]"
               />
-              <h3 className="text-xl text-gray-800 font-semibold mb-4 pb-2 border-b border-dashed border-gray-700">
+              <h3 className="mb-4 pb-2 text-xl font-semibold border-b border-dashed text-gray-800 border-gray-700">
                 {ProfileList.title}
               </h3>
               <p>{ProfileList.content}</p>
