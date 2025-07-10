@@ -3,7 +3,6 @@
 |-------|-------|
 | ![ポートフォリオトップ](/public/image_webp/portfolio-thumbnail-top-image.webp) | ![モーダルと画像スライダー](/public/image_webp/portfolio-thumbnail-modal-slider.webp)|
 
-
 「Next.jsのSSG」にて作成されたシンプルなポートフォリオサイトです。
 
 こったデザインよりも、シンプルながらアピールしたいことを考えて、配置などを構成しました。
@@ -25,6 +24,10 @@
 - アニメーションを各箇所で付与
 
 少なくとも「複数の言語を学習してきた」　「複数のオリジナルアプリを作成している」点は認識して貰えるようにはなっているのではないかと思います。
+
+下記URLへデプロイしています。
+
+URL: https://www.haruengineer.com/
 
 ## 使用技術
 
