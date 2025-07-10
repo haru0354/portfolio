@@ -71,7 +71,7 @@ const MemoBooksNote = () => {
         }}
         urls={{
           githubURL: "https://github.com/haru0354/memo-books-mern",
-          appURL: "https://www.memo-book-note.com/",
+          appURL: "https://www.memo-books-note.com/",
         }}
       />
     </AppContainer>

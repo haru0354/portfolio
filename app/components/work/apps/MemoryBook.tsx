@@ -81,7 +81,7 @@ const MemoryBook = () => {
         }}
         urls={{
           githubURL: "https://github.com/haru0354/trip-abroad-itinerary",
-          appURL: "https://www.travel-memory-life.com/memorybook",
+          appURL: "https://www.my-travel-memory.com/memorybook",
         }}
       />
     </AppContainer>
