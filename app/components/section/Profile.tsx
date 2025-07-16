@@ -69,15 +69,17 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <AnimatedItem animation="fadeInDown" elementType="div">
-        <Image
-          src="/image_webp/footer-image-portfolio01.webp"
-          width={801}
-          height={320}
-          alt="エンジニアの仕事中の画像"
-          className="mx-auto"
-        />
-      </AnimatedItem>
+      <div className="overflow-y-hidden">
+        <AnimatedItem animation="fadeInDown" elementType="div">
+          <Image
+            src="/image_webp/footer-image-portfolio01.webp"
+            width={801}
+            height={320}
+            alt="エンジニアの仕事中の画像"
+            className="mx-auto"
+          />
+        </AnimatedItem>
+      </div>
     </Section>
   );
 };

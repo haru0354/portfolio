@@ -33,8 +33,8 @@ const BoxInList: React.FC<BoxInListProps> = ({
       <h3 className="text-center border-b border-dashed pb-3 border-gray-500">
         {title}
       </h3>
-      <div className="w-full max-w-screen-md mx-auto px-4">
-        <ul className="list-disc w-full mx-2 md:mx-8 my-6">
+      <div className="w-full max-w-screen-md mx-auto">
+        <ul className="list-disc w-full px-6 md:px-8 my-6">
           {lists.map((list, index) => (
             <li key={`${list}-${index}`} className="mb-1 break-words">
               {list}
@@ -43,7 +43,7 @@ const BoxInList: React.FC<BoxInListProps> = ({
         </ul>
         {contents &&
           contents.map((content, index) => (
-            <p key={index} className="mx-8 break-words">
+            <p key={index} className="px-6 md:px-8 break-words">
               {content}
             </p>
           ))}

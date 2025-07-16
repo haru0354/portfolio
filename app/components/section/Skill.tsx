@@ -98,9 +98,9 @@ const Skill = () => {
           <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
             Udemyで学習した教材
           </h3>
-          <div className="w-full max-w-screen-md mx-auto px-4">
+          <div className="w-full max-w-screen-md mx-auto">
             <p className="mt-8 mb-2 font-semibold">フロントエンド</p>
-            <ol className="list-decimal w-full mx-2 md:mx-8">
+            <ol className="list-decimal w-full px-6 md:px-8">
               {frontendItems.map((frontendItem, index) => (
                 <li key={index} className="mb-1 break-words">
                   <a
@@ -115,7 +115,7 @@ const Skill = () => {
               ))}
             </ol>
             <p className="mt-8 mb-2 font-semibold">バックエンド</p>
-            <ol className="list-decimal w-full mx-2 md:mx-8">
+            <ol className="list-decimal w-full px-6 md:px-8">
               {backendItems.map((backendItem, index) => (
                 <li key={index} className="mb-1 break-words">
                   <a

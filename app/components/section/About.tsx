@@ -17,7 +17,7 @@ const About = () => {
       bgBlue={true}
       h1={true}
     >
-      <div className="w-full flex flex-col sm:flex-row">
+      <div className="w-full flex flex-col sm:flex-row overflow-y-hidden">
         <AnimatedItem
           elementType="div"
           animation="fadeInDown"

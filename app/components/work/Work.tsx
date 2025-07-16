@@ -1,7 +1,6 @@
 import Section from "../section/Section";
 import MemoryBook from "./apps/MemoryBook";
 import MemoBooksNote from "./apps/MemoBooksNote";
-import AppIntroduction from "./apps/AppIntroduction";
 import Blog from "./apps/Blog";
 import LaravelPractice from "./apps/LaravelPractice";
 import LaravelAcademy from "./apps/LaravelAcademy";
