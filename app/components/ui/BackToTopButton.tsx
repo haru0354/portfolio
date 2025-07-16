@@ -31,7 +31,7 @@ const BackToTopButton = () => {
   return (
     <>
       {isVisible && (
-        <button onClick={backToTop} type="button" className="fixed bottom-14 right-4 py-2 px-4 font-bold rounded-full z-10 opacity-80 text-white bg-blue-500 hover:bg-blue-700 transition-colors duration-300" >
+        <button onClick={backToTop} type="button" className="fixed bottom-14 right-4 py-2 px-4 font-bold rounded-full opacity-80 text-white bg-blue-500 hover:bg-blue-700 transition-colors duration-300 z-10">
           トップへ戻る
         </button>
       )}
