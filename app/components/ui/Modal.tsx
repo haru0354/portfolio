@@ -111,7 +111,7 @@ const Modal: React.FC<ModalProps> = ({
               </h3>
               <CloseButton onClick={closeModal} />
             </div>
-            <div className="mx-10">
+            <div className="mx-10 break-words">
               <ImageSlider items={sliderItems} />
               <p className="mt-6">{explanations.overview}</p>
               <ul>

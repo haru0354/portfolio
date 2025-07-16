@@ -32,7 +32,7 @@ const About = () => {
               href="https://github.com/haru0354"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 my-4"
+              className="text-blue-600 my-4 break-words"
             >
               https://github.com/haru0354
             </a>

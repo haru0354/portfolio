@@ -96,7 +96,7 @@ const Skill = () => {
           <p className="mt-8 mb-2 font-semibold">フロントエンド</p>
           <ol className="list-decimal mx-8">
             {frontendItems.map((frontendItem, index) => (
-              <li key={index} className="mb-1">
+              <li key={index} className="mb-1 break-words">
                 <a
                   href={frontendItem.href}
                   target="_blank"
@@ -111,7 +111,7 @@ const Skill = () => {
           <p className="mt-8 mb-2 font-semibold">バックエンド</p>
           <ol className="list-decimal mx-8">
             {backendItems.map((backendItem, index) => (
-              <li key={index} className="mb-1">
+              <li key={index} className="mb-1 break-words">
                 <a
                   href={backendItem.href}
                   target="_blank"

@@ -35,14 +35,14 @@ const BoxInList: React.FC<BoxInListProps> = ({
       </h3>
       <ul className="list-disc mx-8 my-6">
         {lists.map((list, index) => (
-          <li key={`${list}-${index}`} className="mb-1">
+          <li key={`${list}-${index}`} className="mb-1 break-words">
             {list}
           </li>
         ))}
       </ul>
       {contents &&
         contents.map((content, index) => (
-          <p key={index} className="mx-8">
+          <p key={index} className="mx-8 break-words">
             {content}
           </p>
         ))}

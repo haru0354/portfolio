@@ -16,11 +16,13 @@ const Work = () => {
 
   return (
     <Section id="works" title="Works">
-      {contents.map((content, index) => (
-        <p key={index} className="text-center">
-          {content}
-        </p>
-      ))}
+      <div className="text-center break-words">
+        {contents.map((content, index) => (
+          <p key={index} className="text-center">
+            {content}
+          </p>
+        ))}
+      </div>
       <MemoryBook />
       <MemoBooksNote />
       <LaravelAcademy />
