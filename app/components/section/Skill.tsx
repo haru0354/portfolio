@@ -81,7 +81,7 @@ const Skill = () => {
 
   return (
     <Section id="skill" title="エンジニアとしての技術" bgBlue={true}>
-      <div className="flex flex-wrap items-center justify-center px-2">
+      <div className="flex flex-wrap items-center justify-center px-2 overflow-y-hidden">
         {items.map((item, index) => (
           <BoxInList
             key={index}
