@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node scripts/convertToWebp.mjs && next dev",
     "build": "node scripts/convertToWebp.mjs && next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "image": "node scripts/convertToWebp.mjs",
     "lint": "next lint"
   },

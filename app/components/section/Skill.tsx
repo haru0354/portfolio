@@ -81,48 +81,55 @@ const Skill = () => {
 
   return (
     <Section id="skill" title="エンジニアとしての技術" bgBlue={true}>
-      <div className="flex flex-wrap items-center justify-center px-2">
+      <div className="flex flex-wrap items-center justify-center px-2 overflow-y-hidden">
         {items.map((item, index) => (
-          <BoxInList key={index} animation={true} title={item.title} lists={item.lists} />
+          <BoxInList
+            key={index}
+            animation={true}
+            title={item.title}
+            lists={item.lists}
+          />
         ))}
         <AnimatedItem
           animation="fadeInDown"
           elementType="div"
-          className="w-full max-w-[750px] mx-1 sm:mx-4 my-4 pt-4 pb-8 px-4 border rounded shadow-lg border-gray-400 bg-gradient-to-br from-white to-blue-100"
+          className="w-full max-w-[450px] md:max-w-[750px] mx-1 sm:mx-4 my-4 pt-4 pb-8 px-4 border rounded shadow-lg border-gray-400 bg-gradient-to-br from-white to-blue-100"
         >
           <h3 className="text-center border-b border-dashed pb-2 border-gray-500">
             Udemyで学習した教材
           </h3>
-          <p className="mt-8 mb-2 font-semibold">フロントエンド</p>
-          <ol className="list-decimal mx-8">
-            {frontendItems.map((frontendItem, index) => (
-              <li key={index} className="mb-1">
-                <a
-                  href={frontendItem.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600"
-                >
-                  {frontendItem.title}
-                </a>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-8 mb-2 font-semibold">バックエンド</p>
-          <ol className="list-decimal mx-8">
-            {backendItems.map((backendItem, index) => (
-              <li key={index} className="mb-1">
-                <a
-                  href={backendItem.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600"
-                >
-                  {backendItem.title}
-                </a>
-              </li>
-            ))}
-          </ol>
+          <div className="w-full max-w-screen-md mx-auto">
+            <p className="mt-8 mb-2 font-semibold">フロントエンド</p>
+            <ol className="list-decimal w-full px-6 md:px-8">
+              {frontendItems.map((frontendItem, index) => (
+                <li key={index} className="mb-1 break-words">
+                  <a
+                    href={frontendItem.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600"
+                  >
+                    {frontendItem.title}
+                  </a>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-8 mb-2 font-semibold">バックエンド</p>
+            <ol className="list-decimal w-full px-6 md:px-8">
+              {backendItems.map((backendItem, index) => (
+                <li key={index} className="mb-1 break-words">
+                  <a
+                    href={backendItem.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600"
+                  >
+                    {backendItem.title}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
         </AnimatedItem>
       </div>
     </Section>

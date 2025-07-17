@@ -3,45 +3,49 @@
 import { useState } from "react";
 import HeaderMenu from "./HeaderMenu";
 import AnimatedItem from "../../ui/AnimatedItem";
+import Button from "../../ui/Button";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleOpen = () => {
-    setIsOpen((prev) => !prev);
+  const openMenu = () => {
+    setIsOpen(true);
   };
 
-  const closeModal = (e: React.MouseEvent) => {
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
-      toggleOpen();
+      closeMenu();
     }
   };
 
   return (
     <div className="block sm:hidden">
       {isOpen ? (
-        <>
-          <AnimatedItem
-            elementType="div"
-            animation="fadeInRight"
-            onClick={closeModal}
-            className="h-screen w-screen fixed inset-0 opacity-70"
-          >
-            <div className="w-[180px] h-screen ml-auto border-l shadow-xl border-gray-300 bg-gray-200 ">
-              <HeaderMenu ulClass="pt-20" />
-              <button
-                type="button"
-                onClick={toggleOpen}
-                className=" mt-14 border-b-2 border-gray-500 hover:bg-gray-500 hover:text-white"
-              >
-                ← 閉じる
-              </button>
-            </div>
-          </AnimatedItem>
-        </>
+        <AnimatedItem
+          elementType="div"
+          animation="fadeInRight"
+          onClick={handleBackdropClick}
+          className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-50"
+        >
+          <div className="flex flex-col w-48 h-full ml-auto rounded-l-2xl  bg-white">
+            <HeaderMenu ulClass="pt-20" liClass="text-lg font-semibold" />
+            <Button
+              type="button"
+              color="white"
+              onClick={closeMenu}
+              className="mt-auto mb-10 mx-6"
+            >
+              ← Close
+            </Button>
+          </div>
+        </AnimatedItem>
       ) : (
         <button
-          onClick={toggleOpen}
+          onClick={openMenu}
           type="button"
           className="flex flex-col items-center justify-center border mr-4 px-2 pt-2 pb-1 border-gray-300 rounded"
         >

@@ -19,7 +19,7 @@ const Section: React.FC<SectionProps> = ({
   const elementType = h1 ? "h1" : "h2";
 
   return (
-    <section id={id} className={`w-full pt-10 sm:pb-10 ${bgColor}`}>
+    <section id={id} className={`w-full pt-10 sm:pb-10 overflow-x-hidden  ${bgColor}`}>
       <div className="max-w-[1050px] mx-auto mt-10 px-2 py-4">
         <AnimatedItem
           animation="fadeInOpacity"

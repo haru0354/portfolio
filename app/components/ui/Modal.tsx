@@ -72,7 +72,7 @@ const Modal: React.FC<ModalProps> = ({
         <AnimatedItem
           elementType="div"
           animation="fadeInRotate"
-          className="relative max-w-[520px] p-1 m-1 text-center rounded-lg cursor-pointer"
+          className="relative max-w-[520px] p-2 m-1 text-center rounded-lg cursor-pointer"
           onClick={toggleModal}
         >
           <Image
@@ -92,7 +92,7 @@ const Modal: React.FC<ModalProps> = ({
       )}
       {modalType === "button" && (
         <AnimatedItem elementType="div" animation="fadeInScale">
-          <Button onClick={toggleModal} type="button">
+          <Button onClick={toggleModal} type="button" color="black" className="block mx-auto mt-6">
             詳細はコチラ
           </Button>
         </AnimatedItem>
@@ -111,7 +111,7 @@ const Modal: React.FC<ModalProps> = ({
               </h3>
               <CloseButton onClick={closeModal} />
             </div>
-            <div className="mx-10">
+            <div className="mx-10 break-words">
               <ImageSlider items={sliderItems} />
               <p className="mt-6">{explanations.overview}</p>
               <ul>

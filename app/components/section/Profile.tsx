@@ -33,7 +33,7 @@ const Profile = () => {
       id: 5,
       title: "エンジニアの勉強開始（2024年初め）",
       content:
-        "JavaScript,React,TypeScript,Next.jsとフロントエンドの学習をしていき、小さいアプリをアウトプットとして作成しつつ、自身初となる「旅程表アプリ」を完成させる。その後、いくつかアプリを作成した後、バックエンドの学習としてNode.js、Expressのアプリ作成後に、PHP・Laravelの学習を行い「レッスンアカデミー」の作成を行う。",
+        "JavaScript, React, TypeScript, Next.jsとフロントエンドの学習をしていき、小さいアプリをアウトプットとして作成しつつ、自身初となる「旅程表アプリ」を完成させる。その後、いくつかアプリを作成した後、バックエンドの学習としてNode.js、Expressのアプリ作成後に、PHP・Laravelの学習を行い「レッスンアカデミー」の作成を行う。",
     },
     {
       id: 6,
@@ -51,7 +51,7 @@ const Profile = () => {
             <AnimatedItem
               animation="fadeInRight"
               elementType="li"
-              className="relative my-20 p-4 border border-gray-300 bg-gradient-to-br from-indigo-50 to-sky-100"
+              className="relative my-20 p-4 border border-gray-300 bg-gradient-to-br from-indigo-50 to-sky-100 break-words"
               key={ProfileList.id}
             >
               <Image
@@ -69,15 +69,17 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <AnimatedItem animation="fadeInDown" elementType="div">
-        <Image
-          src="/image_webp/footer-image-portfolio01.webp"
-          width={801}
-          height={320}
-          alt="エンジニアの仕事中の画像"
-          className="mx-auto"
-        />
-      </AnimatedItem>
+      <div className="overflow-y-hidden">
+        <AnimatedItem animation="fadeInDown" elementType="div">
+          <Image
+            src="/image_webp/footer-image-portfolio01.webp"
+            width={801}
+            height={320}
+            alt="エンジニアの仕事中の画像"
+            className="mx-auto"
+          />
+        </AnimatedItem>
+      </div>
     </Section>
   );
 };

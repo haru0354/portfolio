@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={notoSansJp.className}>
+        <BackToTopButton />
         <Header />
         {children}
-        <BackToTopButton />
         <Footer />
       </body>
     </html>

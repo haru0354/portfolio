@@ -43,7 +43,7 @@ const Blog = () => {
       },
       urls: {
         githubURL: "https://github.com/haru0354/next-blog-isr",
-        appURL: "https://www.travel-memory-life.com/",
+        appURL: "https://www.my-travel-memory.com/",
       },
     },
     {

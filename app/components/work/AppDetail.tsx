@@ -32,11 +32,11 @@ const AppDetail: React.FC<AppDetailProps> = ({
         animation={animation}
         className="mx-auto py-4 my-10"
       >
-        <h3 className="block w-full text-3xl text-center font-bold mb-10 px-2 leading-relaxed">
+        <h3 className="block w-full text-3xl text-center font-bold mb-10 leading-relaxed">
           {title}
         </h3>
         <div className="w-full flex flex-col sm:flex-row">
-          <div className="w-full px-2 sm:px-10 sm:flex-1 order-2 sm:order-2">
+          <div className="w-full px-0 sm:px-10 sm:flex-1 order-2 sm:order-2">
             {contents.map((content, index) => (
               <p key={index}>{content}</p>
             ))}

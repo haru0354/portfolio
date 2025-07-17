@@ -17,7 +17,7 @@ const About = () => {
       bgBlue={true}
       h1={true}
     >
-      <div className="w-full flex flex-col sm:flex-row">
+      <div className="w-full flex flex-col sm:flex-row overflow-y-hidden">
         <AnimatedItem
           elementType="div"
           animation="fadeInDown"
@@ -32,7 +32,7 @@ const About = () => {
               href="https://github.com/haru0354"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 my-4"
+              className="text-blue-600 my-4 break-words"
             >
               https://github.com/haru0354
             </a>

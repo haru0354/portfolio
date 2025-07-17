@@ -1,19 +1,28 @@
 type ButtonProps = {
   children: React.ReactNode;
   type?: "submit" | "button";
+  color: "white" | "black";
+  className?: string;
   onClick?: () => void;
 };
 
 const Button: React.FC<ButtonProps> = ({
   children,
   type = "submit",
+  color,
+  className,
   onClick,
 }) => {
+  const colors = {
+    white: "text-gray-800 hover:text-white hover:bg-gray-700 ",
+    black: "text-white hover:text-gray-800 bg-gray-700 hover:bg-white",
+  };
+
   return (
     <button
       onClick={onClick}
       type={type}
-      className="block w-[180px] mx-auto my-4 py-3 px-4 font-semibold border rounded text-white hover:text-gray-800 border-gray-800 bg-gray-800 hover:bg-blue-100 transition duration-300"
+      className={`${className} ${colors[color]} px-8 py-3 border rounded border-gray-400 transition duration-300`}
     >
       {children}
     </button>
