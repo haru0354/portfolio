@@ -92,7 +92,7 @@ const Modal: React.FC<ModalProps> = ({
       )}
       {modalType === "button" && (
         <AnimatedItem elementType="div" animation="fadeInScale">
-          <Button onClick={toggleModal} type="button">
+          <Button onClick={toggleModal} type="button" color="black" className="block mx-auto mt-6">
             詳細はコチラ
           </Button>
         </AnimatedItem>

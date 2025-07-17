@@ -3,6 +3,7 @@
 import { useState } from "react";
 import HeaderMenu from "./HeaderMenu";
 import AnimatedItem from "../../ui/AnimatedItem";
+import Button from "../../ui/Button";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +33,14 @@ const HamburgerMenu = () => {
         >
           <div className="flex flex-col w-48 h-full ml-auto rounded-l-2xl  bg-white">
             <HeaderMenu ulClass="pt-20" liClass="text-lg font-semibold" />
-            <button
+            <Button
               type="button"
+              color="white"
               onClick={closeMenu}
-              className="mt-auto mb-10 mx-6 py-3 rounded-md border border-gray-400 text-gray-700 hover:bg-gray-700 hover:text-white transition"
+              className="mt-auto mb-10 mx-6"
             >
               ← Close
-            </button>
+            </Button>
           </div>
         </AnimatedItem>
       ) : (
