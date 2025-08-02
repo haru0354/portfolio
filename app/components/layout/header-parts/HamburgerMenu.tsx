@@ -31,8 +31,12 @@ const HamburgerMenu = () => {
           onClick={handleBackdropClick}
           className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-50"
         >
-          <div className="flex flex-col w-48 h-full ml-auto rounded-l-2xl  bg-white">
-            <HeaderMenu ulClass="pt-20" liClass="text-lg font-semibold" />
+          <div className="flex flex-col w-48 h-full ml-auto rounded-l-2xl bg-white">
+            <HeaderMenu
+              ulClass="pt-20"
+              liClass="text-lg font-semibold"
+              closeMenu={closeMenu}
+            />
             <Button
               type="button"
               color="white"
