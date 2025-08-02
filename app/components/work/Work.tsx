@@ -1,9 +1,9 @@
-import Section from "../section/Section";
 import MemoryBook from "./apps/MemoryBook";
 import MemoBooksNote from "./apps/MemoBooksNote";
 import Blog from "./apps/Blog";
 import LaravelPractice from "./apps/LaravelPractice";
 import LaravelAcademy from "./apps/LaravelAcademy";
+import WorkSection from "./WorkSection";
 
 const Work = () => {
   const contents = [
@@ -14,7 +14,7 @@ const Work = () => {
   ];
 
   return (
-    <Section id="works" title="Works">
+    <WorkSection id="works" title="Works">
       <div className="text-center break-words">
         {contents.map((content, index) => (
           <p key={index} className="text-center">
@@ -27,7 +27,7 @@ const Work = () => {
       <LaravelAcademy />
       <Blog />
       <LaravelPractice />
-    </Section>
+    </WorkSection>
   );
 };
 
