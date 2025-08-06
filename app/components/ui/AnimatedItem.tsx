@@ -97,7 +97,7 @@ const AnimatedItem: React.FC<AnimatedItemProps> = ({
       opacity: 1,
       transition: {
         delay: delay || 0,
-        duration: 0.6,
+        duration: 1.2,
       },
     },
   };

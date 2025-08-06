@@ -4,6 +4,7 @@ import Blog from "./apps/Blog";
 import LaravelPractice from "./apps/LaravelPractice";
 import LaravelAcademy from "./apps/LaravelAcademy";
 import WorkSection from "./WorkSection";
+import AnimatedItem from "../ui/AnimatedItem";
 
 const Work = () => {
   const contents = [
@@ -15,13 +16,17 @@ const Work = () => {
 
   return (
     <WorkSection id="works" title="Works">
-      <div className="text-center break-words mb-12">
+      <AnimatedItem
+        elementType="div"
+        animation="fadeInOpacity"
+        className="text-center break-words mb-12"
+      >
         {contents.map((content, index) => (
           <p key={index} className="text-center">
             {content}
           </p>
         ))}
-      </div>
+      </AnimatedItem>
       <MemoryBook />
       <MemoBooksNote />
       <LaravelAcademy />
