@@ -4,7 +4,7 @@ import Modal from "../../ui/Modal";
 
 const LaravelAcademy = () => {
   return (
-    <AppContainer>
+    <AppContainer bg="bg-zinc-50">
       <AppDetail
         title="「レッスンアカデミー」- 4択/フラッシュカード 学習アプリ -"
         contents={[

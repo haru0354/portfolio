@@ -72,7 +72,7 @@ const LaravelPractice = () => {
         {
           image: "/image_webp/laravel-livewire-form.webp",
           text: "フォームバリデーション",
-        }
+        },
       ],
       explanations: {
         overview:
@@ -91,13 +91,13 @@ const LaravelPractice = () => {
   ];
 
   return (
-    <AppContainer border={false}>
+    <AppContainer bg="bg-zinc-50">
       <AnimatedItem
         animation="fadeInOpacity"
         elementType="div"
         className="text-center"
       >
-        <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
+        <h3 className="w-full mb-10 text-3xl font-bold leading-relaxed">
           Laravelの学習目的に作成した旅程表アプリ
         </h3>
         <p>Laravelを学習して知識の定着の為に、学習目的に制作したアプリです。</p>

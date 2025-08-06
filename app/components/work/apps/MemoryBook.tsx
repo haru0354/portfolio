@@ -4,7 +4,7 @@ import Modal from "../../ui/Modal";
 
 const MemoryBook = () => {
   return (
-    <AppContainer>
+    <AppContainer bg="bg-zinc-50">
       <AppDetail
         title="「旅のメモリーブック」旅程表作成アプリ"
         contents={[

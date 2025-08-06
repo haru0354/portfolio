@@ -21,7 +21,7 @@ const About = () => {
         <AnimatedItem
           elementType="div"
           animation="fadeInDown"
-          className="w-full px-4 sm:flex-1 order-2 sm:order-1"
+          className="w-full px-2 sm:flex-1 order-2 sm:order-1"
         >
           {texts.map((text, index) => (
             <p key={index}>{text}</p>

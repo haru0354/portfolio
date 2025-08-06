@@ -164,7 +164,7 @@ const Blog = () => {
         elementType="div"
         className="text-center"
       >
-        <h3 className="w-full my-10 text-3xl font-bold leading-relaxed">
+        <h3 className="w-full mb-10 text-3xl font-bold leading-relaxed">
           Next.js製のブログ作成アプリ
         </h3>
         <p>「作成したアプリの集客用」「個人での利用」</p>

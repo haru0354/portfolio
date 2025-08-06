@@ -30,7 +30,7 @@ const AppDetail: React.FC<AppDetailProps> = ({
       <AnimatedItem
         elementType="div"
         animation={animation}
-        className="mx-auto py-4 my-10"
+        className="mx-auto"
       >
         <h3 className="block w-full text-3xl text-center font-bold mb-10 leading-relaxed">
           {title}

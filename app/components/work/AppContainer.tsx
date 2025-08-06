@@ -1,17 +1,17 @@
 type AppContainerProps = {
   children: React.ReactNode;
-  border?: boolean;
+  bg?: string;
 };
 
 const AppContainer: React.FC<AppContainerProps> = ({
   children,
-  border = true,
+  bg = "bg-white"
 }) => {
-  const borderBottom = border ? "border-b border-dashed border-gray-700" : "";
-
   return (
-    <div className={`w-full max-w-[1050px] mx-auto px-2 my-6 pb-14 ${borderBottom}`}>
-      {children}
+    <div className={`w-full py-12 ${bg}`}>
+      <div className="w-full max-w-[1050px] mx-auto px-2">
+        {children}
+      </div>
     </div>
   );
 };

@@ -45,13 +45,13 @@ const Profile = () => {
 
   return (
     <Section id="profile" title="プロフィール">
-      <div className="border-l-8 ml-10 border-gray-700">
-        <ul className="mx-6">
+      <div className="border-l-8 ml-2 md:ml-10 border-gray-700">
+        <ul className="ml-6 mr-2">
           {ProfileLists.map((ProfileList) => (
             <AnimatedItem
               animation="fadeInRight"
               elementType="li"
-              className="relative my-20 p-4 border border-gray-300 bg-gradient-to-br from-indigo-50 to-sky-100 break-words"
+              className="relative my-10 md:my-20 p-4 border border-gray-300 bg-gradient-to-br from-zinc-50 to-sky-100 break-words"
               key={ProfileList.id}
             >
               <Image
