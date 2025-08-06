@@ -15,7 +15,7 @@ const Work = () => {
 
   return (
     <WorkSection id="works" title="Works">
-      <div className="text-center break-words">
+      <div className="text-center break-words mb-12">
         {contents.map((content, index) => (
           <p key={index} className="text-center">
             {content}

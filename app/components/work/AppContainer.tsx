@@ -8,7 +8,7 @@ const AppContainer: React.FC<AppContainerProps> = ({
   bg = "bg-white"
 }) => {
   return (
-    <div className={`w-full py-8 ${bg}`}>
+    <div className={`w-full py-12 ${bg}`}>
       <div className="w-full max-w-[1050px] mx-auto px-2">
         {children}
       </div>
