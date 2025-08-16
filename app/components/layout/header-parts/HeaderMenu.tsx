@@ -3,14 +3,9 @@
 type HeaderMenuProps = {
   liClass?: string;
   ulClass?: string;
-  closeMenu?: () => void;
 };
 
-const HeaderMenu: React.FC<HeaderMenuProps> = ({
-  liClass,
-  ulClass,
-  closeMenu,
-}) => {
+const HeaderMenu: React.FC<HeaderMenuProps> = ({ liClass, ulClass }) => {
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -21,17 +16,11 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
     }
   };
 
-  const handleClick = (id: string) => {
-    scrollToSection(id);
-    if (closeMenu) {
-      closeMenu();
-    }
-  };
-
   const items = [
     { id: "about", name: "About" },
     { id: "works", name: "Works" },
     { id: "skill", name: "Skills" },
+    { id: "experience", name: "Experience" },
     { id: "profile", name: "Profile" },
   ];
 
@@ -42,7 +31,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
           <li
             key={item.id}
             className={`${liClass} p-4 hover:bg-sky-400 hover:text-white cursor-pointer`}
-            onClick={() => handleClick(item.id)}
+            onClick={() => scrollToSection(item.id)}
           >
             <span>{item.name}</span>
           </li>
