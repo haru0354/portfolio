@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Section from "./Section";
 import AnimatedItem from "../ui/AnimatedItem";
+import ErrorText from "../ui/ErrorText";
 
 const Profile = () => {
   const ProfileLists = [
@@ -69,16 +70,18 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <div className="overflow-y-hidden">
+      <div className="relative overflow-hidden">
         <AnimatedItem animation="fadeInDown" elementType="div">
           <Image
             src="/image_webp/footer-image-portfolio01.webp"
-            width={801}
+            width={1000}
             height={320}
             alt="エンジニアの仕事中の画像"
             className="mx-auto"
           />
         </AnimatedItem>
+        <ErrorText animationType="blink" direction="right" position="top" />
+        <ErrorText animationType="bounce" direction="bottom" position="left" />
       </div>
     </Section>
   );
