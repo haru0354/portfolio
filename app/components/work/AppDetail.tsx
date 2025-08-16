@@ -11,6 +11,7 @@ type AppDetailProps = {
   imageRight?: boolean;
   featureList: string[];
   techStack: string[];
+  subTitle: string[];
 };
 
 const AppDetail: React.FC<AppDetailProps> = ({
@@ -21,20 +22,26 @@ const AppDetail: React.FC<AppDetailProps> = ({
   imageRight = false,
   featureList,
   techStack,
+  subTitle = [],
 }) => {
   const imagePosition = imageRight ? "sm:order-2" : "sm:order-1";
   const animation = imageRight ? "fadeInLeft" : "fadeInRight";
-  
+
   return (
     <>
       <AnimatedItem
         elementType="div"
         animation={animation}
-        className="mx-auto"
+        className="mx-auto py-4 my-10"
       >
-        <h3 className="block w-full text-3xl text-center font-bold mb-10 leading-relaxed">
+        <h3 className="block w-full text-3xl text-center font-bold mb-4 leading-relaxed text-indigo-600">
           {title}
         </h3>
+        <div className="flex justify-center mb-8">
+          <span className="bg-indigo-100 text-sm font-semibold px-4 py-2 rounded-full">
+            {subTitle.join(" | ")}
+          </span>
+        </div>
         <div className="w-full flex flex-col sm:flex-row">
           <div className="w-full px-0 sm:px-10 sm:flex-1 order-2 sm:order-2">
             {contents.map((content, index) => (
