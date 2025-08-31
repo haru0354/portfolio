@@ -7,6 +7,7 @@ const LaravelAcademy = () => {
     <AppContainer bg="bg-zinc-50">
       <AppDetail
         title="「レッスンアカデミー」- 4択/フラッシュカード 学習アプリ -"
+        subTitle={["Laravel + Livewire", "Laravelフルスタック"]}
         contents={[
           "「4択クイズ」と「フラッシュカード」機能を備えた「Laravel 12」で作成している「学習用Webアプリケーション」です。",
           "複数の4択クイズをまとめた、レッスンを作成することができます。また、作成したレッスンデータを元にフラッシュカードモードが生成されます。",

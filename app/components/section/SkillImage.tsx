@@ -1,5 +1,4 @@
 import AnimatedItem from "../ui/AnimatedItem";
-import Section from "./Section";
 
 const skills = [
   { name: "HTML", icon: "html" },
