@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import Section from "./Section";
 import AnimatedItem from "../ui/AnimatedItem";
-import ErrorText from "../ui/ErrorText";
 
 const Profile = () => {
   const ProfileLists = [
